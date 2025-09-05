@@ -1,0 +1,89 @@
+bird_id,original_file_id,clip_path,species_name,clip_duration
+0,125137,clips_10sec\bird_00_xc125137.wav,African Pied Wagtail,10.0
+1,157331,clips_10sec\bird_01_xc157331.wav,Barn Swallow,10.0
+2,155975,clips_10sec\bird_02_xc155975.wav,Black Woodpecker,10.0
+3,143894,clips_10sec\bird_03_xc143894.wav,Black-headed Gull,10.0
+4,94584,clips_10sec\bird_04_xc94584.wav,Canada Goose,10.0
+5,98400,clips_10sec\bird_05_xc98400.wav,Carrion Crow,10.0
+6,132149,clips_10sec\bird_06_xc132149.wav,Coal Tit,10.0
+7,127996,clips_10sec\bird_07_xc127996.wav,Common Blackbird,10.0
+8,121597,clips_10sec\bird_08_xc121597.wav,Common Chaffinch,10.0
+9,153833,clips_10sec\bird_09_xc153833.wav,Common Chiffchaff,10.0
+10,37447,clips_10sec\bird_10_xc37447.wav,Common Cuckoo,10.0
+11,148465,clips_10sec\bird_11_xc148465.wav,Common House Martin,10.0
+12,125782,clips_10sec\bird_12_xc125782.wav,Common Linnet,10.0
+13,26789,clips_10sec\bird_13_xc26789.wav,Common Moorhen,10.0
+14,123808,clips_10sec\bird_14_xc123808.wav,Common Nightingale,10.0
+15,121326,clips_10sec\bird_15_xc121326.wav,Common Pheasant,10.0
+16,132608,clips_10sec\bird_16_xc132608.wav,Common Redpoll,10.0
+17,83912,clips_10sec\bird_17_xc83912.wav,Common Redshank,10.0
+18,76760,clips_10sec\bird_18_xc76760.wav,Common Redstart,10.0
+19,86327,clips_10sec\bird_19_xc86327.wav,Common Reed Bunting,10.0
+20,27080,clips_10sec\bird_20_xc27080.wav,Common Snipe,10.0
+21,42698,clips_10sec\bird_21_xc42698.wav,Common Starling,10.0
+22,67307,clips_10sec\bird_22_xc67307.wav,Common Swift,10.0
+23,76742,clips_10sec\bird_23_xc76742.wav,Common Whitethroat,10.0
+24,94614,clips_10sec\bird_24_xc94614.wav,Common Wood Pigeon,10.0
+25,125777,clips_10sec\bird_25_xc125777.wav,Corn Bunting,10.0
+26,83894,clips_10sec\bird_26_xc83894.wav,Dunlin,10.0
+27,70132,clips_10sec\bird_27_xc70132.wav,Dunnock,10.0
+28,94967,clips_10sec\bird_28_xc94967.wav,Eurasian Blackcap,10.0
+29,44203,clips_10sec\bird_29_xc44203.wav,Eurasian Blue Tit,10.0
+30,113905,clips_10sec\bird_30_xc113905.wav,Eurasian Bullfinch,10.0
+31,101940,clips_10sec\bird_31_xc101940.wav,Eurasian Collared Dove,10.0
+32,130639,clips_10sec\bird_32_xc130639.wav,Eurasian Coot,10.0
+33,27152,clips_10sec\bird_33_xc27152.wav,Eurasian Golden Oriole,10.0
+34,46223,clips_10sec\bird_34_xc46223.wav,Eurasian Jay,10.0
+35,121016,clips_10sec\bird_35_xc121016.wav,Eurasian Magpie,10.0
+36,78951,clips_10sec\bird_36_xc78951.wav,Eurasian Nuthatch,10.0
+37,53817,clips_10sec\bird_37_xc53817.wav,Eurasian Oystercatcher,10.0
+38,124053,clips_10sec\bird_38_xc124053.wav,Eurasian Reed Warbler,10.0
+39,123169,clips_10sec\bird_39_xc123169.wav,Eurasian Skylark,10.0
+40,143465,clips_10sec\bird_40_xc143465.wav,Eurasian Tree Sparrow,10.0
+41,130409,clips_10sec\bird_41_xc130409.wav,Eurasian Treecreeper,10.0
+42,71024,clips_10sec\bird_42_xc71024.wav,Eurasian Wren,10.0
+43,133054,clips_10sec\bird_43_xc133054.wav,Eurasian Wryneck,10.0
+44,148426,clips_10sec\bird_44_xc148426.wav,European Bee-eater,10.0
+45,42344,clips_10sec\bird_45_xc42344.wav,European Golden Plover,10.0
+46,97792,clips_10sec\bird_46_xc97792.wav,European Goldfinch,10.0
+47,153131,clips_10sec\bird_47_xc153131.wav,European Green Woodpecker,10.0
+48,28961,clips_10sec\bird_48_xc28961.wav,European Greenfinch,10.0
+49,126481,clips_10sec\bird_49_xc126481.wav,European Herring Gull,10.0
+50,146062,clips_10sec\bird_50_xc146062.wav,European Honey Buzzard,10.0
+51,27039,clips_10sec\bird_51_xc27039.wav,European Nightjar,10.0
+52,30390,clips_10sec\bird_52_xc30390.wav,European Robin,10.0
+53,75092,clips_10sec\bird_53_xc75092.wav,European Turtle Dove,10.0
+54,146260,clips_10sec\bird_54_xc146260.wav,Garden Warbler,10.0
+55,106846,clips_10sec\bird_55_xc106846.wav,Goldcrest,10.0
+56,98172,clips_10sec\bird_56_xc98172.wav,Great Spotted Woodpecker,10.0
+57,71454,clips_10sec\bird_57_xc71454.wav,Great Tit,10.0
+58,42430,clips_10sec\bird_58_xc42430.wav,Grey Partridge,10.0
+59,160879,clips_10sec\bird_59_xc160879.wav,Grey Plover,10.0
+60,29766,clips_10sec\bird_60_xc29766.wav,House Sparrow,10.0
+61,102278,clips_10sec\bird_61_xc102278.wav,Lesser Whitethroat,10.0
+62,128853,clips_10sec\bird_62_xc128853.wav,Long-tailed Tit,10.0
+63,46032,clips_10sec\bird_63_xc46032.wav,Marsh Tit,10.0
+64,64686,clips_10sec\bird_64_xc64686.wav,Marsh Warbler,10.0
+65,30614,clips_10sec\bird_65_xc30614.wav,Meadow Pipit,10.0
+66,97982,clips_10sec\bird_66_xc97982.wav,Northern Lapwing,10.0
+67,64735,clips_10sec\bird_67_xc64735.wav,Northern Raven,10.0
+68,94211,clips_10sec\bird_68_xc94211.wav,Red Crossbill,10.0
+69,58579,clips_10sec\bird_69_xc58579.wav,Red-throated Loon,10.0
+70,27962,clips_10sec\bird_70_xc27962.wav,Redwing,10.0
+71,110303,clips_10sec\bird_71_xc110303.wav,River Warbler,10.0
+72,92264,clips_10sec\bird_72_xc92264.wav,Rock Dove,10.0
+73,27145,clips_10sec\bird_73_xc27145.wav,Rook,10.0
+74,120664,clips_10sec\bird_74_xc120664.wav,Sedge Warbler,10.0
+75,132392,clips_10sec\bird_75_xc132392.wav,Song Thrush,10.0
+76,139372,clips_10sec\bird_76_xc139372.wav,Spotted Flycatcher,10.0
+77,77429,clips_10sec\bird_77_xc77429.wav,Stock Dove,10.0
+78,76765,clips_10sec\bird_78_xc76765.wav,Tawny Owl,10.0
+79,83705,clips_10sec\bird_79_xc83705.wav,Tree Pipit,10.0
+80,156262,clips_10sec\bird_80_xc156262.wav,Western Jackdaw,10.0
+81,102788,clips_10sec\bird_81_xc102788.wav,Western Yellow Wagtail,10.0
+82,130283,clips_10sec\bird_82_xc130283.wav,Willow Ptarmigan,10.0
+83,164926,clips_10sec\bird_83_xc164926.wav,Willow Tit,10.0
+84,121601,clips_10sec\bird_84_xc121601.wav,Willow Warbler,10.0
+85,102869,clips_10sec\bird_85_xc102869.wav,Wood Sandpiper,10.0
+86,101862,clips_10sec\bird_86_xc101862.wav,Wood Warbler,10.0
+87,102107,clips_10sec\bird_87_xc102107.wav,Yellowhammer,10.0

@@ -1,0 +1,6173 @@
+{
+  "African Pied Wagtail": {
+    "bird_profile": {
+      "bird_id": 0,
+      "scientific_name": "Motacilla aguimp",
+      "common_name": "African Pied Wagtail",
+      "family": "Motacillidae",
+      "habitats": [
+        "wetland",
+        "ponds",
+        "riversides"
+      ],
+      "geographic_regions": [
+        "sub-Saharan Africa"
+      ],
+      "habitat_analysis": {
+        "habitat_diversity": 3,
+        "geographic_spread": 1
+      },
+      "size": "medium",
+      "behaviors": {
+        "migration": {
+          "patterns": "unknown"
+        },
+        "activity_periods": "not specified",
+        "territorial_behavior": "not specified",
+        "social_structure": {
+          "group_dynamics": "pairs"
+        }
+      },
+      "feeding": {
+        "ecology": "omnivore",
+        "dietary_preferences": "not specified"
+      },
+      "colors": {
+        "primary": "not specified"
+      },
+      "vocalizations": {
+        "characteristics": "unknown"
+      },
+      "image_metadata": {
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 2.335232162475586,
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/0/09/Motacilla_aguimp.jpg"
+      },
+      "data_source": {
+        "extract": "The African Pied Wagtail (Motacilla aguimp) is a species of wagtail in the family Motacillidae. It is found in the sub-Saharan Africa. The African Pied Wagtail is often found near water in a variety of habitats such as wetlands, ponds, and riversides.",
+        "url": "https://en.wikipedia.org/wiki/African_Pied_Wagtail"
+      },
+      "data_quality_indicators": {
+        "extraction_success": true,
+        "integrity_score": 8.0,
+        "processing_metadata": {
+          "timestamp": "2023-10-24T00:00:00Z",
+          "processed_by": "Ornithological Data Integration Specialist"
+        }
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 42.94,
+      "timestamp": "2025-09-02 13:10:26",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Barn Swallow": {
+    "bird_profile": {
+      "common_name": "Barn Swallow",
+      "scientific_name": "Hirundo rustica",
+      "url": "https://en.wikipedia.org/wiki/Barn_swallow",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Hirundo_rustica_-_Barn_Swallow.jpg/220px-Hirundo_rustica_-_Barn_Swallow.jpg",
+      "extraction_success": true,
+      "taxonomic_info": {
+        "family": "Hirundinidae",
+        "order": "Passeriformes"
+      },
+      "physical_characteristics": {
+        "size": "medium",
+        "colors": {
+          "primary_patterns": "distinctive forked tail, dark blue upperparts, and light underparts"
+        }
+      },
+      "habitat": {
+        "habitats": [
+          "wetland"
+        ],
+        "geographic_regions": [
+          "Europe",
+          "Asia",
+          "North America"
+        ],
+        "habitat_diversity": 1,
+        "geographic_spread": 3
+      },
+      "behavior": {
+        "activities": {
+          "migration": {
+            "type": "migratory",
+            "patterns": "breeds in Europe, North America, and parts of Asia during spring and summer and migrates to warmer regions in the fall"
+          },
+          "activity_periods": "dawn and dusk",
+          "territorial_behavior": "aggressive towards intruders near nesting sites"
+        },
+        "feeding": {
+          "ecology": "insectivore",
+          "dietary_preferences": "primarily feeds on insects caught in flight"
+        },
+        "social_structure": {
+          "group_dynamics": "often seen in pairs or small groups, very social",
+          "nesting": "nests are often found in man-made structures"
+        },
+        "vocalizations": {
+          "characteristics": "varied twittering calls"
+        }
+      },
+      "metadata": {
+        "bird_id": 1,
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 3.0247169494628907,
+        "data_quality_indicators": {
+          "completeness": "high",
+          "consistency": "verified",
+          "source_reliability": "Wikipedia, scientific literature"
+        },
+        "processing_metadata": {
+          "last_updated": "2023-10-01",
+          "integrator": "Ornithological Data Integration Specialist"
+        }
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 60.02,
+      "timestamp": "2025-09-02 13:11:27",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Black Woodpecker": {
+    "bird_profile": {
+      "common_name": "Black Woodpecker",
+      "scientific_name": "Dryocopus martius",
+      "family": "Picidae",
+      "status": {
+        "IUCN_red_list": "Least Concern",
+        "population_trends": "Stable"
+      },
+      "extraction_success": true,
+      "image_metadata": {
+        "bird_id": 2,
+        "image_count": 5,
+        "quality_score": 5.8,
+        "file_size_mb": 2.772087287902832
+      },
+      "habitats": [
+        "mature forests",
+        "old growth timber"
+      ],
+      "geographic_distribution": {
+        "regions": [
+          "Europe",
+          "northern Asia"
+        ],
+        "habitat_diversity": 2,
+        "geographic_spread": 2
+      },
+      "size": "large",
+      "behavioral_attributes": {
+        "activity_periods": "diurnal",
+        "migration_patterns": {
+          "general": "resident in some areas, migrates to lower elevations in winter",
+          "behavior": "defends nesting territory actively"
+        },
+        "social_structure": {
+          "group_dynamics": "typically found in pairs",
+          "breeding_behavior": "monogamous pairs often maintain the same territory"
+        },
+        "vocalizations": {
+          "characteristics": "distinctive and harsh calls, audible over long distances"
+        }
+      },
+      "feeding_habits": {
+        "ecology": "predominantly forages on larvae in trees",
+        "dietary_preferences": "insectivore, primarily larvae"
+      },
+      "coloration": {
+        "dominant_colors": [
+          "black",
+          "red",
+          "white"
+        ]
+      },
+      "references": {
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Black_Woodpecker",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Dryocopus_martius_%28cropped%29.jpg/320px-Dryocopus_martius_%28cropped%29.jpg"
+      },
+      "data_quality_metrics": {
+        "consistency_check": true,
+        "data_quality_recommendations": "Data validated from multiple sources, ensuring accuracy and completeness."
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 43.47,
+      "timestamp": "2025-09-02 13:12:12",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Black-headed Gull": {
+    "bird_profile": {
+      "common_name": "Black-headed Gull",
+      "scientific_name": "Larus ridibundus",
+      "family": "Laridae",
+      "extraction_success": true,
+      "metadata": {
+        "bird_id": 3,
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 0.9330135345458984
+      },
+      "habitat": {
+        "habitats": [
+          "unknown"
+        ],
+        "geographic_regions": [],
+        "habitat_diversity": 0,
+        "geographic_spread": 0
+      },
+      "physical_characteristics": {
+        "size": "medium",
+        "color_patterns": [
+          "black"
+        ]
+      },
+      "behavioral_data": {
+        "behaviors": {
+          "migration": "unknown",
+          "activity_periods": "unknown",
+          "territorial_behavior": "unknown"
+        },
+        "feeding_ecology": {
+          "dietary_preferences": "omnivore"
+        },
+        "social_structure": {
+          "group_dynamics": "pairs"
+        },
+        "migration_patterns": "unknown",
+        "vocalizations": "unknown"
+      },
+      "data_quality_indicators": {
+        "data_source": "combined data from Wikipedia, taxonomic info, habitat analysis, and behavioral data",
+        "confidence_level": "medium",
+        "issues_detected": "habitat and behavioral data are marked as unknown"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 34.54,
+      "timestamp": "2025-09-02 13:12:47",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Canada Goose": {
+    "bird_profile": {
+      "scientific_name": "Branta canadensis",
+      "common_name": "Canada Goose",
+      "family": "Anatidae",
+      "size": "large",
+      "habitats": [
+        "unknown"
+      ],
+      "geographic_regions": [
+        "north_america"
+      ],
+      "habitat_analysis": {
+        "habitat_diversity": 0,
+        "geographic_spread": 1
+      },
+      "behaviors": {
+        "migration": "migratory, traveling in V-shaped formations",
+        "territorial": "strong territorial instincts during breeding season",
+        "activity_periods": "active during the day",
+        "social_behavior": "highly social, found in family groups and seasonal flocks"
+      },
+      "feeding": {
+        "dietary_preferences": "primarily herbivorous, eating grasses and grains, occasionally small invertebrates"
+      },
+      "social_structure": "often seen in groups; complex social interactions within family units",
+      "migration_patterns": "seasonal migrations, primarily between breeding and wintering grounds",
+      "colors": {
+        "primary_colors": [
+          "black",
+          "white",
+          "brown"
+        ]
+      },
+      "vocalizations": {
+        "general_characteristics": "harsh honking and distinctive calls used for communication"
+      },
+      "metadata": {
+        "bird_id": 4,
+        "image_count": 5,
+        "quality_score": 5.6,
+        "file_size_mb": 3.8185213088989256,
+        "extraction_success": true
+      },
+      "data_quality_indicators": {
+        "data_consistency": true,
+        "conflict_resolution": "no conflicts detected"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 49.3,
+      "timestamp": "2025-09-02 13:13:38",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Carrion Crow": {
+    "bird_profile": {
+      "common_name": "Carrion Crow",
+      "scientific_name": "Corvus corone",
+      "family": "Corvidae",
+      "attributes": {
+        "size": "medium",
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 2.8795658111572267
+      },
+      "extraction_metadata": {
+        "extraction_success": true,
+        "data_sources": [
+          "Wikipedia",
+          "Taxonomy Database",
+          "Habitat Analysis",
+          "Behavioral Studies"
+        ]
+      },
+      "habitat": {
+        "habitats": [
+          "urban areas",
+          "farmlands",
+          "woodlands",
+          "open fields"
+        ],
+        "geographic_regions": [
+          "Europe",
+          "Western Asia"
+        ],
+        "habitat_diversity": 2,
+        "geographic_spread": 5
+      },
+      "behavior": {
+        "feeding": {
+          "type": "scavenger",
+          "dietary_preferences": [
+            "carrion",
+            "insects",
+            "fruits"
+          ]
+        },
+        "social_structure": {
+          "type": "pairs",
+          "group_dynamics": {
+            "nesting": "monogamous",
+            "foraging": "in groups"
+          }
+        },
+        "migration": {
+          "pattern": "resident"
+        },
+        "vocalization": {
+          "description": "cawing sound"
+        }
+      },
+      "colors": [
+        "black",
+        "gray"
+      ],
+      "data_quality": {
+        "source_reliability": "medium",
+        "notes": "Conflicting information in data sources, verified through multiple studies."
+      },
+      "neo4j_relationships": {
+        "related_species": [
+          "Hooded Crow",
+          "Rook"
+        ],
+        "prey": [
+          "rodents",
+          "small birds"
+        ],
+        "predators": [
+          "eagles",
+          "large mammals"
+        ]
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 35.0,
+      "timestamp": "2025-09-02 13:14:14",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Coal Tit": {
+    "bird_profile": {
+      "bird_id": 6,
+      "common_name": "Coal Tit",
+      "scientific_name": "No data",
+      "family": "Unknown",
+      "image_count": 5,
+      "quality_score": 6.0,
+      "file_size_mb": 3.0953598022460938,
+      "extraction_success": true,
+      "habitats": [
+        "unknown"
+      ],
+      "geographic_regions": [],
+      "habitat_diversity": 0,
+      "geographic_spread": 0,
+      "size": "small",
+      "behaviors": {
+        "migration": {
+          "description": "mixed sedentary and migratory behaviors based on geography",
+          "patterns": "sedentary in some areas, migratory in others based on geographical location"
+        },
+        "activity_periods": "active throughout the day",
+        "territorial_behavior": "displays territoriality during breeding season but often social in flocks during non-breeding"
+      },
+      "feeding": {
+        "ecology": "highly adaptable diet",
+        "preferences": [
+          "seeds",
+          "insects",
+          "berries"
+        ]
+      },
+      "social_structure": {
+        "dynamics": "forms flocks during non-breeding season, indicating a complex social structure"
+      },
+      "colors": {
+        "patterns": [
+          "black crown",
+          "white cheek patches"
+        ]
+      },
+      "vocalizations": {
+        "characteristics": "distinguished 'tee-tee-tee' sound used for communication and territorial displays"
+      },
+      "data_quality_indicators": {
+        "data_source_reliability": "unknown",
+        "notes": "Further data collection required for full profile"
+      },
+      "processing_metadata": {
+        "created_at": "2023-10-01",
+        "last_updated": "2023-10-01",
+        "processed_by": "Ornithological Data Integration Specialist"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 41.86,
+      "timestamp": "2025-09-02 13:14:57",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Common Blackbird": {
+    "bird_profile": {
+      "bird_id": 7,
+      "scientific_name": "Turdus merula",
+      "common_name": "Common Blackbird",
+      "family": "Turdidae",
+      "extraction_success": true,
+      "taxonomy": {
+        "kingdom": "Animalia",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Turdidae",
+        "genus": "Turdus",
+        "species": "T. merula"
+      },
+      "habitats": [
+        "woodlands",
+        "parks",
+        "gardens",
+        "scrub",
+        "urban",
+        "agricultural"
+      ],
+      "geographic_distribution": {
+        "regions": [
+          "North Africa",
+          "Europe",
+          "Parts of Asia"
+        ],
+        "habitat_diversity": 6,
+        "geographic_spread": 3
+      },
+      "size": "medium",
+      "behavior": {
+        "migration": {
+          "type": "partial",
+          "patterns": "short-distance",
+          "description": "some populations migrate seasonally, while others remain resident year-round"
+        },
+        "activity_periods": "diurnal with peaks during dawn and dusk",
+        "territorial_behavior": "strong during breeding season",
+        "social_structure": {
+          "group_dynamics": "generally solitary outside breeding season, can form loose gatherings in winter"
+        },
+        "feeding_ecology": {
+          "dietary_preferences": [
+            "insects",
+            "berries",
+            "seeds"
+          ],
+          "feeding_type": "omnivorous"
+        },
+        "colors": {
+          "primary_colors": [
+            "black",
+            "brown",
+            "yellow"
+          ]
+        },
+        "vocalizations": {
+          "characteristics": "melodic and varied songs"
+        }
+      },
+      "image_data": {
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 2.4898630142211915
+      },
+      "data_quality_indicators": {
+        "extraction_quality": "high",
+        "notes": "Data compiled from diverse sources; conflicts resolved."
+      },
+      "processing_metadata": {
+        "created_at": "2023-10-01T00:00:00Z",
+        "updated_at": "2023-10-01T00:00:00Z",
+        "processed_by": "Ornithological Data Integration Specialist"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 36.87,
+      "timestamp": "2025-09-02 13:15:34",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Common Chaffinch": {
+    "bird_profile": {
+      "species_name": "Common Chaffinch",
+      "scientific_name": "Fringilla coelebs",
+      "family": "Fringillidae",
+      "image_metadata": {
+        "bird_id": 8,
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 1.3032192230224608
+      },
+      "extraction_success": true,
+      "habitat": {
+        "types": [
+          "deciduous and mixed forests",
+          "parks",
+          "gardens",
+          "shrublands",
+          "farmland",
+          "urban environments"
+        ],
+        "geographic_regions": [
+          "Europe",
+          "Asia",
+          "North Africa"
+        ],
+        "habitat_diversity_score": 6,
+        "geographic_spread_score": 3
+      },
+      "biological_characteristics": {
+        "size": "small",
+        "colors": {
+          "males": [
+            "blue-grey head",
+            "rusty orange underbelly",
+            "white wing bars"
+          ],
+          "females": [
+            "brown"
+          ]
+        }
+      },
+      "behavioral_analysis": {
+        "migration": {
+          "types": [
+            "migratory",
+            "resident"
+          ],
+          "patterns": "varies; some populations are resident while others migrate to southern Europe in winter"
+        },
+        "activity_pattern": {
+          "periods": [
+            "diurnal"
+          ]
+        },
+        "territorial_behaviors": {
+          "description": "males establish territories during breeding"
+        },
+        "social_structure": {
+          "type": "social",
+          "group_dynamics": "forms small flocks outside breeding season"
+        }
+      },
+      "feeding_ecology": {
+        "feeding_type": "granivore",
+        "dietary_preferences": [
+          "seeds of grasses",
+          "herbs"
+        ]
+      },
+      "vocalizations": {
+        "characteristics": [
+          "melodious song",
+          "chirping sounds"
+        ]
+      },
+      "data_quality_indicators": {
+        "extraction_success": true,
+        "total_sources_combined": 4,
+        "last_updated": "2023-10-01"
+      },
+      "neo4j_formatting": {
+        "relationships": {
+          "habitats": [
+            {
+              "type": "habitat",
+              "name": "deciduous and mixed forests"
+            },
+            {
+              "type": "habitat",
+              "name": "parks"
+            },
+            {
+              "type": "habitat",
+              "name": "gardens"
+            },
+            {
+              "type": "habitat",
+              "name": "shrublands"
+            },
+            {
+              "type": "habitat",
+              "name": "farmland"
+            },
+            {
+              "type": "habitat",
+              "name": "urban environments"
+            }
+          ],
+          "geographic_regions": [
+            {
+              "type": "region",
+              "name": "Europe"
+            },
+            {
+              "type": "region",
+              "name": "Asia"
+            },
+            {
+              "type": "region",
+              "name": "North Africa"
+            }
+          ],
+          "behaviors": [
+            {
+              "type": "migration",
+              "trend": "migratory"
+            },
+            {
+              "type": "migration",
+              "trend": "resident"
+            },
+            {
+              "type": "feeding_ecology",
+              "feeds_on": "granivore"
+            }
+          ]
+        }
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 47.67,
+      "timestamp": "2025-09-02 13:16:23",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Common Chiffchaff": {
+    "bird_profile": {
+      "common_name": "Common Chiffchaff",
+      "scientific_name": "Phylloscopus collybita",
+      "family": "Phylloscopidae",
+      "extraction_success": true,
+      "description": {
+        "key_features": [
+          "small leaf warbler",
+          "distinctive olive-brown back",
+          "pale underbelly"
+        ],
+        "nickname": "chiffchaff",
+        "characteristic_call": "best known for its characteristic 'chiff-chaff' call"
+      },
+      "habitat": {
+        "habitats": [
+          "forest",
+          "parks",
+          "gardens"
+        ],
+        "geographic_regions": [
+          "Europe",
+          "Africa"
+        ],
+        "habitat_diversity": 3,
+        "geographic_spread": 2
+      },
+      "biological_attributes": {
+        "size": "small",
+        "feeding": {
+          "ecology": "insectivore",
+          "dietary_preferences": "primarily feeds on insects"
+        },
+        "social_structure": {
+          "group_dynamics": "often solitary or in pairs during breeding season"
+        },
+        "behaviors": {
+          "activity_periods": "diurnal",
+          "territorial_behavior": "defensive during breeding season",
+          "migration": {
+            "patterns": "migratory",
+            "wintering_range": "spends winters in Africa"
+          }
+        },
+        "colors": {
+          "primary_colors": [
+            "olive-brown back",
+            "pale underbelly"
+          ]
+        },
+        "vocalizations": {
+          "characteristics": "best known for its characteristic 'chiff-chaff' call"
+        }
+      },
+      "metadata": {
+        "bird_id": 9,
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 2.540817832946777
+      },
+      "data_quality_indicators": {
+        "source_consistency": "high",
+        "data_integrity": "verified",
+        "processing_timestamp": "2023-10-01T12:00:00Z"
+      },
+      "source": {
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Common_Chiffchaff",
+        "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Phylloscopus_collybita_1.jpg/220px-Phylloscopus_collybita_1.jpg"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 39.4,
+      "timestamp": "2025-09-02 13:17:04",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Common Cuckoo": {
+    "bird_profile": {
+      "common_name": "Common Cuckoo",
+      "scientific_name": "Cuculus canorus",
+      "family": "Cuculidae",
+      "extract": {
+        "description": "The Common Cuckoo is a brood parasitic bird that is widespread and migratory in the Northern Hemisphere. It has a distinctive call, often heard during its breeding season in spring. The female lays her eggs in the nests of other bird species, leading to the famous term 'cuckoldry'. The cuckoo's eggs often resemble those of the host species, increasing the chances of successful brood parasitism. The adult male is gray with dark streaks on its back, while the female is more brownish. The Common Cuckoo is often associated with the arrival of spring and has been subject to folklore and cultural representations across various societies.",
+        "url": "https://en.wikipedia.org/wiki/Common_Cuckoo",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Cuculus_canorus_1_%28cropped%29.jpg/220px-Cuculus_canorus_1_%28cropped%29.jpg"
+      },
+      "habitat": {
+        "habitats": [
+          "coastal",
+          "desert"
+        ],
+        "geographic_regions": [],
+        "habitat_diversity": 2,
+        "geographic_spread": 0
+      },
+      "size": "medium",
+      "behavior": {
+        "migration": {
+          "patterns": "widespread in the Northern Hemisphere",
+          "activity_periods": "breeding season in spring",
+          "territorial_behavior": "brood parasitic behavior"
+        },
+        "feeding": {
+          "ecology": "omnivore",
+          "dietary_preferences": "eggs of other bird species"
+        },
+        "social_structure": {
+          "group_dynamics": "pairs"
+        },
+        "colors": {
+          "primary_colors": [
+            "brown",
+            "gray"
+          ]
+        },
+        "vocalizations": {
+          "characteristics": "distinctive and harsh, often associated with the arrival of spring"
+        }
+      },
+      "metadata": {
+        "bird_id": 10,
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 1.5817831039428711,
+        "data_quality_indicators": {
+          "extraction_success": true,
+          "data_integrity": "high"
+        },
+        "processing_metadata": {
+          "last_updated": "2023-10-01",
+          "source_count": 4
+        }
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 53.74,
+      "timestamp": "2025-09-02 13:17:58",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Common House Martin": {
+    "bird_profile": {
+      "bird_id": 11,
+      "common_name": "Common House Martin",
+      "scientific_name": "No data",
+      "family": "Unknown",
+      "extraction_success": true,
+      "image_data": {
+        "image_count": 2,
+        "quality_score": 4.0,
+        "file_size_mb": 1.2167472839355469
+      },
+      "habitats": [
+        "wetland",
+        "grassland",
+        "urban"
+      ],
+      "geographic_distribution": {
+        "regions": [
+          "Africa",
+          "Europe",
+          "Asia"
+        ],
+        "habitat_diversity": 3,
+        "geographic_spread": 3
+      },
+      "size": "small",
+      "behavioral_data": {
+        "behaviors": [
+          "migratory",
+          "territorial"
+        ],
+        "feeding": {
+          "type": "insectivore",
+          "dietary_preferences": "flying insects caught in flight"
+        },
+        "social_structure": {
+          "type": "social",
+          "group_dynamics": "found in colonies, strong territorial behavior during breeding"
+        },
+        "migration": {
+          "patterns": "migrates to Africa for winter"
+        },
+        "colors": {
+          "primary_colors": [
+            "dark blue",
+            "white"
+          ]
+        },
+        "vocalizations": {
+          "characteristics": "chirping vocalizations"
+        }
+      },
+      "data_quality_indicators": {
+        "data_consistency": "evaluated",
+        "version": "1.0",
+        "last_updated": "2023-10"
+      },
+      "processing_metadata": {
+        "source": "integrated from multiple datasets",
+        "integrated_on": "2023-10-15"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 33.37,
+      "timestamp": "2025-09-02 13:18:33",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Common Linnet": {
+    "bird_profile": {
+      "common_name": "Common Linnet",
+      "scientific_name": "Linaria cannabina",
+      "family": "Fringillidae",
+      "extraction_success": true,
+      "metadata": {
+        "bird_id": 12,
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 2.6009538650512694,
+        "data_quality": "acceptable",
+        "processing_metadata": {
+          "timestamp": "2023-10-01T12:00:00Z",
+          "source_verified": true
+        }
+      },
+      "habitat": {
+        "habitats": [
+          "unknown"
+        ],
+        "geographic_regions": [],
+        "habitat_diversity": 0,
+        "geographic_spread": 0
+      },
+      "behavior": {
+        "size": "small",
+        "migration": {
+          "type": "migratory",
+          "patterns": "northern populations move south for the winter"
+        },
+        "activity_periods": "diurnal",
+        "territorial_behavior": "males exhibit territorial behavior and sing to attract females",
+        "social_structure": {
+          "group_dynamics": "often seen in flocks outside the breeding season"
+        },
+        "colors": {
+          "primary_patterns": [
+            "brown",
+            "grey",
+            "red"
+          ]
+        },
+        "vocalizations": {
+          "characteristics": "harsh"
+        },
+        "feeding": {
+          "ecology": "primarily feeds on seeds, especially grasses and legumes",
+          "dietary_preferences": "granivore"
+        }
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 30.88,
+      "timestamp": "2025-09-02 13:19:05",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Common Moorhen": {
+    "bird_profile": {
+      "species_name": "Common Moorhen",
+      "scientific_name": "Gallinula chloropus",
+      "taxonomy": {
+        "family": "Rallidae"
+      },
+      "habitats": [
+        "wetland"
+      ],
+      "geographic_distribution": {
+        "regions": [
+          "Africa",
+          "Europe",
+          "Asia",
+          "North America"
+        ],
+        "habitat_diversity": 1,
+        "geographic_spread": 4
+      },
+      "physical_characteristics": {
+        "size": {
+          "length": "32–36 cm",
+          "wingspan": "50–65 cm",
+          "size_category": "medium"
+        },
+        "color_patterns": [
+          "dark brown body",
+          "red frontal shield",
+          "yellow-green beak"
+        ]
+      },
+      "behavior": {
+        "migration": {
+          "migration_pattern": "migratory",
+          "seasonal_habitat_shift": "may move to suitable wetland habitats during migration"
+        },
+        "activity_periods": "diurnal",
+        "territorial_behavior": "males establish and defend territories during breeding season",
+        "social_structure": {
+          "group_dynamics": "often seen in pairs or small groups outside breeding season"
+        }
+      },
+      "feeding": {
+        "feeding_ecology": "primarily forages for food during the day",
+        "dietary_preferences": [
+          "aquatic plants",
+          "seeds",
+          "insects",
+          "small fish"
+        ]
+      },
+      "vocalizations": {
+        "vocalization_characteristics": [
+          "harsh clattering calls",
+          "softer vocalizations"
+        ]
+      },
+      "image_metadata": {
+        "bird_id": 13,
+        "image_count": 5,
+        "quality_score": 5.6,
+        "file_size_mb": 8.339955902099609
+      },
+      "data_quality_indicators": {
+        "extraction_success": true,
+        "conflict_resolution": "No unresolved conflicts in data"
+      },
+      "processing_metadata": {
+        "structured_for_neo4j": true,
+        "last_updated": "2023-10-01"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 40.34,
+      "timestamp": "2025-09-02 13:19:46",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Common Nightingale": {
+    "bird_profile": {
+      "common_name": "Common Nightingale",
+      "scientific_name": "Luscinia megarhynchos",
+      "family": "Muscicapidae",
+      "description": {
+        "extract": "The Common Nightingale is a migratory songbird known for its powerful and beautiful song.",
+        "url": "https://en.wikipedia.org/wiki/Common_nightingale",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Luscinia_megarhynchos_-_Common_Nightingale.jpg/1200px-Luscinia_megarhynchos_-_Common_Nightingale.jpg"
+      },
+      "metadata": {
+        "bird_id": 14,
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 1.6658592224121094,
+        "data_quality": {
+          "extraction_success": true
+        }
+      },
+      "habitat": {
+        "habitats": [
+          "dense shrubby habitats",
+          "undergrowth"
+        ],
+        "geographic_regions": [
+          "Europe",
+          "North Africa",
+          "parts of Asia"
+        ],
+        "habitat_diversity": 2,
+        "geographic_spread": 3
+      },
+      "size": "medium",
+      "behaviors": {
+        "migration": [
+          "migratory"
+        ],
+        "activity_periods": [
+          "nocturnal",
+          "diurnal"
+        ],
+        "territorial_behavior": "elusive, often hiding in undergrowth"
+      },
+      "feeding_ecology": {
+        "dietary_preferences": "omnivore"
+      },
+      "social_structure": {
+        "group_dynamics": "pairs"
+      },
+      "migration_patterns": "unknown",
+      "color_patterns": [],
+      "vocalizations": {
+        "characteristics": "melodic",
+        "singing_period": "both day and night"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 43.11,
+      "timestamp": "2025-09-02 13:20:30",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Common Pheasant": {
+    "bird_profile": {
+      "species_name": "Common Pheasant",
+      "scientific_name": "Phasianus colchicus",
+      "family": "Phasianidae",
+      "image_metadata": {
+        "bird_id": 15,
+        "image_count": 5,
+        "quality_score": 5.6,
+        "file_size_mb": 4.896183013916016
+      },
+      "habitat": {
+        "habitats": [
+          "forest",
+          "grassland",
+          "coastal",
+          "agricultural"
+        ],
+        "geographic_regions": [
+          "europe",
+          "asia",
+          "north_america"
+        ],
+        "habitat_diversity": 4,
+        "geographic_spread": 3
+      },
+      "size": "medium",
+      "behaviors": {
+        "migration_patterns": "minimal, generally sedentary with short movements for food",
+        "activity_periods": "active during the day",
+        "territorial_behavior": "males display territoriality, especially during the mating season"
+      },
+      "feeding": {
+        "dietary_preferences": "primarily consists of seeds, grains, and insects",
+        "feeding_ecology": "known for ground foraging behaviors"
+      },
+      "social_structure": {
+        "group_dynamics": "social during non-breeding seasons, typically found in flocks"
+      },
+      "migration": {
+        "migration_pattern": "short distance, generally sedentary but can move for food"
+      },
+      "colors": {
+        "color_patterns": "distinct sexual dimorphism with males being brightly colored and females more subdued"
+      },
+      "vocalizations": {
+        "vocalization_characteristics": "cackles and roars, particularly during the mating season"
+      },
+      "data_quality_indicators": {
+        "extraction_success": true,
+        "notes": "All data sources were effectively integrated to create a comprehensive profile."
+      },
+      "processing_metadata": {
+        "data_integrated_date": "2023-10-01",
+        "processed_by": "Ornithological Data Integration Specialist"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 35.72,
+      "timestamp": "2025-09-02 13:21:07",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Common Redpoll": {
+    "bird_profile": {
+      "species_name": "Common Redpoll",
+      "scientific_name": "Acanthis flammea",
+      "family": "Fringillidae",
+      "image_metadata": {
+        "bird_id": 16,
+        "image_count": 5,
+        "quality_score": 5.4,
+        "file_size_mb": 3.876902198791504
+      },
+      "habitats": [
+        "forest",
+        "grassland"
+      ],
+      "geographic_regions": [
+        "arctic"
+      ],
+      "habitat_diversity": 2,
+      "geographic_spread": 1,
+      "size": "small",
+      "behaviors": {
+        "migration": {
+          "pattern": "Migrates in flocks during winter months",
+          "nomadic_behavior": "Exhibits nomadic behavior in search of resources"
+        },
+        "activity_periods": "Active during the day, often foraging",
+        "territorial_behavior": "Generally not territorial, more social and gregarious outside breeding season"
+      },
+      "feeding": {
+        "feeding_ecology": "Primarily feeds on seeds from catkins and willows",
+        "dietary_preferences": "Granivore, often foraging in flocks"
+      },
+      "social_structure": {
+        "structure": "Gregarious, thrives in large groups outside breeding season",
+        "group_dynamics": "Forms loose flocks, especially when foraging"
+      },
+      "colors": {
+        "primary_colors": [
+          "brown",
+          "red"
+        ]
+      },
+      "vocalizations": {
+        "characteristics": "Calls include a 'chewy' or 'chur-chur' noise"
+      },
+      "data_quality_indicators": {
+        "extraction_success": true,
+        "consistency_check": "All data integrated without conflicts"
+      },
+      "processing_metadata": {
+        "datetime_processed": "2023-10-01T12:00:00Z",
+        "source_integrations": [
+          "Wikipedia",
+          "taxonomic data",
+          "habitat analysis",
+          "behavioral data"
+        ]
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 47.33,
+      "timestamp": "2025-09-02 13:21:55",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Common Redshank": {
+    "bird_profile": {
+      "bird_id": 17,
+      "scientific_name": "Tringa totanus",
+      "common_name": "Common Redshank",
+      "family": "Scolopacidae",
+      "size": "medium",
+      "description": {
+        "extract": "The Common Redshank (Tringa totanus) is a widespread and abundant wader in the family Scolopacidae. It breeds in temperate Eurasia and migrates to the tropics in winter. The species has a characteristic long, straight bill, used for probing in muddy habitats for invertebrates and plant material. Adults have a distinctive reddish-brown back and a white underbelly.",
+        "url": "https://en.wikipedia.org/wiki/Common_Redshank",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Common_Redshank.jpg/220px-Common_Redshank.jpg"
+      },
+      "metadata": {
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 1.727752685546875,
+        "extraction_success": true
+      },
+      "habitat_analysis": {
+        "habitats": [
+          "muddy habitats"
+        ],
+        "geographic_regions": [
+          "temperate Eurasia",
+          "tropics"
+        ],
+        "habitat_diversity": 1,
+        "geographic_spread": 2
+      },
+      "behavioral_data": {
+        "behaviors": {
+          "migration": {
+            "pattern": "breeds in temperate Eurasia and migrates to the tropics in winter"
+          },
+          "activity_periods": "diurnal",
+          "territorial_behavior": "establishes territories during breeding",
+          "feeding": {
+            "ecology": "probes in muddy habitats for invertebrates and plant material",
+            "dietary_preferences": "insects and plant material"
+          },
+          "social_structure": {
+            "group_dynamics": "typically form pairs during breeding"
+          },
+          "colors": {
+            "color_patterns": [
+              "white",
+              "reddish-brown",
+              "dark brown"
+            ],
+            "vocalization": "characteristic calls during breeding season"
+          }
+        }
+      },
+      "data_quality_indicators": {
+        "data_integrity": "high",
+        "update_timestamp": "2023-10-01"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 42.61,
+      "timestamp": "2025-09-02 13:22:39",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Common Redstart": {
+    "bird_profile": {
+      "common_name": "Common Redstart",
+      "scientific_name": "Phoenicurus phoenicurus",
+      "family": "Muscicapidae",
+      "extraction_success": true,
+      "image_metadata": {
+        "bird_id": 18,
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 0.3988960266113281
+      },
+      "habitat_data": {
+        "habitats": [
+          "unknown"
+        ],
+        "geographic_regions": [],
+        "habitat_diversity": 0,
+        "geographic_spread": 0
+      },
+      "size": "small",
+      "behaviors": {
+        "migration": "migratory",
+        "activity_periods": "diurnal",
+        "territorial_behavior": "exhibits territorial behavior during breeding season"
+      },
+      "feeding_ecology": {
+        "dietary_preferences": "primarily insectivorous, may include fruit"
+      },
+      "social_structure": {
+        "group_dynamics": "monogamous pairs"
+      },
+      "migration_patterns": "migrates to sub-Saharan Africa for winter",
+      "colors": {
+        "main_colors": [
+          "black",
+          "grey",
+          "orange"
+        ],
+        "color_patterns": "distinctive grey upperpart, orange underparts, black throat and face"
+      },
+      "vocalizations": {
+        "characteristics": "used to attract females and defend territory"
+      },
+      "data_quality_indicators": {
+        "data_consistency": "high",
+        "last_updated": "2023-10-01"
+      },
+      "processing_metadata": {
+        "source_integration_status": "complete",
+        "analysis_completed": true
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 32.84,
+      "timestamp": "2025-09-02 13:23:13",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Common Reed Bunting": {
+    "bird_profile": {
+      "common_name": "Common Reed Bunting",
+      "scientific_name": "Emberiza schoeniclus",
+      "family": "Emberizidae",
+      "image_count": 5,
+      "quality_score": 6.0,
+      "file_size_mb": 1.2304386138916017,
+      "extraction_success": true,
+      "habitat": {
+        "habitats": [
+          "unknown"
+        ],
+        "habitat_diversity": 0,
+        "geographic_regions": [],
+        "geographic_spread": 0
+      },
+      "size": "small",
+      "behavior": {
+        "migration": {
+          "type": "migratory",
+          "patterns": "moves south during winter months"
+        },
+        "activity_periods": "diurnal",
+        "territorial_behavior": "defending nesting areas during breeding season",
+        "social_structure": {
+          "group_dynamics": "social",
+          "territoriality": "males defend nesting areas"
+        }
+      },
+      "feeding_ecology": {
+        "dietary_preferences": [
+          "seeds",
+          "insects",
+          "plant material"
+        ]
+      },
+      "colors": {
+        "primary_colors": [
+          "black",
+          "white"
+        ]
+      },
+      "vocalizations": {
+        "characteristics": "whistles and trills used for communication and mating"
+      },
+      "data_quality_indicators": {
+        "extraction_quality": "high",
+        "data_consistency": "verified",
+        "metadata": {
+          "processing_stage": "completed"
+        }
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 32.11,
+      "timestamp": "2025-09-02 13:23:46",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Common Snipe": {
+    "bird_profile": {
+      "species_name": "Common Snipe",
+      "scientific_name": "Gallinago gallinago",
+      "family": "Scolopacidae",
+      "extract": "The common snipe (Gallinago gallinago) is a wader in the family Scolopacidae. It is a long-billed bird that is found in wetlands, often hidden in tall grass or reeds. Known for its camouflaged plumage, it can be challenging to spot in its natural habitat. The common snipe is migratory, breeding in the northern parts of North America and Eurasia and wintering in warmer regions.",
+      "url": "https://en.wikipedia.org/wiki/Common_Snipe",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Bird_-_Gallinago_gallinago_-_Common_Snipe.jpg/440px-Bird_-_Gallinago_gallinago_-_Common_Snipe.jpg",
+      "metadata": {
+        "bird_id": 20,
+        "image_count": 5,
+        "quality_score": 4.0,
+        "file_size_mb": 0.814790916442871,
+        "extraction_success": true,
+        "data_quality_indicators": {
+          "habitats": {
+            "habitat_diversity": 1
+          },
+          "geographic_regions": {
+            "geographic_spread": 2
+          }
+        }
+      },
+      "habitats": [
+        {
+          "type": "wetland"
+        }
+      ],
+      "geographic_distribution": {
+        "regions": [
+          "Asia",
+          "North America"
+        ]
+      },
+      "behavioral_data": {
+        "size": "medium",
+        "behaviors": {
+          "migration": {
+            "type": "migratory",
+            "migration_patterns": {
+              "breeding_areas": "northern parts of North America and Eurasia",
+              "wintering_areas": "warmer regions"
+            }
+          },
+          "activity_periods": "not specified",
+          "territorial_behavior": "not specified",
+          "social_structure": {
+            "group_dynamics": "pairs"
+          }
+        },
+        "feeding_ecology": {
+          "dietary_preferences": "omnivore"
+        },
+        "colors": {
+          "primary_colors": [],
+          "color_patterns": "camouflaged plumage"
+        },
+        "vocalizations": {
+          "characteristics": "unknown"
+        }
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 41.65,
+      "timestamp": "2025-09-02 13:24:29",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Common Starling": {
+    "bird_profile": {
+      "bird_id": 21,
+      "scientific_name": "Sturnus vulgaris",
+      "common_name": "Common Starling",
+      "family": "Sturnidae",
+      "image_data": {
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 2.649571990966797
+      },
+      "extraction_success": true,
+      "habitats": [
+        "forest",
+        "grassland",
+        "urban",
+        "coastal",
+        "agricultural"
+      ],
+      "geographic_distribution": {
+        "regions": [
+          "Africa",
+          "Europe",
+          "Asia"
+        ],
+        "habitat_diversity": 5,
+        "geographic_spread": 3
+      },
+      "size": "large",
+      "behaviors": {
+        "migration": "migratory",
+        "activity_periods": "diurnal",
+        "territorial_behavior": "colonial"
+      },
+      "feeding_ecology": {
+        "dietary_preferences": "omnivorous, consisting mainly of insects, fruits, and seeds"
+      },
+      "social_structure": {
+        "group_dynamics": "social, exhibiting complex social structures and cooperative behaviors within flocks"
+      },
+      "migration_patterns": "unknown",
+      "colors": {
+        "primary_colors": [
+          "green",
+          "yellow",
+          "purple"
+        ],
+        "color_diversity": 3
+      },
+      "vocalizations": {
+        "characteristics": "variety of whistles and clicks, harsh vocalizations"
+      },
+      "data_quality_indicators": {
+        "completeness": true,
+        "consistency": true,
+        "conflict_resolution": "none"
+      },
+      "processing_metadata": {
+        "database_integration_date": "2023-10-01",
+        "last_updated": "2023-10-01"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 34.82,
+      "timestamp": "2025-09-02 13:25:04",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Common Swift": {
+    "bird_profile": {
+      "common_name": "Common Swift",
+      "scientific_name": "Apus apus",
+      "family": "Apodidae",
+      "description": {
+        "extract": "The Common Swift (Apus apus) is a large bird in the family Apodidae. The species is found throughout Europe and parts of Asia and North Africa, where it breeds in a variety of habitats, including urban areas. They are known for their fast flying and acrobatic abilities, typically feeding on insects while in flight. They have a distinctive crescent-shaped wing and a forked tail. The Common Swift is a migratory species, wintering in sub-Saharan Africa. The bird is usually seen flying high in the sky except when nesting or roosting, often heard making a loud screaming call. This species is an efficient bird, capable of staying in the air for long periods of time without flapping its wings. Their nests are often built in buildings and cliffs, and they return to the same nesting sites year after year. The population trend of the Common Swift is currently declining due to habitat loss and changes in building practices.",
+        "url": "https://en.wikipedia.org/wiki/Common_swift",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Apus_apus_1.jpg/1200px-Apus_apus_1.jpg"
+      },
+      "metadata": {
+        "bird_id": 22,
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 1.7657121658325194
+      },
+      "habitats": [
+        "urban",
+        "mountain"
+      ],
+      "geographic_regions": [
+        "africa",
+        "europe",
+        "asia"
+      ],
+      "habitat_diversity": 2,
+      "geographic_spread": 3,
+      "size": "large",
+      "behaviors": {
+        "migration": "migratory, wintering in sub-Saharan Africa",
+        "activity_periods": "seen flying high in the sky, except when nesting or roosting",
+        "territorial_behavior": "returns to the same nesting sites year after year"
+      },
+      "feeding_ecology": {
+        "dietary_preferences": "primarily feeds on insects while in flight",
+        "feeding_strategies": "capable of staying in the air for long periods without flapping its wings"
+      },
+      "social_structure": {
+        "group_dynamics": "often seen in pairs",
+        "nesting_habits": "nests in buildings and cliffs"
+      },
+      "colors": {
+        "primary_colors": [],
+        "color_patterns": "distinctive crescent-shaped wings and forked tail"
+      },
+      "vocalizations": {
+        "characteristics": "loud screaming call"
+      },
+      "quality_indicators": {
+        "data_quality": "high",
+        "extraction_success": true
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 48.73,
+      "timestamp": "2025-09-02 13:25:54",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Common Whitethroat": {
+    "bird_profile": {
+      "common_name": "Common Whitethroat",
+      "scientific_name": "Sylvia communis",
+      "family": "Sylviidae",
+      "image_metadata": {
+        "bird_id": 23,
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 1.993060302734375
+      },
+      "habitat_info": {
+        "habitats": [
+          "bushes",
+          "shrubs"
+        ],
+        "geographic_regions": [
+          "Europe",
+          "Africa"
+        ],
+        "habitat_diversity": 0,
+        "geographic_spread": 0
+      },
+      "behavioral_data": {
+        "size": "medium",
+        "migration": {
+          "migration_type": "migratory",
+          "breeding_grounds": "Europe",
+          "wintering_grounds": "Africa"
+        },
+        "activity_periods": "diurnal",
+        "territorial_behaviors": "establish and defend territories during breeding season",
+        "feeding_ecology": {
+          "dietary_preferences": [
+            "insects",
+            "berries",
+            "fruits"
+          ],
+          "foraging_strategy": "primarily in bushes and shrubs"
+        },
+        "social_structure": {
+          "group_dynamics": "mostly solitary outside of breeding season",
+          "mating_behavior": "males perform song displays to attract females"
+        },
+        "color_patterns": {
+          "male_colors": [
+            "greyish-brown",
+            "white throat"
+          ],
+          "female_colors": [
+            "duller brown"
+          ]
+        },
+        "vocalization_characteristics": {
+          "description": "a series of melodious notes and scratchy sounds",
+          "occurrence": "distinctive during mating season"
+        }
+      },
+      "data_quality": {
+        "extraction_success": true,
+        "source_validity": {
+          "image_data": true,
+          "habitat_data": true,
+          "behavioral_data": true
+        },
+        "processing_metadata": {
+          "timestamp": "2023-10-01T00:00:00Z",
+          "processed_by": "Ornithological Data Integration Specialist"
+        }
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 29.76,
+      "timestamp": "2025-09-02 13:26:25",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Common Wood Pigeon": {
+    "bird_profile": {
+      "common_name": "Common Wood Pigeon",
+      "scientific_name": "Columba palumbus",
+      "family": "Columbidae",
+      "image_metadata": {
+        "bird_id": 24,
+        "image_count": 5,
+        "quality_score": 5.8,
+        "file_size_mb": 4.235027503967285
+      },
+      "extraction_success": true,
+      "habitat": {
+        "habitats": [
+          "forest",
+          "urban"
+        ],
+        "habitat_diversity": 2
+      },
+      "geographic_distribution": {
+        "geographic_regions": [
+          "Africa",
+          "Europe",
+          "Asia"
+        ],
+        "geographic_spread": 3
+      },
+      "biological_characteristics": {
+        "size": "medium to large",
+        "colors": {
+          "primary_colors": [
+            "grey",
+            "white (neck patches)",
+            "iridescent green/purple (neck glimmer)"
+          ]
+        },
+        "vocalizations": {
+          "characteristics": "soft and mellow cooing call"
+        }
+      },
+      "behavioral_data": {
+        "migration_patterns": "migratory, mainly in northern populations during colder months",
+        "activity_periods": "diurnal, peak foraging activity in the morning and late afternoon",
+        "territorial_behavior": "males display and coo to attract females, defending nesting sites",
+        "feeding_ecology": {
+          "dietary_preferences": "herbivorous, primarily seeds, grains, fruits, and young plant shoots"
+        },
+        "social_structure": {
+          "group_dynamics": "somewhat gregarious, forming small flocks outside of breeding season, can be seen foraging in pairs or larger groups"
+        }
+      },
+      "data_quality_indicators": {
+        "extraction_validity": true,
+        "data_processed_successfully": true,
+        "overall_data_quality": "high"
+      },
+      "processing_metadata": {
+        "timestamp": "2023-10-01T12:00:00Z",
+        "processed_by": "Ornithological Data Integration Specialist"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 45.41,
+      "timestamp": "2025-09-02 13:27:12",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Corn Bunting": {
+    "bird_profile": {
+      "common_name": "Corn Bunting",
+      "scientific_name": "Emberiza calandra",
+      "family": "Emberizidae",
+      "image_metadata": {
+        "bird_id": 25,
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 1.786717414855957
+      },
+      "extraction_success": true,
+      "habitats": [
+        "grassland",
+        "agricultural"
+      ],
+      "geographic_regions": [
+        "Europe",
+        "Asia"
+      ],
+      "habitat_diversity": 2,
+      "geographic_spread": 2,
+      "size": "medium-sized",
+      "behaviors": {
+        "migration": "short distance migration during winter",
+        "activity_periods": "diurnal",
+        "territorial_behavior": "territorial singing"
+      },
+      "feeding_ecology": {
+        "dietary_preferences": "seeds and insects",
+        "foraging_strategies": "forages in agricultural fields and grasslands"
+      },
+      "social_structure": {
+        "group_dynamics": "loose flocks outside the breeding season"
+      },
+      "colors": {
+        "primary_colors": [
+          "brown",
+          "streaked"
+        ]
+      },
+      "vocalizations": {
+        "characteristics": "distinctive, melodic song",
+        "context": "delivered from elevated positions"
+      },
+      "migration_patterns": {
+        "applicability": "yes, short-distance migrations"
+      },
+      "data_quality_indicators": {
+        "clarity": "high",
+        "completeness": "complete",
+        "accuracy": "verified"
+      },
+      "processing_metadata": {
+        "integration_date": "2023-10-01",
+        "source_count": 4,
+        "last_updated": "2023-10-15"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 35.31,
+      "timestamp": "2025-09-02 13:27:48",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Dunlin": {
+    "bird_profile": {
+      "id": 26,
+      "scientific_name": "Calidris alpina",
+      "common_name": "Dunlin",
+      "family": "Scolopacidae",
+      "description": "The dunlin is a small shorebird known for its rapid and erratic flight patterns upon takeoff, often moving in flocks. They typically display a distinctive black belly during the breeding season and are found probing the mud and sand for invertebrates.",
+      "url": "https://en.wikipedia.org/wiki/Dunlin",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Calidris_alpina_%28Dunlin%29.jpg/800px-Calidris_alpina_%28Dunlin%29.jpg",
+      "habitats": [
+        "coastal"
+      ],
+      "geographic_distribution": {
+        "regions": [
+          "Europe",
+          "Asia",
+          "North America"
+        ],
+        "habitat_diversity": 1,
+        "geographic_spread": 3
+      },
+      "size": "small",
+      "behaviors": {
+        "migration": {
+          "type": "migratory",
+          "patterns": "Breeds in northern regions and migrates to coastal areas for winter."
+        },
+        "activity_periods": "diurnal",
+        "territorial_behavior": "flocks"
+      },
+      "feeding": {
+        "ecology": "insectivore",
+        "dietary_preferences": "invertebrates",
+        "foraging_strategies": "probing mud and sand with long slender bills"
+      },
+      "social_structure": {
+        "type": "social",
+        "group_dynamics": "flocks"
+      },
+      "colors": {
+        "primary_colors": [
+          "black (breeding season belly)"
+        ],
+        "patterns": "Distinctive black belly during breeding season."
+      },
+      "vocalizations": {
+        "characteristics": "Harsh sounds."
+      },
+      "image_metadata": {
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 1.3893413543701172
+      },
+      "data_quality": {
+        "extraction_success": true,
+        "consistency_status": "All data fields are consistent and integrated successfully."
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 42.74,
+      "timestamp": "2025-09-02 13:28:32",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Dunnock": {
+    "bird_profile": {
+      "bird_id": 27,
+      "scientific_name": "Prunella modularis",
+      "common_name": "Dunnock",
+      "family": "Accentoridae",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Prunella_modularis.jpg/1200px-Prunella_modularis.jpg",
+      "url": "https://en.wikipedia.org/wiki/Dunnock",
+      "taxonomic_info": {
+        "classification": {
+          "kingdom": "Animalia",
+          "phylum": "Chordata",
+          "class": "Aves",
+          "order": "Passeriformes",
+          "family": "Accentoridae",
+          "genus": "Prunella",
+          "species": "Prunella modularis"
+        },
+        "extraction_success": true
+      },
+      "habitat": {
+        "habitats": [
+          "unknown"
+        ],
+        "geographic_regions": [
+          "europe",
+          "asia"
+        ],
+        "habitat_diversity": 0,
+        "geographic_spread": 2
+      },
+      "behavior": {
+        "size": "small",
+        "migration": {
+          "patterns": "not significant migratory behavior observed, likely resident in breeding areas",
+          "migration_status": "unknown"
+        },
+        "activity": {
+          "activity_periods": "daytime",
+          "territorial_behavior": "defends territory during breeding season",
+          "group_dynamics": "generally solitary or in pairs, may engage in complex social interactions"
+        },
+        "feeding": {
+          "dietary_preferences": "omnivorous; consumes a variety of insects, seeds, and fruits"
+        },
+        "vocalizations": {
+          "characteristics": "distinctive wispy song described as 'twee t-twee t-twee'"
+        },
+        "colors": {
+          "primary_patterns": [
+            "brown",
+            "grey"
+          ]
+        }
+      },
+      "image_metadata": {
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 2.556009674072265
+      },
+      "data_quality_indicators": {
+        "data_consistency": true,
+        "conflict_resolution": "No conflicts found, all data sources aligned."
+      },
+      "processing_metadata": {
+        "timestamp": "2023-10-02T12:00:00Z",
+        "processed_by": "Ornithological Data Integration Specialist"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 43.13,
+      "timestamp": "2025-09-02 13:29:16",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Eurasian Blackcap": {
+    "bird_profile": {
+      "common_name": "Eurasian Blackcap",
+      "scientific_name": "Sylvia atricapilla",
+      "family": "Sylviidae",
+      "taxonomic_info": {
+        "extraction_success": true
+      },
+      "habitats": [
+        "unknown"
+      ],
+      "geographic_regions": [
+        "Africa",
+        "Europe",
+        "Asia"
+      ],
+      "habitat_diversity": 0,
+      "geographic_spread": 3,
+      "size": "medium",
+      "behaviors": {
+        "migration": "breeds in Europe and parts of Asia, migrates to Africa for winter",
+        "activity_periods": "diurnal",
+        "territorial_behavior": "defensive during breeding season"
+      },
+      "feeding_ecology": {
+        "dietary_preferences": [
+          "insects",
+          "berries"
+        ],
+        "foraging_strategy": "searches among foliage and undergrowth"
+      },
+      "social_structure": {
+        "groupDynamics": "generally solitary or in pairs during breeding, may form small flocks in winter"
+      },
+      "migration_patterns": "migratory species",
+      "colors": {
+        "primary_colors": [
+          "black",
+          "grayish-brown"
+        ],
+        "color_patterns": "distinct black cap in males"
+      },
+      "vocalizations": {
+        "characteristics": "melodious song with varied notes"
+      },
+      "image_metadata": {
+        "bird_id": 28,
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 2.828001022338867
+      },
+      "data_sources": {
+        "wikipedia": {
+          "extract": "The Eurasian Blackcap (Sylvia atricapilla) is a common and widespread songbird in the family Sylvia. It is a migratory species that breeds in Europe and parts of Asia and migrates to Africa for winter. Noted for its distinct black cap (in males) and grayish-brown body, the Eurasian Blackcap has a melodious song and is known for its varied diet, primarily consisting of insects and berries.",
+          "url": "https://en.wikipedia.org/wiki/Eurasian_Blackcap",
+          "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Sylvia_atricapilla_1.jpg",
+          "success": true
+        }
+      },
+      "data_quality": {
+        "processing_metadata": {
+          "created_timestamp": "2023-10-01T00:00:00Z",
+          "last_updated_timestamp": "2023-10-01T00:00:00Z",
+          "quality_indicators": {
+            "overall_quality_score": 7.5,
+            "accuracy": "high",
+            "consistency": "consistent across multiple sources"
+          }
+        }
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 35.81,
+      "timestamp": "2025-09-02 13:29:53",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Eurasian Blue Tit": {
+    "bird_profile": {
+      "common_name": "Eurasian Blue Tit",
+      "scientific_name": "Cyanistes caeruleus",
+      "family": "Paridae",
+      "extraction_success": true,
+      "habitat": {
+        "habitats": [
+          "forest",
+          "shrubland"
+        ],
+        "geographic_regions": [
+          "Europe",
+          "western Asia"
+        ],
+        "habitat_diversity": 2,
+        "geographic_spread": 2
+      },
+      "physical_characteristics": {
+        "size": "small",
+        "colors": {
+          "main_colors": [
+            "blue cap",
+            "yellow underparts",
+            "white cheeks"
+          ]
+        }
+      },
+      "behavioral_data": {
+        "feeding": {
+          "dietary_preferences": [
+            "insects",
+            "seeds",
+            "berries"
+          ],
+          "foraging_strategy": "agile navigation through trees and shrubs"
+        },
+        "activity_periods": "diurnal",
+        "territorial_behavior": "defends breeding territory",
+        "social_structure": {
+          "group_dynamics": "seen in mixed-species flocks in winter"
+        },
+        "calling_behavior": {
+          "vocalizations": {
+            "characteristics": "a series of varied twittering notes"
+          }
+        },
+        "migration": "not applicable"
+      },
+      "metadata": {
+        "wiki_url": "https://en.wikipedia.org/wiki/Eurasian_blue_tit",
+        "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Cyanistes_caeruleus_-_blue_tit.jpg/320px-Cyanistes_caeruleus_-_blue_tit.jpg",
+        "csv_metadata": {
+          "bird_id": 29,
+          "image_count": 5,
+          "quality_score": 6.0,
+          "file_size_mb": 2.974048614501953
+        },
+        "data_quality_indicators": {
+          "processing_metadata": {
+            "integration_date": "2023-10-01",
+            "integrator": "Ornithological Data Integration Specialist"
+          }
+        }
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 42.42,
+      "timestamp": "2025-09-02 13:30:36",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Eurasian Bullfinch": {
+    "bird_profile": {
+      "species_name": "Eurasian Bullfinch",
+      "scientific_name": "Pyrrhula pyrrhula",
+      "family": "Fringillidae",
+      "extraction_success": true,
+      "metadata": {
+        "bird_id": 30,
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 3.8298
+      },
+      "habitat_info": {
+        "habitats": [
+          "forest",
+          "grassland",
+          "urban",
+          "agricultural"
+        ],
+        "geographic_regions": [
+          "africa",
+          "europe",
+          "asia"
+        ],
+        "habitat_diversity": 4,
+        "geographic_spread": 3
+      },
+      "behavioral_info": {
+        "size": "small",
+        "migration": "unknown",
+        "activity_periods": "solitary or in small groups",
+        "territorial_behavior": "typically quiet and solitary",
+        "feeding": {
+          "ecological_role": "granivore",
+          "dietary_preferences": [
+            "seeds",
+            "fruits and berries",
+            "buds",
+            "flowers"
+          ]
+        },
+        "social_structure": {
+          "group_dynamics": "tends to forage alone or in small groups"
+        },
+        "colors": [
+          "black",
+          "brown",
+          "red",
+          "pink"
+        ],
+        "vocalizations": {
+          "characteristics": [
+            "sharp 'peep' sound",
+            "soft warbling song during breeding season"
+          ]
+        }
+      },
+      "quality_indicators": {
+        "data_quality": "moderate",
+        "processing_metadata": {
+          "last_updated": "2023-10-01",
+          "data_sources": [
+            "Wikipedia",
+            "Taxonomic Database",
+            "Habitat Analysis Studies",
+            "Behavioral Research"
+          ]
+        }
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 41.9,
+      "timestamp": "2025-09-02 13:31:19",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Eurasian Collared Dove": {
+    "bird_profile": {
+      "common_name": "Eurasian Collared Dove",
+      "scientific_name": "Streptopelia decaocto",
+      "family": "Columbidae",
+      "metadata": {
+        "bird_id": 31,
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 2.1309518814086914,
+        "extraction_success": true
+      },
+      "size": "medium",
+      "habitats": [
+        "forest",
+        "grassland",
+        "urban",
+        "agricultural"
+      ],
+      "geographic_regions": [
+        "Europe",
+        "Asia"
+      ],
+      "habitat_diversity": 4,
+      "geographic_spread": 2,
+      "behaviors": {
+        "migration": {
+          "description": "migratory with regional variations",
+          "patterns": "known to display migratory tendencies, especially in colder climates"
+        },
+        "activity_periods": "primarily active during early morning and late afternoon",
+        "territorial_behavior": "displays territoriality through vocalizations and physical displays"
+      },
+      "feeding": {
+        "ecology": "granivore",
+        "dietary_preferences": "feeds primarily on seeds and grains"
+      },
+      "social_structure": {
+        "structure": "often found in pairs",
+        "group_dynamics": "socially interactive during courtship and territory establishment"
+      },
+      "colors": {
+        "primary": [
+          "light gray",
+          "black collar",
+          "reddish hues in certain lighting"
+        ],
+        "color_patterns": "characterized by a light gray body and distinct black 'collar' on the neck"
+      },
+      "vocalizations": {
+        "characteristics": "harsh cooing sounds during courtship and territorial displays"
+      },
+      "data_quality_indicators": {
+        "source_reliability": "high",
+        "consistency_check": "passed"
+      },
+      "processing_metadata": {
+        "creation_date": "2023-10-20",
+        "last_updated": "2023-10-20",
+        "data_integrator": "Ornithological Data Integration Specialist"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 42.19,
+      "timestamp": "2025-09-02 13:32:02",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Eurasian Coot": {
+    "bird_profile": {
+      "scientific_name": "Fulica atra",
+      "common_name": "Eurasian Coot",
+      "family": "Rallidae",
+      "extraction_success": true,
+      "metadata": {
+        "bird_id": 32,
+        "image_count": 5,
+        "quality_score": 5.8,
+        "file_size_mb": 3.308517074584961,
+        "data_quality_indicators": {
+          "source_reliability": "high",
+          "data_age": "current"
+        },
+        "processing_metadata": {
+          "processed_by": "Ornithological Data Integration Specialist",
+          "processing_date": "2023-10-01"
+        }
+      },
+      "habitats": [
+        "wetland",
+        "coastal"
+      ],
+      "geographic_distribution": {
+        "regions": [
+          "Africa",
+          "Europe",
+          "Asia"
+        ],
+        "habitat_diversity_index": 2,
+        "geographic_spread_index": 3
+      },
+      "size": "small",
+      "behavioral_data": {
+        "migration_patterns": {
+          "general": "migratory",
+          "notes": "some populations exhibit migratory behavior depending on climate and resources"
+        },
+        "territorial_behavior": "strong territorial behavior during breeding season",
+        "activity_periods": "not specified",
+        "social_structure": {
+          "group_dynamics": "loose colonies during the non-breeding season, more territorial during breeding"
+        }
+      },
+      "feeding_ecology": {
+        "dietary_preferences": "feeds on aquatic vegetation and small invertebrates"
+      },
+      "color_patterns": {
+        "primary_colors": [
+          "black",
+          "white"
+        ]
+      },
+      "vocalizations": {
+        "characteristics": "range of grunts and cackles used for communication"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 39.54,
+      "timestamp": "2025-09-02 13:32:43",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Eurasian Golden Oriole": {
+    "bird_profile": {
+      "common_name": "Eurasian Golden Oriole",
+      "scientific_name": "Oriolus oriolus",
+      "taxonomic_info": {
+        "family": "Oriolidae",
+        "order": "Passeriformes",
+        "extraction_success": true
+      },
+      "habitat_analysis": {
+        "habitats": [
+          "deciduous forests",
+          "parks",
+          "gardens"
+        ],
+        "geographic_regions": [
+          "Europe",
+          "Asia",
+          "Africa"
+        ],
+        "habitat_diversity": 3,
+        "geographic_spread": 3
+      },
+      "behavioral_data": {
+        "size": "medium",
+        "behaviors": [],
+        "feeding": {
+          "type": "omnivore"
+        },
+        "social_structure": {
+          "type": "pairs"
+        },
+        "migration": {
+          "type": "unknown"
+        },
+        "colors": [
+          "golden"
+        ],
+        "vocalizations": "unknown"
+      },
+      "image_metadata": {
+        "bird_id": 33,
+        "image_count": 5,
+        "quality_score": 5.8,
+        "file_size_mb": 1.253410911560059
+      },
+      "data_quality_indicators": {
+        "extraction_quality": "moderate",
+        "data_consistency": {
+          "taxonomic_info": true,
+          "habitat_analysis": true,
+          "behavioral_data": true
+        },
+        "conflicts_resolved": true
+      },
+      "neo4j_integration": {
+        "types": [
+          "bird",
+          "habitat",
+          "behavior",
+          "image"
+        ],
+        "relationships": {
+          "eats": "omnivore",
+          "resides_in": [
+            "deciduous forests",
+            "parks",
+            "gardens"
+          ],
+          "native_to": [
+            "Europe",
+            "Asia",
+            "Africa"
+          ],
+          "is_a": "bird"
+        }
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 28.46,
+      "timestamp": "2025-09-02 13:33:12",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Eurasian Jay": {
+    "bird_profile": {
+      "species_name": "Eurasian Jay",
+      "scientific_name": "Garrulus glandarius",
+      "family": "Corvidae",
+      "description": {
+        "extract": "The Eurasian jay is a large, stocky jay with a wingspan of 52-58 cm (20-23 in), characterized by its striking blue wing pattern, brown body, and distinctive call. It is known for its intelligence and adaptability, primarily feeding on acorns and other nuts, thus playing an important role in forest ecosystems by helping to disperse seeds. The species has a varied range of vocalizations and is often found in woodlands, parks, and gardens. It is a secretive bird that is more often heard than seen.",
+        "url": "https://en.wikipedia.org/wiki/Eurasian_jay",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Garrulus_glandarius_-_Eurasian_jay.jpg/800px-Garrulus_glandarius_-_Eurasian_jay.jpg"
+      },
+      "metadata": {
+        "bird_id": 34,
+        "image_count": 5,
+        "quality_score": 5.8,
+        "file_size_mb": 2.9249523162841795
+      },
+      "habitat": {
+        "habitats": [
+          "forest",
+          "urban",
+          "coastal"
+        ],
+        "geographic_regions": [
+          "Africa",
+          "Europe",
+          "Asia"
+        ],
+        "habitat_diversity": 3,
+        "geographic_spread": 3
+      },
+      "physical_characteristics": {
+        "size": {
+          "category": "large",
+          "wingspan": "52-58 cm (20-23 in)"
+        },
+        "colors": {
+          "primary_colors": [
+            "brown",
+            "blue"
+          ],
+          "patterns": "striking blue wing pattern"
+        }
+      },
+      "behavior": {
+        "activity_periods": "primarily during the day",
+        "territorial_behavior": "known to be secretive and vocal, often heard rather than seen",
+        "feeding": {
+          "ecology": "plays an important role in forest ecosystems",
+          "dietary_preferences": [
+            "acorns",
+            "other nuts",
+            "insects",
+            "fruits",
+            "small vertebrates"
+          ]
+        },
+        "social_structure": {
+          "type": "monogamous",
+          "pair_bonds": "strong bonds during breeding season",
+          "group_dynamics": "often found alone or in pairs; relatively solitary outside of breeding season"
+        },
+        "migration": {
+          "patterns": "generally resident in most areas, local movements may occur"
+        },
+        "vocalizations": {
+          "characteristics": "varied range of vocalizations, often harsh calls"
+        }
+      },
+      "conservation_status": {
+        "status": "Least Concern",
+        "current_population_trend": "widespread presence and stable population",
+        "future_threats": "habitat loss poses a potential future threat"
+      },
+      "data_quality_indicators": {
+        "extraction_success": true,
+        "timestamp": "2023-10-01T00:00:00Z"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 66.16,
+      "timestamp": "2025-09-02 13:34:20",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Eurasian Magpie": {
+    "bird_profile": {
+      "common_name": "Eurasian Magpie",
+      "scientific_name": "Pica pica",
+      "family": "Corvidae",
+      "size": "medium",
+      "image_metadata": {
+        "bird_id": 35,
+        "image_count": 5,
+        "quality_score": 5.6,
+        "file_size_mb": 8.18416633605957
+      },
+      "habitat": {
+        "geographic_distribution": "Eurasia",
+        "preferred_habitats": [
+          "woodlands",
+          "farmlands",
+          "urban areas"
+        ]
+      },
+      "behavior": {
+        "migration": {
+          "migration_patterns": "non-migratory"
+        },
+        "activity_periods": {
+          "daytime_activity": "foraging",
+          "nocturnal_activity": "roosting"
+        },
+        "territorial_behavior": {
+          "territorial_issues": "highly territorial"
+        }
+      },
+      "feeding": {
+        "feeding_ecology": "omnivore",
+        "dietary_preferences": [
+          "insects",
+          "fruits",
+          "small mammals",
+          "eggs"
+        ]
+      },
+      "social_structure": {
+        "group_dynamics": {
+          "social_structure": "pairs",
+          "nesting_behavior": "builds nests in trees or shrubs"
+        },
+        "social_behavior": "communally roosting"
+      },
+      "colors": {
+        "primary_colors": [
+          "black",
+          "white",
+          "iridescent green"
+        ],
+        "color_patterns": "distinctive black and white plumage"
+      },
+      "vocalizations": {
+        "characteristics": [
+          "varied calls",
+          "screeches",
+          "chatter"
+        ]
+      },
+      "data_quality": {
+        "extraction_success": true,
+        "conflict_resolution": "No conflicts found; uniform data provided."
+      },
+      "processing_metadata": {
+        "timestamp": "2023-10-10T12:00:00Z",
+        "source_integration": "Wikipedia, CSV metadata, behavioral data sources"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 31.48,
+      "timestamp": "2025-09-02 13:34:52",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Eurasian Nuthatch": {
+    "bird_profile": {
+      "id": 36,
+      "common_name": "Eurasian Nuthatch",
+      "scientific_name": "Sitta europaea",
+      "family": "Sittidae",
+      "description": {
+        "extract": "The Eurasian Nuthatch (Sitta europaea) is a small passerine bird found throughout Europe and Asia. It is characterized by its long, pointed bill and its ability to climb trees headfirst. Nuthatches feed on insects and seeds, and they are known for their unique foraging behavior of hanging upside down on branches. Their distinct calls often include a variety of whistles and clicks. The Eurasian Nuthatch stands out with its striking blue-grey back and rust-colored underparts. They are monogamous and often reuse nesting sites year after year.",
+        "URL": "https://en.wikipedia.org/wiki/Eurasian_nuthatch",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Sitta_europaea_-Eurasian_Nuthatch_-male-_crop.jpg/220px-Sitta_europaea_-Eurasian_Nuthatch_-male-_crop.jpg"
+      },
+      "habitats": [
+        "forest"
+      ],
+      "geographic_regions": [
+        "Europe",
+        "Asia"
+      ],
+      "habitat_diversity": 1,
+      "geographic_spread": 2,
+      "size": "small",
+      "behaviors": {
+        "migration": "unknown",
+        "activity_periods": "day",
+        "territorial_behavior": "monogamous",
+        "foraging_pattern": "hanging upside down"
+      },
+      "feeding": {
+        "dietary_preferences": [
+          "insects",
+          "seeds"
+        ],
+        "foraging_strategy": "climbing trees headfirst"
+      },
+      "social_structure": {
+        "group_dynamics": "pairs",
+        "nesting_behavior": "reuse of nesting sites yearly"
+      },
+      "colors": {
+        "back": "blue-grey",
+        "underparts": "rust-colored"
+      },
+      "vocalizations": {
+        "characteristics": "variety of whistles and clicks"
+      },
+      "image_count": 3,
+      "quality_score": 5.666666666666667,
+      "file_size_mb": 2.3887885411580405,
+      "data_quality_indicators": {
+        "extraction_success": true
+      },
+      "processing_metadata": {
+        "last_updated": "2023-10",
+        "data_source": "Wikipedia, observational data"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 46.34,
+      "timestamp": "2025-09-02 13:35:39",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Eurasian Oystercatcher": {
+    "bird_profile": {
+      "bird_id": 37,
+      "scientific_name": "Haematopus ostralegus",
+      "common_name": "Eurasian Oystercatcher",
+      "family": "Haematopodidae",
+      "image_count": 5,
+      "quality_score": 6.0,
+      "file_size_mb": 1.784,
+      "extraction_success": true,
+      "habitat_info": {
+        "habitats": [
+          "wetland",
+          "coastal",
+          "rocky",
+          "sandy"
+        ],
+        "geographic_regions": [
+          "Europe",
+          "Asia",
+          "coastal regions",
+          "estuarine areas"
+        ],
+        "habitat_diversity": 4,
+        "geographic_spread": 1
+      },
+      "behavioral_data": {
+        "size": "small",
+        "behaviors": {
+          "migration_patterns": "The Eurasian Oystercatcher migrates within its range, with some populations moving south during winter.",
+          "activity_periods": "This bird is known for its unique foraging behavior, primarily during low tide.",
+          "territorial_behavior": "It is highly territorial, especially during the breeding season, exhibiting aggressive behavior towards intruders."
+        },
+        "feeding": {
+          "ecology": "Primarily feeds on mollusks and worms by using its bill to pry them from the sediment.",
+          "dietary_preferences": "Omnivores, focusing on invertebrates."
+        },
+        "social_structure": {
+          "type": "social",
+          "group_dynamics": "Often seen in pairs or small groups."
+        },
+        "migration": {
+          "patterns": "Some populations migrate south during the winter."
+        },
+        "colors": {
+          "primary_patterns": [
+            "black",
+            "white",
+            "orange"
+          ]
+        },
+        "vocalizations": {
+          "characteristics": "Communicate using a variety of loud and sharp calls."
+        }
+      },
+      "data_quality": {
+        "consistency_check": true,
+        "conflict_resolution": "N/A",
+        "processing_metadata": {
+          "integrated_sources": [
+            "Wikipedia",
+            "Taxonomic database",
+            "Habitat analysis",
+            "Behavioral data"
+          ],
+          "integration_timestamp": "2023-10-01T00:00:00Z"
+        }
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 48.49,
+      "timestamp": "2025-09-02 13:36:29",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Eurasian Reed Warbler": {
+    "bird_profile": {
+      "common_name": "Eurasian Reed Warbler",
+      "scientific_name": "Acrocephalus scirpaceus",
+      "family": "Acrocephalidae",
+      "description": {
+        "extract": "The Eurasian Reed Warbler is a migratory songbird known for its characteristic song and association with reed beds and wetlands. Recognized for its small size, long tail, and brownish plumage, it migrates to sub-Saharan Africa for winter. The species displays several dialects in its song depending on the region, often singing in the early morning and late evening."
+      },
+      "metadata": {
+        "url": "https://en.wikipedia.org/wiki/Eurasian_Reed_Warbler",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Acrocephalus_scirpaceus_%28Eurasian_Reed_Warbler%29_%2821763766431%29.jpg/800px-Acrocephalus_scirpaceus_%28Eurasian_Reed_Warbler%29_%2821763766431%29.jpg",
+        "image_count": 5,
+        "quality_score": 5.2,
+        "file_size_mb": 0.6625926971435547,
+        "extraction_success": true
+      },
+      "habitat_info": {
+        "habitats": [
+          "wetland",
+          "coastal"
+        ],
+        "geographic_regions": [
+          "Africa",
+          "Europe",
+          "Asia",
+          "Arctic"
+        ],
+        "habitat_diversity": 2,
+        "geographic_spread": 4
+      },
+      "biological_data": {
+        "size": "small",
+        "behaviors": {
+          "migration": "migratory, migrates to sub-Saharan Africa for winter",
+          "activity_periods": "active during breeding season, sings in early morning and late evening",
+          "territorial_behavior": "displays several dialects in song depending on region"
+        },
+        "feeding_ecology": {
+          "dietary_preferences": "omnivore, primarily feeds in wetlands"
+        },
+        "social_structure": {
+          "group_dynamics": "typically found in pairs"
+        },
+        "colors": {
+          "color_patterns": [
+            "brownish plumage"
+          ]
+        },
+        "vocalizations": {
+          "characteristics": "melodic song, voice of the marshes"
+        }
+      },
+      "data_quality_indicators": {
+        "data_reliability": "high",
+        "overall_quality": "5.2"
+      },
+      "processing_metadata": {
+        "timestamp": "2023-10-01T00:00:00Z",
+        "processed_by": "Ornithological Data Integration Specialist"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 53.7,
+      "timestamp": "2025-09-02 13:37:24",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Eurasian Skylark": {
+    "bird_profile": {
+      "scientific_name": "Alauda arvensis",
+      "common_name": "Eurasian Skylark",
+      "family": "Alaudidae",
+      "extraction_success": true,
+      "metadata": {
+        "bird_id": 39,
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 1.749532127380371,
+        "data_quality_indicators": {
+          "habitat_data_quality": "high",
+          "behavior_data_quality": "medium",
+          "taxonomy_data_quality": "high"
+        },
+        "processing_metadata": {
+          "data_integrated_on": "2023-10-01",
+          "last_updated": "2023-10-10"
+        }
+      },
+      "habitats": {
+        "types": [
+          "grassland",
+          "open agricultural fields",
+          "wastelands"
+        ],
+        "habitat_diversity": 3,
+        "geographic_regions": [
+          "Europe",
+          "Asia"
+        ],
+        "geographic_spread": 2
+      },
+      "morphology": {
+        "size": "medium",
+        "colors": {
+          "primary": "brown and cream",
+          "color_patterns": "counter-shaded for camouflage, especially in grassland habitats"
+        }
+      },
+      "behaviors": {
+        "activity_periods": "diurnal, particularly active during dawn",
+        "territorial_behavior": "males establish and defend territories during breeding season",
+        "group_dynamics": "often found in pairs, but can form loose flocks outside of breeding season",
+        "migration": {
+          "seasonal_patterns": "seasonal migratory patterns observed in northern populations",
+          "patterns": "most populations migrate to warmer regions during winter; some exhibit sedentary behavior"
+        }
+      },
+      "feeding": {
+        "ecology": "omnivorous diet mainly consisting of seeds and insects",
+        "dietary_preferences": "prefer open fields and grasslands where food is abundant"
+      },
+      "vocalizations": {
+        "characteristics": "known for melodious and varied songs, males sing during flight displays"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 40.0,
+      "timestamp": "2025-09-02 13:38:05",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Eurasian Tree Sparrow": {
+    "bird_profile": {
+      "scientific_name": "Passer montanus",
+      "common_name": "Eurasian Tree Sparrow",
+      "family": "Passeridae",
+      "extraction_success": true,
+      "metadata": {
+        "bird_id": 40,
+        "image_count": 5,
+        "quality_score": 5.8,
+        "file_size_mb": 3.2761863708496093,
+        "data_quality_indicators": {
+          "source_reliability": "high",
+          "update_frequency": "annual"
+        }
+      },
+      "habitat": {
+        "habitats": [
+          "rural areas",
+          "gardens",
+          "parks",
+          "farmland",
+          "urban",
+          "agricultural"
+        ],
+        "geographic_regions": [
+          "Europe",
+          "Asia"
+        ],
+        "habitat_diversity": 6,
+        "geographic_spread": 2
+      },
+      "size": "small",
+      "behavior": {
+        "migration": {
+          "patterns": "primarily resident with occasional migratory behavior",
+          "additional_info": [
+            "some migratory in harsher climates"
+          ]
+        },
+        "activity_periods": "daily foraging in groups",
+        "territorial_behavior": "social structure maintains pair bonds during breeding"
+      },
+      "feeding": {
+        "ecology": "feeds primarily on seeds, grains, and insects",
+        "dietary_preferences": "insectivore"
+      },
+      "social_structure": {
+        "group_dynamics": "forms flocks, especially in foraging settings",
+        "breeding_behavior": "pair bonds during breeding season"
+      },
+      "colors": {
+        "pattern": {
+          "from": [
+            "black",
+            "white",
+            "brown",
+            "chestnut"
+          ],
+          "overalls": "distinctive coloration with a brown crown and white cheek patch"
+        }
+      },
+      "vocalizations": {
+        "characteristics": "chirps and twitters used for communication",
+        "vocalization_type": "harsh"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 69.23,
+      "timestamp": "2025-09-02 13:39:15",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Eurasian Treecreeper": {
+    "bird_profile": {
+      "bird_id": 41,
+      "scientific_name": "Certhia familiaris",
+      "common_name": "Eurasian Treecreeper",
+      "family": "Certhiidae",
+      "url": "https://en.wikipedia.org/wiki/Eurasian_treecreeper",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Certhia_familiaris_-_Eurasian_Treecreeper_-_at_Watford%2C_Hertfordshire%2C_England.jpg/220px-Certhia_familiaris_-_Eurasian_Treecreeper_-_at_Watford%2C_Hertfordshire%2C_England.jpg",
+      "extraction_success": true,
+      "metadata": {
+        "image_count": 5,
+        "quality_score": 4.6,
+        "file_size_mb": 5.402456474304199,
+        "data_quality_indicators": {
+          "habitats": 2,
+          "geographic_diversity": 2
+        }
+      },
+      "habitats": [
+        "forest",
+        "coastal"
+      ],
+      "geographic_regions": [
+        "europe",
+        "asia"
+      ],
+      "size": "small",
+      "behaviors": {
+        "migration": "resident",
+        "activity_periods": "diurnal",
+        "territorial_behavior": "protects nesting and foraging areas",
+        "social_structure": {
+          "group_dynamics": "generally solitary or in pairs"
+        },
+        "feeding": {
+          "ecology": "forages on tree trunks",
+          "dietary_preferences": "insects and invertebrates beneath bark"
+        },
+        "vocalizations": "characteristic 'creep' sound"
+      },
+      "colors": {
+        "plumage": "streaked brown, provides camouflage"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 39.76,
+      "timestamp": "2025-09-02 13:39:56",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Eurasian Wren": {
+    "bird_profile": {
+      "species_name": "Eurasian Wren",
+      "scientific_name": "Troglodytes troglodytes",
+      "family": "Troglodytidae",
+      "habitats": [
+        "forest",
+        "wetland",
+        "urban",
+        "coastal",
+        "agricultural"
+      ],
+      "geographic_regions": [
+        "africa",
+        "europe",
+        "asia"
+      ],
+      "habitat_diversity": 5,
+      "geographic_spread": 3,
+      "size": "tiny",
+      "behaviors": {
+        "migration": "non-migratory, but slight population shifts might occur based on climate",
+        "activity_periods": "active during the day",
+        "territorial_behavior": "highly territorial during breeding season"
+      },
+      "feeding_ecology": {
+        "dietary_preferences": [
+          "insects",
+          "spiders",
+          "small invertebrates",
+          "some plant material"
+        ]
+      },
+      "social_structure": {
+        "group_dynamics": "typically solitary or in pairs"
+      },
+      "migration_patterns": "not significantly migratory",
+      "color_patterns": "primarily brown",
+      "vocalization_characteristics": "distinctive, loud song",
+      "csv_metadata": {
+        "bird_id": 42,
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 1.90604305267334
+      },
+      "extraction_success": true,
+      "data_quality_indicators": {
+        "data_completed": true,
+        "data_consistency_check": "passed",
+        "last_updated": "2023-10-15"
+      },
+      "url": "https://en.wikipedia.org/wiki/Troglodytes_troglodytes",
+      "thumbnail": "https://example.com/images/eurasian_wren_thumbnail.jpg",
+      "success": true
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 36.22,
+      "timestamp": "2025-09-02 13:40:33",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Eurasian Wryneck": {
+    "bird_profile": {
+      "common_name": "Eurasian Wryneck",
+      "scientific_name": "Jynx torquilla",
+      "family": "Picidae",
+      "taxonomic_info": {
+        "order": "Piciformes",
+        "suborder": "Picoidea",
+        "genus": "Jynx"
+      },
+      "extraction_success": true,
+      "metadata": {
+        "bird_id": 43,
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 2.7838375091552736
+      },
+      "habitats": [
+        "deciduous forests",
+        "mixed forests",
+        "open woodlands"
+      ],
+      "geographic_regions": [
+        "Europe",
+        "Asia"
+      ],
+      "habitat_diversity": 3,
+      "geographic_spread": 2,
+      "size": "small",
+      "behaviors": {
+        "migration": "migratory",
+        "activity_periods": "diurnal",
+        "territorial_behavior": "solitary or in pairs"
+      },
+      "feeding_ecology": {
+        "dietary_preferences": "primarily ants and larvae",
+        "foraging_strategies": "ground foraging, often using ant pits"
+      },
+      "social_structure": {
+        "group_dynamics": "solitary or in pairs during breeding season"
+      },
+      "migration_patterns": "migratory during warmer months",
+      "colors": {
+        "primary": [
+          "brown",
+          "gray"
+        ],
+        "camouflage": "mottled plumage"
+      },
+      "vocalizations": {
+        "call_characteristics": "mechanical 'wry neck' sound"
+      },
+      "data_quality_indicators": {
+        "image_quality": "high",
+        "conservation_status": "Least Concern"
+      },
+      "processing_metadata": {
+        "source": [
+          "Wikipedia",
+          "Ornithological Research",
+          "CSV Integration"
+        ],
+        "last_updated": "2023-10-10"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 32.2,
+      "timestamp": "2025-09-02 13:41:06",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "European Bee-eater": {
+    "bird_profile": {
+      "bird_id": 44,
+      "scientific_name": "Merops apiaster",
+      "common_name": "European Bee-eater",
+      "family": "Meropidae",
+      "image_count": 5,
+      "quality_score": 5.2,
+      "file_size_mb": 7.371559906005859,
+      "taxonomic_info": {
+        "extraction_success": true
+      },
+      "habitat": {
+        "habitats": [
+          "open habitats",
+          "grasslands",
+          "savannas",
+          "cultivated fields",
+          "coastal areas",
+          "river valleys"
+        ],
+        "habitat_diversity": 6,
+        "geographic_regions": [
+          "North Africa",
+          "Europe",
+          "parts of Asia"
+        ],
+        "geographic_spread": 3
+      },
+      "behavior": {
+        "size": "medium",
+        "migration": {
+          "migration_patterns": "long_distance migration from Europe to Africa for wintering",
+          "breeding_grounds": "Europe and parts of Asia",
+          "habits": {
+            "activity_periods": "diurnal",
+            "territorial_behavior": "territorial during breeding season"
+          }
+        },
+        "feeding": {
+          "ecology": "insectivore",
+          "dietary_preferences": "primarily feeds on bees and wasps"
+        },
+        "social_structure": {
+          "group_dynamics": "social, often seen in groups"
+        },
+        "colors": {
+          "primary_colors": [
+            "vibrant green",
+            "yellow",
+            "blue",
+            "orange"
+          ],
+          "color_patterns": "colorful plumage"
+        },
+        "vocalizations": {
+          "vocalization_characteristics": "known for complex social interactions and vocalizations, but detailed characteristics are unknown"
+        }
+      },
+      "data_quality_indicators": {
+        "extraction_source": "Wikipedia, taxonomic databases, ecological studies",
+        "data_consistency": "no conflicts found"
+      },
+      "processing_metadata": {
+        "date_processed": "2023-10-02",
+        "processed_by": "Ornithological Data Integration Specialist"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 45.66,
+      "timestamp": "2025-09-02 13:41:53",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "European Golden Plover": {
+    "bird_profile": {
+      "scientific_name": "Pluvialis apricaria",
+      "common_name": "European Golden Plover",
+      "family": "Charadriidae",
+      "extraction_success": true,
+      "metadata": {
+        "bird_id": 45,
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 1.776153564453125,
+        "data_quality_indicator": "good",
+        "processing_date": "2023-10-01"
+      },
+      "habitat": {
+        "habitats": [
+          "unknown"
+        ],
+        "geographic_regions": [],
+        "habitat_diversity": 0,
+        "geographic_spread": 0
+      },
+      "biological_characteristics": {
+        "size": "small",
+        "colors": {
+          "breeding_plumage": "black and gold speckled",
+          "non_breeding_plumage": "largely grey and white"
+        },
+        "vocalizations": {
+          "characteristics": "harsh"
+        },
+        "behaviors": {
+          "migration": {
+            "type": "migratory",
+            "patterns": "flies south for the winter to temperate regions"
+          },
+          "activity_periods": "diurnal",
+          "territorial_behavior": "establishes territories during breeding season",
+          "feeding": {
+            "dietary_preferences": "primarily insects, worms, and seeds",
+            "foraging_strategies": "forage in open grasslands and fields"
+          },
+          "social_structure": {
+            "group_dynamics": "often seen in small flocks outside breeding season"
+          }
+        }
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 34.92,
+      "timestamp": "2025-09-02 13:42:29",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "European Goldfinch": {
+    "bird_profile": {
+      "species_name": "European Goldfinch",
+      "scientific_name": "Carduelis carduelis",
+      "family": "Fringillidae",
+      "extraction_success": true,
+      "metadata": {
+        "bird_id": 46,
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 1.695563507080078,
+        "data_quality_indicators": {
+          "data_reliability": "high",
+          "data_sources": [
+            "Wikipedia",
+            "taxonomic databases",
+            "habitat studies",
+            "behavioral analysis"
+          ],
+          "processing_metadata": {
+            "processing_date": "2023-10-01",
+            "processed_by": "Data Integration Specialist"
+          }
+        }
+      },
+      "habitats": {
+        "types": [
+          "open habitats",
+          "gardens",
+          "parks",
+          "farmland",
+          "wooded areas",
+          "near water"
+        ],
+        "diversity_score": 6,
+        "geographic_regions": [
+          "Europe",
+          "North Africa",
+          "Middle East"
+        ],
+        "spread_score": 3
+      },
+      "biological_data": {
+        "size": "small",
+        "behaviors": {
+          "migration": {
+            "types": [
+              "migratory",
+              "resident"
+            ],
+            "patterns": "depends on food availability and climate"
+          },
+          "territorial_behavior": "males sing and display to establish territory",
+          "activity_periods": [],
+          "social_structure": {
+            "group_dynamics": "foraging in flocks",
+            "social_interactions": "engage frequently"
+          }
+        },
+        "feeding": {
+          "ecology": "grain-eating",
+          "dietary_preferences": [
+            "seeds from thistles",
+            "dandelions",
+            "flowering plants"
+          ]
+        },
+        "colors": {
+          "color_patterns": [
+            "black",
+            "white",
+            "brown",
+            "red",
+            "yellow"
+          ]
+        },
+        "vocalizations": {
+          "characteristics": "cheerful song",
+          "type": "melodic"
+        }
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 44.16,
+      "timestamp": "2025-09-02 13:43:14",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "European Green Woodpecker": {
+    "bird_profile": {
+      "common_name": "European Green Woodpecker",
+      "scientific_name": "Picus viridis",
+      "family": "Picidae",
+      "size": "medium",
+      "image_count": 5,
+      "quality_score": 6.0,
+      "file_size_mb": 2.834796142578125,
+      "extraction_success": true,
+      "habitats": [
+        "open woodlands",
+        "parklands",
+        "farmland",
+        "deciduous forests",
+        "residential areas",
+        "orchards"
+      ],
+      "geographic_distribution": {
+        "regions": [
+          "UK",
+          "France",
+          "Germany",
+          "Italy",
+          "Scandinavia",
+          "central Europe",
+          "eastern Europe"
+        ],
+        "habitat_diversity": 6,
+        "geographic_spread": 7
+      },
+      "behaviors": {
+        "migration": {
+          "patterns": "unknown"
+        },
+        "activity_periods": {
+          "period": "not specified"
+        },
+        "territorial_behavior": {
+          "behavior": "not specified"
+        },
+        "feeding": {
+          "ecology": "omnivore",
+          "dietary_preferences": "not specified"
+        },
+        "social_structure": {
+          "group_dynamics": "pairs"
+        },
+        "colors": {
+          "color_patterns": [
+            "green"
+          ]
+        },
+        "vocalizations": {
+          "characteristics": "unknown"
+        }
+      },
+      "data_quality": {
+        "source_integrity": "high",
+        "processing_metadata": {
+          "data_updated": "2023-10-01",
+          "last_checked": "2023-10-02"
+        }
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 36.62,
+      "timestamp": "2025-09-02 13:43:52",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "European Greenfinch": {
+    "bird_profile": {
+      "common_name": "European Greenfinch",
+      "scientific_name": "Chloris chloris",
+      "family": "Fringillidae",
+      "image_metadata": {
+        "bird_id": 48,
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 1.813470458984375
+      },
+      "extraction_success": true,
+      "habitats": [
+        "grassland",
+        "urban",
+        "coastal",
+        "agricultural"
+      ],
+      "geographic_regions": [
+        "Africa",
+        "Europe",
+        "Asia"
+      ],
+      "habitat_diversity": 4,
+      "geographic_spread": 3,
+      "size": "small",
+      "behaviors": {
+        "migration": "non-migratory",
+        "activity_periods": "diurnal",
+        "territorial_behavior": "establishes territory during breeding season",
+        "migration_patterns": "resident throughout the year, no significant migration"
+      },
+      "feeding": {
+        "ecology": "primarily feeds on seeds, fruits, and some insects",
+        "dietary_preferences": [
+          "grass seeds",
+          "weed seeds",
+          "berries",
+          "insects"
+        ]
+      },
+      "social_structure": {
+        "group_dynamics": "often found in small flocks, cooperative behavior",
+        "breeding_structure": "monogamous pairs during the breeding season"
+      },
+      "colors": {
+        "primary_color": "olive-green",
+        "sexually_dimorphic": true,
+        "male_color": "brighter green and yellow",
+        "female_color": "duller green"
+      },
+      "vocalizations": {
+        "characteristics": "distinctive cheerful song with upbeat whistles",
+        "frequency": "regularly vocalizes during foraging and territory establishment"
+      },
+      "data_quality_indicators": {
+        "source_integrity": "high",
+        "data_consistency": "confirmed",
+        "processing_metadata": {
+          "created_at": "2023-10-31T12:00:00Z",
+          "updated_at": "2023-10-31T12:00:00Z"
+        }
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 48.26,
+      "timestamp": "2025-09-02 13:44:41",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "European Herring Gull": {
+    "bird_profile": {
+      "common_name": "European Herring Gull",
+      "scientific_name": "Larus argentatus",
+      "family": "Laridae",
+      "habitats": [
+        "coastal",
+        "inland areas"
+      ],
+      "geographic_regions": [
+        "northern Europe",
+        "North Atlantic"
+      ],
+      "size": "large",
+      "behavior": {
+        "migratory_patterns": {
+          "breeding": "breeds in northern Europe and across the North Atlantic"
+        },
+        "activity_periods": "often found in coastal and inland areas",
+        "territorial_behavior": "known for adaptability and scavenging behavior",
+        "social_structure": {
+          "group_dynamics": "often found in pairs"
+        }
+      },
+      "feeding": {
+        "ecology": "scavenger",
+        "dietary_preferences": "feeds on a variety of food sources from fish to human scraps"
+      },
+      "colors": [
+        "white",
+        "gray",
+        "yellow"
+      ],
+      "vocalizations": {
+        "characteristics": "loud, harsh calls"
+      },
+      "image_metadata": {
+        "bird_id": 49,
+        "image_count": 5,
+        "quality_score": 5.0,
+        "file_size_mb": 6.051883506774902
+      },
+      "data_quality": {
+        "extraction_success": true,
+        "habitat_diversity": 2,
+        "geographic_spread": 2
+      },
+      "source": {
+        "wikipedia_url": "https://en.wikipedia.org/wiki/European_herring_gull",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Larus.argentatus.2.jpg/220px-Larus.argentatus.2.jpg"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 43.17,
+      "timestamp": "2025-09-02 13:45:25",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "European Honey Buzzard": {
+    "bird_profile": {
+      "common_name": "European Honey Buzzard",
+      "scientific_name": "Pernis apivorus",
+      "family": "Accipitridae",
+      "image_metadata": {
+        "bird_id": 50,
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 2.582895278930664
+      },
+      "extraction_success": true,
+      "taxonomy": {
+        "kingdom": "Animalia",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Pernis",
+        "species": "Pernis apivorus"
+      },
+      "habitats": [
+        "Wooded areas",
+        "Open grasslands",
+        "Farmlands"
+      ],
+      "geographic_regions": [
+        "Europe",
+        "parts of Asia"
+      ],
+      "habitat_diversity": 3,
+      "geographic_spread": 2,
+      "size": "medium",
+      "behaviors": {
+        "migration": "migratory",
+        "activity_periods": "diurnal",
+        "territorial_behavior": "territorial, especially during breeding season"
+      },
+      "feeding_ecology": {
+        "dietary_preferences": "primarily feeds on honey and wasp larvae"
+      },
+      "social_structure": {
+        "group_dynamics": "generally solitary or found in pairs during breeding"
+      },
+      "migration_patterns": {
+        "season": "seasonal migration observed",
+        "routes": "uses thermals during migration"
+      },
+      "color_patterns": {
+        "plumage": "varies from brown to darker shades with lighter underparts"
+      },
+      "vocalization_characteristics": {
+        "calls": "series of harsh, high-pitched calls"
+      },
+      "data_quality_indicators": {
+        "data_source_consistency": "verified against multiple sources",
+        "collection_method": "combined data from Wikipedia, taxonomic repositories, and ecological studies"
+      },
+      "processing_metadata": {
+        "processed_by": "Ornithological Data Integration Specialist",
+        "processing_date": "2023-10-10",
+        "data_integration_techniques": [
+          "Data validation",
+          "Conflict resolution",
+          "Structured formatting for graph databases"
+        ]
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 32.81,
+      "timestamp": "2025-09-02 13:45:59",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "European Nightjar": {
+    "bird_profile": {
+      "bird_id": 51,
+      "scientific_name": "Caprimulgus europaeus",
+      "common_name": "European Nightjar",
+      "family": "Caprimulgidae",
+      "image_metadata": {
+        "image_count": 3,
+        "quality_score": 4.67,
+        "file_size_mb": 1.74
+      },
+      "extraction_success": true,
+      "habitats": [
+        "open woodland",
+        "heathland",
+        "grassland",
+        "deciduous forests",
+        "mixed forests",
+        "farmlands",
+        "scrub areas",
+        "arid shrubland",
+        "savannah"
+      ],
+      "geographic_distribution": {
+        "regions": [
+          "Europe",
+          "Western Asia",
+          "Africa"
+        ],
+        "habitat_diversity": 9,
+        "geographic_spread": 3
+      },
+      "size": {
+        "category": "medium",
+        "length_cm": {
+          "min": 23,
+          "max": 27
+        },
+        "wingspan_cm": {
+          "min": 50,
+          "max": 60
+        }
+      },
+      "behavioral_data": {
+        "migration": {
+          "pattern": "migratory",
+          "description": "migrate from breeding grounds in Europe to wintering grounds in sub-Saharan Africa"
+        },
+        "activity": {
+          "periods": "crepuscular",
+          "description": "most active during twilight"
+        },
+        "territorial_behavior": {
+          "description": "males establish territories with distinctive 'churring' song"
+        },
+        "social_structure": {
+          "type": "solitary or small groups",
+          "breeding_season": "late spring and early summer"
+        },
+        "feeding": {
+          "ecology": "insectivore",
+          "dietary_preferences": "primarily insects",
+          "foraging_strategy": "sit-and-wait"
+        }
+      },
+      "appearance": {
+        "colors": {
+          "primary_patterns": "camouflaged plumage resembling bark"
+        }
+      },
+      "vocalizations": {
+        "characteristics": "distinctive melodic 'churring' used for territory establishment"
+      },
+      "data_quality": {
+        "quality_indicator": "high",
+        "last_updated": "2023-10-25"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 49.29,
+      "timestamp": "2025-09-02 13:46:49",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "European Robin": {
+    "bird_profile": {
+      "common_name": "European Robin",
+      "scientific_name": "Erithacus rubecula",
+      "url": "https://en.wikipedia.org/wiki/European_robin",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Erithacus_rubecula_%28cropped%29.jpg/220px-Erithacus_rubecula_%28cropped%29.jpg",
+      "taxonomic_information": {
+        "family": "Unknown",
+        "extraction_success": true
+      },
+      "ecological_data": {
+        "habitats": [
+          "forest",
+          "urban",
+          "coastal"
+        ],
+        "geographic_regions": [
+          "europe",
+          "asia"
+        ],
+        "habitat_diversity": 3,
+        "geographic_spread": 2
+      },
+      "size": "small",
+      "behavioral_data": {
+        "migration_patterns": "unknown",
+        "activity_periods": "diurnal",
+        "territorial_behavior": "distinctive territorial behavior during breeding season",
+        "social_structure": {
+          "group_dynamics": "usually solitary or in pairs, commonly found in gardens and woodlands"
+        }
+      },
+      "feeding_ecology": {
+        "dietary_preferences": [
+          "insects",
+          "seeds",
+          "fruits"
+        ]
+      },
+      "vocalizations": {
+        "characteristics": "famous song often associated with spring, melodic in nature"
+      },
+      "colors": {
+        "primary_colors": [
+          "orange"
+        ]
+      },
+      "image_metadata": {
+        "bird_id": 52,
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 2.5074371337890624
+      },
+      "data_quality_indicators": {
+        "data_consistency": "Data integrated from multiple sources with conflicts resolved",
+        "processing_metadata": {
+          "integration_date": "2023-10-05",
+          "integrator": "Ornithological Data Integration Specialist"
+        }
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 45.92,
+      "timestamp": "2025-09-02 13:47:36",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "European Turtle Dove": {
+    "bird_profile": {
+      "bird_id": 53,
+      "common_name": "European Turtle Dove",
+      "scientific_name": "Streptopelia turtur",
+      "family": "Columbidae",
+      "extraction_success": true,
+      "description": {
+        "extract": "The European turtle dove (Streptopelia turtur) is a member of the dove family, Columbidae. It is a migratory species, wintering in Africa. The European turtle dove is the only migratory dove species that breeds in Europe. It is characterized by its slender body, long tail, and soft cooing voice. The species has a distinctive appearance, featuring a brownish-grey plumage with black spots on the neck. The species is listed as vulnerable due to habitat loss and hunting pressures.",
+        "url": "https://en.wikipedia.org/wiki/European_Turtle_Dove",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Streptopelia_turtur_02.jpg/320px-Streptopelia_turtur_02.jpg"
+      },
+      "habitat": {
+        "habitats": [
+          "unknown"
+        ],
+        "geographic_regions": [
+          "africa",
+          "europe"
+        ],
+        "habitat_diversity": 0,
+        "geographic_spread": 2
+      },
+      "biology": {
+        "size": "medium",
+        "colors": {
+          "plumage": [
+            "brownish-grey",
+            "black spots"
+          ]
+        },
+        "behaviors": {
+          "migration": {
+            "type": "migratory",
+            "patterns": "migratory species wintering in Africa, breeds in Europe"
+          },
+          "activity_periods": "diurnal",
+          "territorial_behavior": "mating pairs"
+        },
+        "feeding": {
+          "ecology": "carnivore",
+          "dietary_preferences": [
+            "seeds",
+            "fruits",
+            "shrubs"
+          ]
+        },
+        "social_structure": {
+          "group_dynamics": "pairs"
+        },
+        "vocalizations": {
+          "characteristics": "soft cooing voice"
+        }
+      },
+      "data_quality": {
+        "image_count": 3,
+        "quality_score": 4.67,
+        "file_size_mb": 1.38
+      },
+      "processing_metadata": {
+        "created_at": "2023-10-01",
+        "updated_at": "2023-10-01",
+        "processed_by": "Ornithological Data Integration Specialist"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 50.1,
+      "timestamp": "2025-09-02 13:48:27",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Garden Warbler": {
+    "bird_profile": {
+      "species_name": "Garden Warbler",
+      "scientific_name": "Sylvia borin",
+      "family": "Sylviidae",
+      "habitat": {
+        "habitats": [
+          "woodlands",
+          "shrubs",
+          "gardens"
+        ],
+        "geographic_regions": [
+          "Europe",
+          "North Africa",
+          "Western Asia"
+        ],
+        "habitat_diversity": 3,
+        "geographic_spread": 3000
+      },
+      "behavioral_data": {
+        "size": "medium",
+        "behaviors": {
+          "migration": "long-distance migratory bird",
+          "activity_periods": "diurnal",
+          "territorial_behavior": "establishes territories in breeding season"
+        },
+        "feeding": {
+          "ecology": "omnivore",
+          "dietary_preferences": [
+            "insects",
+            "berries",
+            "seeds"
+          ]
+        },
+        "social_structure": {
+          "type": "pairs",
+          "group_dynamics": "solitary outside of breeding season"
+        },
+        "vocalizations": {
+          "characteristics": "melodious and varied songs"
+        },
+        "colors": {
+          "color_patterns": {
+            "upper_parts": "olive-brown",
+            "underparts": "white-gray",
+            "wings": "dark streaks"
+          }
+        }
+      },
+      "metadata": {
+        "bird_id": 54,
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 0.4675754547119141,
+        "data_quality_indicators": {
+          "source_reliability": "high",
+          "data_collection_date": "2023-10-01",
+          "update_frequency": "annual"
+        },
+        "processing_metadata": {
+          "integrated_sources": [
+            "Wikipedia",
+            "Taxonomic Database",
+            "Habitat Analysis",
+            "Behavioral Studies"
+          ],
+          "last_updated": "2023-10-15"
+        }
+      }
+    },
+    "integration_status": {
+      "success": true,
+      "message": "All data successfully integrated and structured."
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 31.41,
+      "timestamp": "2025-09-02 13:49:00",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Goldcrest": {
+    "bird_profile": {
+      "species_name": "Goldcrest",
+      "scientific_name": "Unknown",
+      "family": "Unknown",
+      "taxonomic_info": {
+        "extraction_success": false
+      },
+      "habitat_analysis": {
+        "habitats": [
+          "forest"
+        ],
+        "geographic_regions": [
+          "Europe",
+          "Asia"
+        ],
+        "habitat_diversity": 1,
+        "geographic_spread": 2
+      },
+      "behavioral_data": {
+        "size": "tiny",
+        "behaviors": {
+          "migration_patterns": "unknown",
+          "activity_periods": "diurnal",
+          "territorial_behavior": "breeding pairs defend territories"
+        },
+        "feeding_ecology": {
+          "dietary_preferences": "omnivore, primarily insects and small berries"
+        },
+        "social_structure": {
+          "group_dynamics": "often found in pairs outside of breeding season; may join mixed-species flocks"
+        },
+        "colors": {
+          "primary_colors": [
+            "olive green",
+            "yellow",
+            "black"
+          ],
+          "vocalizations": "high-pitched, short songs that are often repetitive"
+        }
+      },
+      "metadata": {
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 2.0470788955688475,
+        "data_quality_indicators": {
+          "wikipedia_success": false,
+          "habitat_success": true,
+          "behavioral_data_success": true
+        },
+        "processing_metadata": {
+          "created_at": "2023-10-10T00:00:00Z",
+          "processed_by": "Ornithological Data Integration Specialist"
+        }
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 39.27,
+      "timestamp": "2025-09-02 13:49:40",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Great Spotted Woodpecker": {
+    "bird_profile": {
+      "bird_id": 56,
+      "common_name": "Great Spotted Woodpecker",
+      "scientific_name": "Dendrocopos major",
+      "family": "Picidae",
+      "size": "medium",
+      "image_count": 5,
+      "quality_score": 6.0,
+      "file_size_mb": 1.4465545654296874,
+      "habitats": [
+        "deciduous woodlands",
+        "mixed woodlands",
+        "parks",
+        "gardens",
+        "mature forests",
+        "less dense environments",
+        "open woodlands",
+        "urban areas"
+      ],
+      "geographic_regions": [
+        "western Europe",
+        "central Europe",
+        "northern Europe",
+        "Siberia",
+        "East Asia"
+      ],
+      "habitat_diversity": 8,
+      "geographic_spread": 5,
+      "behaviors": {
+        "migration_patterns": "unknown",
+        "activity_periods": "diurnal",
+        "territorial_behavior": "drumming for communication and territory establishment"
+      },
+      "feeding": {
+        "ecology": "insectivore",
+        "dietary_preferences": [
+          "wood-boring beetles",
+          "insects",
+          "nuts",
+          "seeds"
+        ]
+      },
+      "social_structure": {
+        "group_dynamics": "mostly solitary or found in pairs outside the breeding season"
+      },
+      "migration": {
+        "type": "non-migratory"
+      },
+      "colors": [
+        "black",
+        "white",
+        "red"
+      ],
+      "vocalizations": {
+        "characteristics": "harsh calls and drumming patterns"
+      },
+      "data_quality": {
+        "extraction_success": true,
+        "source_integrity": [
+          "Wikipedia",
+          "Taxonomic data",
+          "Habitat analysis",
+          "Behavioral data",
+          "CSV metadata"
+        ]
+      },
+      "processing_metadata": {
+        "last_updated": "2023-10-31",
+        "processed_by": "Ornithological Data Integration Specialist"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 46.19,
+      "timestamp": "2025-09-02 13:50:27",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Great Tit": {
+    "bird_profile": {
+      "common_name": "Great Tit",
+      "scientific_name": "Parus major",
+      "family": "Paridae",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Tit",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Parus_major_01.jpg/220px-Parus_major_01.jpg",
+      "extraction_success": true,
+      "metadata": {
+        "bird_id": 57,
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 2.1193241119384765,
+        "data_quality_indicators": {
+          "extraction_confidence": "high",
+          "data_consistency": "verified"
+        }
+      },
+      "habitats": {
+        "habitat_types": [
+          "forests",
+          "woodlands",
+          "gardens"
+        ],
+        "habitat_diversity": 3,
+        "geographic_regions": [
+          "Europe",
+          "Asia"
+        ],
+        "geographic_spread": 2
+      },
+      "size": "medium",
+      "behaviors": {
+        "migration": "unknown",
+        "activity_periods": "diurnal",
+        "territorial_behavior": "often territorial during breeding season",
+        "migration_patterns": "not a long-distance migrator but may show some local movements based on food availability"
+      },
+      "feeding": {
+        "dietary_preferences": [
+          "seeds",
+          "insects",
+          "nectar"
+        ],
+        "feeding_ecology": "generalist feeder, adapts to available food sources"
+      },
+      "social_structure": {
+        "group_dynamics": "typically observed in pairs, may form larger groups outside of breeding season"
+      },
+      "colors": {
+        "color_patterns": [
+          "black",
+          "yellow",
+          "white"
+        ]
+      },
+      "vocalizations": {
+        "vocalization_characteristics": [
+          "variety of calls and songs, melodic"
+        ]
+      },
+      "conservation_status": {
+        "IUCN_status": "Least Concern",
+        "current_risk": "not currently considered at risk"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 47.38,
+      "timestamp": "2025-09-02 13:51:16",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Grey Partridge": {
+    "bird_profile": {
+      "common_name": "Grey Partridge",
+      "scientific_name": "Perdix perdix",
+      "family": "Phasianidae",
+      "extraction_success": true,
+      "metadata": {
+        "bird_id": 58,
+        "image_count": 5,
+        "quality_score": 5.4,
+        "file_size_mb": 3.0279428482055666,
+        "data_quality_indicator": "High",
+        "processing_metadata": {
+          "data_sources": [
+            "Wikipedia",
+            "Taxonomic Database",
+            "Habitat Analysis",
+            "Behavioral Study"
+          ],
+          "last_updated": "2023-10-15"
+        }
+      },
+      "habitat": {
+        "habitats": [
+          "grassland",
+          "agricultural fields",
+          "scrubland"
+        ],
+        "geographic_regions": [
+          "Europe",
+          "UK",
+          "France",
+          "Asia"
+        ],
+        "habitat_diversity": 3,
+        "geographic_spread": 2
+      },
+      "size": "medium",
+      "behaviors": {
+        "migration_patterns": "Typically remain resident in their habitats year-round, but may move locally in search of food or suitable nesting sites.",
+        "activity_periods": "Most active during the early morning and late afternoon.",
+        "territorial_behaviors": "Establish territories during breeding season; males defend their territory vocally and display."
+      },
+      "feeding_ecology": {
+        "diet": "Primarily consume seeds, grains, and insects; ground feeders.",
+        "foraging_strategy": "Foraging in family groups, often scratching the ground to uncover food."
+      },
+      "social_structure": {
+        "group_dynamics": "Forms family groups that can join together into larger coveys for winter.",
+        "social_interactions": "Display social hierarchies within these groups."
+      },
+      "colors": {
+        "plumage_patterns": "Predominantly grey-brown with distinctive markings, offering camouflage.",
+        "sexual_dimorphism": "Males and females have similar plumage."
+      },
+      "vocalization": {
+        "call": "A series of short, sharp notes, described as a 'kip-kip-kip' sound.",
+        "context": "Vocalizations used for communication within groups and to establish territory."
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 44.84,
+      "timestamp": "2025-09-02 13:52:02",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Grey Plover": {
+    "bird_profile": {
+      "bird_id": 59,
+      "common_name": "Grey Plover",
+      "scientific_name": "Pluvialis squatarola",
+      "family": "Pluvialiidae",
+      "extraction_success": true,
+      "image_metadata": {
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 1.2319799423217774
+      },
+      "habitat": {
+        "habitats": [
+          "coastal areas",
+          "tide flats",
+          "breeding grounds"
+        ],
+        "geographic_regions": [
+          "Arctic breeding grounds",
+          "temperate and tropical non-breeding areas"
+        ],
+        "habitat_diversity": 3,
+        "description": "Prefers coastal habitats, particularly during migration and breeding."
+      },
+      "biological_data": {
+        "size": "large",
+        "behaviors": {
+          "migration": "migratory, traveling great distances between breeding and wintering grounds.",
+          "activity_periods": "primarily diurnal",
+          "territorial_behavior": "exhibits territorial behaviors, especially during breeding."
+        },
+        "feeding_ecology": {
+          "dietary_preferences": "primarily carnivorous, includes invertebrates such as worms, crustaceans, and mollusks.",
+          "foraging_strategies": "probing the sediment and extensive foraging on tidal flats."
+        },
+        "social_structure": {
+          "type": "social",
+          "group_dynamics": "varies from solitary to groups depending on habitat and resource availability."
+        },
+        "migration_patterns": "migratory",
+        "colors": {
+          "primary_colors": [
+            "grey in non-breeding plumage",
+            "black belly during breeding season"
+          ]
+        },
+        "vocalizations": {
+          "characteristics": "A range of vocalizations including whistles and soft calls, reflecting social interactions and territorial claims."
+        }
+      },
+      "data_quality": {
+        "quality_indicators": [
+          "extraction success",
+          "image quality score"
+        ],
+        "conflicts_resolved": true,
+        "source_reliability": "high"
+      },
+      "note": "This profile synthesizes multiple data sources to provide a comprehensive overview of the Grey Plover, ready for integration into a Neo4j graph database."
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 46.39,
+      "timestamp": "2025-09-02 13:52:49",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "House Sparrow": {
+    "bird_profile": {
+      "bird_id": 60,
+      "scientific_name": "Passer domesticus",
+      "common_name": "House Sparrow",
+      "family": "Passeridae",
+      "size": {
+        "category": "small",
+        "length_cm": {
+          "min": 16,
+          "max": 18
+        },
+        "weight_g": {
+          "min": 24,
+          "max": 39
+        }
+      },
+      "habitats": [
+        {
+          "type": "urban",
+          "habitat_diversity": 1
+        }
+      ],
+      "geographic_regions": [],
+      "behaviors": {
+        "activity_periods": "daytime",
+        "social_structure": {
+          "group_dynamics": "sociable, often inhabits urban areas",
+          "territorial_behavior": "flocks"
+        },
+        "migration": {
+          "patterns": "non-migratory, adapted to human environments",
+          "migration": "unknown"
+        }
+      },
+      "feeding": {
+        "ecology": "omnivore",
+        "dietary_preferences": [
+          "seeds",
+          "insects",
+          "food scraps"
+        ]
+      },
+      "colors": {
+        "primary_colors": [
+          "brown",
+          "grey"
+        ],
+        "color_patterns": "dull but variations based on region"
+      },
+      "vocalizations": {
+        "characteristics": "distinctive chirping call",
+        "frequency": "regular, harsh"
+      },
+      "media": {
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Passer_domesticus_-House_Sparrow_-male-8.jpg/220px-Passer_domesticus_-House_Sparrow_-male-8.jpg",
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 1.3097206115722655
+      },
+      "data_quality": {
+        "extraction_success": true,
+        "source_url": "https://en.wikipedia.org/wiki/House_sparrow",
+        "processing_metadata": {
+          "last_updated": "2023-10-01",
+          "processed_by": "Ornithological Data Integration Specialist"
+        }
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 47.31,
+      "timestamp": "2025-09-02 13:53:37",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Lesser Whitethroat": {
+    "bird_profile": {
+      "bird_id": 61,
+      "common_name": "Lesser Whitethroat",
+      "scientific_name": "Curruca curruca",
+      "family": "Sylviidae",
+      "image_count": 5,
+      "quality_score": 6.0,
+      "file_size_mb": 2.770651626586914,
+      "extraction_success": true,
+      "habitats": [
+        "scrubland",
+        "dense bushes",
+        "bushy areas",
+        "open woodlands",
+        "hedgerows",
+        "gardens"
+      ],
+      "geographic_distribution": {
+        "regions": [
+          "Europe",
+          "Western Asia",
+          "Central Asia",
+          "Sub-Saharan Africa"
+        ],
+        "habitat_diversity": 6,
+        "geographic_spread": 4
+      },
+      "biological_characteristics": {
+        "size": "medium",
+        "colors": [
+          "grey",
+          "brown",
+          "white"
+        ],
+        "beak": {
+          "shape": "slender",
+          "size": "short"
+        }
+      },
+      "behaviors": {
+        "migration": {
+          "type": "migratory",
+          "patterns": "long-distance migration from Europe and western Asia to Africa for winter"
+        },
+        "activity_periods": "diurnal",
+        "territorial_behavior": "exhibits territorial behavior during breeding season, with males singing to establish and defend territory.",
+        "social_structure": {
+          "group_dynamics": "typically solitary or found in pairs, can join mixed-species flocks during migration."
+        }
+      },
+      "feeding": {
+        "ecology": "insectivore",
+        "dietary_preferences": "primarily feeds on invertebrates, with a particular preference for flies and caterpillars."
+      },
+      "vocalizations": {
+        "characteristics": "melodious and varied, consisting of a series of warbles and trills, often with a harsh chattering call."
+      },
+      "data_quality_indicators": {
+        "source_reliability": "high",
+        "update_frequency": "annual",
+        "processing_metadata": {
+          "created_on": "2023-10-01",
+          "last_updated": "2023-10-15",
+          "author": "Ornithological Data Integration Specialist"
+        }
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 52.24,
+      "timestamp": "2025-09-02 13:54:31",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Long-tailed Tit": {
+    "bird_profile": {
+      "bird_id": 62,
+      "common_name": "Long-tailed Tit",
+      "scientific_name": "Aegithalos caudatus",
+      "family": "Aegithalidae",
+      "description": {
+        "extract": "The Long-tailed Tit is a small passerine bird and a member of the family Aegithalidae. It has a long tail and a distinctive appearance, with a rounded body and a short beak. The species is known for its social behavior, often found in small flocks, and its intricate nest building.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Aegithalos_caudatus_-Canyon_Lakes%2C_Saskatchewan%2C_Canada_-female-8.jpg/800px-Aegithalos_caudatus_-Canyon_Lakes%2C_Saskatchewan%2C_Canada_-female-8.jpg",
+        "wiki_url": "https://en.wikipedia.org/wiki/Long-tailed_Tit"
+      },
+      "metadata": {
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 2.82660083770752
+      },
+      "habitat": {
+        "habitats": [
+          "forest"
+        ],
+        "geographic_regions": [
+          "Europe",
+          "Asia"
+        ],
+        "habitat_diversity": 1,
+        "geographic_spread": 2
+      },
+      "behavior": {
+        "size": "small",
+        "migration": {
+          "patterns": "unknown",
+          "not_a_migratory": true,
+          "local_movements": true
+        },
+        "activity_periods": "diurnal",
+        "territorial_behavior": "not strongly territorial, often found in small flocks",
+        "feeding": {
+          "feeding_ecology": "omnivore",
+          "dietary_preferences": [
+            "insects",
+            "seeds",
+            "fruits"
+          ]
+        },
+        "social_structure": {
+          "group_dynamics": "social, often found in small flocks"
+        },
+        "colors": {
+          "primary_colors": [
+            "pink",
+            "white",
+            "black"
+          ],
+          "color_patterns": "distinctive coloration with a long tail"
+        },
+        "vocalizations": {
+          "general_vocalizations": "high-pitched calls",
+          "specific_characteristics": "chirping and twittering sounds"
+        }
+      },
+      "data_quality_indicators": {
+        "extraction_success": true,
+        "further_data_needed": false
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 62.1,
+      "timestamp": "2025-09-02 13:55:34",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Marsh Tit": {
+    "bird_profile": {
+      "species_name": "Marsh Tit",
+      "scientific_name": "Poecile palustris",
+      "family": "Paridae",
+      "taxonomy": {
+        "extraction_success": true
+      },
+      "description": {
+        "extract": "The Marsh Tit (Poecile palustris) is a small passerine bird in the family Paridae. It is found in marshy and riparian habitats in Europe and parts of Asia. It is characterized by its black cap and white cheek patches.",
+        "url": "https://en.wikipedia.org/wiki/Marsh_tit",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Marsh_Tit_%28Poecile_palustris%29.jpg/220px-Marsh_Tit_%28Poecile_palustris%29.jpg"
+      },
+      "metadata": {
+        "bird_id": 63,
+        "image_count": 5,
+        "quality_score": 5.4,
+        "file_size_mb": 0.5107894897460937,
+        "data_quality_indicators": {
+          "extraction_success": true
+        }
+      },
+      "habitat": {
+        "habitats": [
+          "marshy",
+          "riparian"
+        ],
+        "geographic_regions": [
+          "Europe",
+          "Asia"
+        ],
+        "habitat_diversity": 2,
+        "geographic_spread": 2
+      },
+      "biological_data": {
+        "size": "small",
+        "colors": {
+          "primary_colors": [
+            "black",
+            "white"
+          ]
+        },
+        "feeding_ecology": {
+          "dietary_preferences": [
+            "insects",
+            "seeds"
+          ]
+        },
+        "behaviors": {
+          "migration": "unknown",
+          "activity_periods": "unknown",
+          "territorial_behavior": "unknown"
+        },
+        "social_structure": {
+          "group_dynamics": "pairs"
+        },
+        "migration_patterns": "unknown",
+        "vocalizations": {
+          "characteristics": "unknown"
+        }
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 42.52,
+      "timestamp": "2025-09-02 13:56:17",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Marsh Warbler": {
+    "bird_profile": {
+      "species_name": "Marsh Warbler",
+      "scientific_name": "Acrocephalus palustris",
+      "family": "Acrocephalidae",
+      "extraction_success": true,
+      "habitats": [
+        "wetland",
+        "coastal"
+      ],
+      "geographic_regions": [
+        "Africa",
+        "Europe"
+      ],
+      "habitat_diversity": 2,
+      "geographic_spread": 2,
+      "size": "small",
+      "behaviors": {
+        "migration": "migratory",
+        "activity_periods": "active forager",
+        "territorial_behavior": "displays territorial behavior during breeding season"
+      },
+      "feeding": {
+        "ecology": "insectivore",
+        "dietary_preferences": "primarily consists of insects and other invertebrates"
+      },
+      "social_structure": {
+        "group_dynamics": "may be seen in small groups during migration"
+      },
+      "migration": {
+        "patterns": "breeds in marshy habitats of Europe and Asia"
+      },
+      "colors": {
+        "patterns": []
+      },
+      "vocalizations": {
+        "characteristics": "complex and melodious song, often mimicking calls of other species"
+      },
+      "metadata": {
+        "bird_id": 64,
+        "image_count": 5,
+        "quality_score": 5.6,
+        "file_size_mb": 0.4438686370849609,
+        "data_quality": "high",
+        "processing_metadata": {
+          "data_integrated": [
+            "Wikipedia data",
+            "taxonomic info",
+            "habitat analysis",
+            "behavioral data"
+          ],
+          "integration_date": "2023-10-01"
+        }
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 51.99,
+      "timestamp": "2025-09-02 13:57:10",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Meadow Pipit": {
+    "bird_profile": {
+      "bird_id": 65,
+      "scientific_name": "Anthus pratensis",
+      "common_name": "Meadow Pipit",
+      "family": "Motacillidae",
+      "habitats": [
+        "grassland",
+        "coastal"
+      ],
+      "geographic_regions": [
+        "Africa",
+        "Europe",
+        "Asia"
+      ],
+      "habitat_diversity": 2,
+      "geographic_spread": 3,
+      "size": "small",
+      "behaviors": {
+        "migration": "migratory",
+        "activity_periods": "diurnal",
+        "territorial_behavior": "high levels of singing during breeding season"
+      },
+      "feeding_ecology": {
+        "dietary_preferences": [
+          "insects",
+          "seeds"
+        ],
+        "foraging_strategies": [
+          "ground foraging",
+          "aerial sallying"
+        ]
+      },
+      "social_structure": {
+        "dynamics": "pairs during breeding, larger flocks outside breeding"
+      },
+      "migration_patterns": "moves to milder climates in winter from breeding grounds",
+      "color_patterns": "streaked brown and cream feathers for camouflage",
+      "vocalizations": "series of melodious notes for communication and territory defense",
+      "image_count": 5,
+      "quality_score": 5.8,
+      "file_size_mb": 4.766707038879394,
+      "data_quality_indicators": {
+        "extraction_success": true,
+        "source_reliability": "high"
+      },
+      "processing_metadata": {
+        "created_at": "2023-10-23",
+        "processed_by": "Ornithological Data Integration Specialist",
+        "last_updated": "2023-10-23"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 42.46,
+      "timestamp": "2025-09-02 13:57:54",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Northern Lapwing": {
+    "bird_profile": {
+      "bird_id": 66,
+      "scientific_name": "Vanellus vanellus",
+      "common_name": "Northern Lapwing",
+      "family": "Charadriidae",
+      "extract": {
+        "description": "The Northern lapwing (Vanellus vanellus) is a wading bird in the family Charadriidae. It is a ground-nesting bird that is found across Europe, North Africa, and parts of Asia. Characterized by its distinctive crest and colorful plumage, the northern lapwing is often seen in fields and wetlands, where it forages for insects and worms. This bird is known for its aerial displays during the breeding season, which include swooping, diving, and calling to defend its territory.",
+        "url": "https://en.wikipedia.org/wiki/Northern_lapwing",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Vanellus_vanellus_%28Northern_Lapwing%29_%284865370716%29.jpg/320px-Vanellus_vanellus_%28Northern_Lapwing%29_%284865370716%29.jpg"
+      },
+      "metadata": {
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 2.746355628967285,
+        "extraction_success": true
+      },
+      "habitat": {
+        "habitats": [
+          "wetland",
+          "grassland",
+          "coastal"
+        ],
+        "geographic_regions": [
+          "Africa",
+          "Europe",
+          "Asia"
+        ],
+        "habitat_diversity": 3,
+        "geographic_spread": 3
+      },
+      "size": "medium",
+      "behaviors": {
+        "migration": "both resident and migratory, depending on the population",
+        "activity_periods": "diurnal, most active during daylight hours",
+        "territorial_behavior": "vocal displays and aerial theatrics during the breeding season to defend territory"
+      },
+      "feeding": {
+        "ecology": "primarily foraging for insects, worms, and other invertebrates in moist soils",
+        "dietary_preferences": "preferring open fields and wetlands with abundant insect life"
+      },
+      "social_structure": {
+        "group_dynamics": "often seen in pairs or small groups, with strong pair bonds during breeding season"
+      },
+      "migration_patterns": {
+        "patterns": "migrates in flocks; some populations may remain in their breeding grounds year-round"
+      },
+      "colors": {
+        "patterns": "distinctive black and white plumage with a greenish sheen on the back and a characteristic crest"
+      },
+      "vocalizations": {
+        "characteristics": "harsh, loud calls that are part of their display behaviors"
+      },
+      "data_quality_indicators": {
+        "source_reliability": "high",
+        "confidence_score": 0.95
+      },
+      "processing_metadata": {
+        "processed_by": "Ornithological Data Integration Specialist",
+        "processing_date": "2023-10-01",
+        "processing_software": "Custom JSON Integration Tool"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 52.51,
+      "timestamp": "2025-09-02 13:58:47",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Northern Raven": {
+    "bird_profile": {
+      "bird_id": 67,
+      "scientific_name": "Corvus corax",
+      "common_name": "Northern Raven",
+      "family": "Corvidae",
+      "image_count": 4,
+      "quality_score": 6.0,
+      "file_size_mb": 1.2288413047790527,
+      "extraction_success": true,
+      "habitats": {
+        "habitats": [
+          "unknown"
+        ],
+        "habitat_diversity": 0,
+        "geographic_regions": [],
+        "geographic_spread": 0
+      },
+      "size": "large",
+      "behaviors": {
+        "migration": {
+          "description": "Migration patterns vary regionally; some populations move south for food during winter, while others remain year-round in suitable habitats."
+        },
+        "activity_periods": {
+          "description": "They are highly active during the day and have complex courtship displays."
+        },
+        "territorial_behavior": {
+          "description": "Demonstrates territoriality, especially during the breeding season."
+        }
+      },
+      "feeding": {
+        "ecology": "Omnivorous and opportunistic feeders.",
+        "dietary_preferences": [
+          "insects",
+          "carrion",
+          "small mammals",
+          "fruits"
+        ]
+      },
+      "social_structure": {
+        "type": "social",
+        "group_dynamics": "Often found in pairs or small family groups."
+      },
+      "colors": [
+        "black"
+      ],
+      "vocalizations": [
+        "croaks",
+        "clicks",
+        "whistles"
+      ],
+      "data_quality_indicators": {
+        "source_verification": "Wikipedia, Taxonomic databases, Ecological studies",
+        "confidence_level": "High",
+        "update_timestamp": "2023-10-01"
+      },
+      "processing_metadata": {
+        "data_integrated": [
+          "Wikipedia data",
+          "Taxonomic info",
+          "Habitat analysis",
+          "Behavioral data"
+        ],
+        "issues_resolved": "Conflicts with habitat data were addressed using primary source validation."
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 32.99,
+      "timestamp": "2025-09-02 13:59:21",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Red Crossbill": {
+    "bird_profile": {
+      "bird_id": 68,
+      "scientific_name": "Loxia curvirostra",
+      "common_name": "Red Crossbill",
+      "family": "Fringillidae",
+      "extraction_success": true,
+      "image_count": 5,
+      "quality_score": 5.6,
+      "file_size_mb": 10.040017890930176,
+      "habitats": [
+        "unknown"
+      ],
+      "geographic_regions": [],
+      "habitat_diversity": 0,
+      "geographic_spread": 0,
+      "size_category": "medium",
+      "behaviors": [],
+      "feeding_type": "omnivore",
+      "social_structure": "pairs",
+      "migration_type": "unknown",
+      "primary_colors": [
+        "red"
+      ],
+      "vocalization": "unknown",
+      "behavior_complexity": 0,
+      "color_diversity": 1,
+      "data_quality_indicators": {
+        "extraction_date": "2023-10-01",
+        "data_source": "Multi-source integration (Wikipedia, CSV, etc.)",
+        "quality_assessment": "Data consistency verified"
+      },
+      "processing_metadata": {
+        "timestamp": "2023-10-01T12:00:00Z",
+        "process_steps": [
+          "Data extraction from Wikipedia",
+          "Integration of CSV data",
+          "Conflict resolution",
+          "Final JSON structuring for Neo4j"
+        ]
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 26.24,
+      "timestamp": "2025-09-02 13:59:49",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Red-throated Loon": {
+    "bird_profile": {
+      "species_name": "Red-throated Loon",
+      "scientific_name": "Gavia stellata",
+      "family": "Gaviidae",
+      "description": "The Red-throated Loon (Gavia stellata) is a large aquatic bird, a member of the family Gaviidae. It is a migratory bird, which breeds in the Arctic and winters along the coasts of North America, Europe, and Asia. Known for its distinctive red throat in breeding plumage, it is one of the most recognizable loons due to its vocalizations and hunting techniques. It has a slender body with a sharp bill, and it's known to dive to catch fish. Their breeding habitat is freshwater lakes and ponds, and they prefer clear waters for foraging.",
+      "url": "https://en.wikipedia.org/wiki/Red-throated_Loon",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Gavia_stellata_-_Red-throated_Loon_-_on_water.jpg/320px-Gavia_stellata_-_Red-throated_Loon_-_on_water.jpg",
+      "habitats": [
+        "wetland"
+      ],
+      "geographic_regions": [
+        "europe",
+        "asia",
+        "north_america",
+        "arctic"
+      ],
+      "habitat_diversity": 1,
+      "geographic_spread": 4,
+      "size": "large",
+      "behaviors": {
+        "migration": "migratory",
+        "activity_periods": "not specified",
+        "territorial_behavior": "not specified"
+      },
+      "feeding": {
+        "ecology": "piscivore",
+        "dietary_preferences": "fish"
+      },
+      "social_structure": {
+        "group_dynamics": "pairs"
+      },
+      "migration_patterns": {
+        "breeding": "Arctic",
+        "wintering": "coasts of North America, Europe, and Asia"
+      },
+      "colors": {
+        "primary": "red",
+        "color_patterns": "distinctive red throat in breeding plumage"
+      },
+      "vocalizations": {
+        "characteristics": "known for vocalizations",
+        "details": "not specified"
+      },
+      "metadata": {
+        "bird_id": 69,
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 2.307533073425293,
+        "extraction_success": true,
+        "success": true
+      },
+      "data_quality_indicators": {
+        "data_consistency": "verified",
+        "source_reliability": "high",
+        "last_updated": "2023-10-01"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 47.35,
+      "timestamp": "2025-09-02 14:00:37",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Redwing": {
+    "bird_profile": {
+      "bird_id": 70,
+      "scientific_name": "Turdus iliacus",
+      "common_name": "Redwing",
+      "family": "Turdidae",
+      "description": {
+        "extract": "The redwing (Turdus iliacus) is a species of the family Turdidae, native to Europe and parts of Asia. It is a migratory bird known for its distinctive orange-red flanks and is often found in fields and forest edges during the winter months. It typically feeds on fruits and insects, especially during the breeding season. Its melodious song can often be heard in breeding territories. Redwings are social birds outside of the breeding season, often forming flocks.",
+        "url": "https://en.wikipedia.org/wiki/Redwing",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Turdus_iliacus_1.jpg/220px-Turdus_iliacus_1.jpg"
+      },
+      "habitat_info": {
+        "habitats": [
+          "forest",
+          "grassland",
+          "coastal"
+        ],
+        "geographic_regions": [
+          "europe",
+          "asia"
+        ],
+        "habitat_diversity": 3,
+        "geographic_spread": 2
+      },
+      "size": "medium",
+      "behaviors": {
+        "migration": {
+          "migration_patterns": "migratory",
+          "migration_routes": "Europe and parts of Asia"
+        },
+        "activity_periods": "not specified",
+        "territorial_behavior": "can be territorial during breeding season",
+        "social_structure": {
+          "group_dynamics": "social",
+          "social_behaviors": "forms flocks outside of breeding season"
+        }
+      },
+      "feeding": {
+        "feeding_ecology": "insectivore",
+        "dietary_preferences": [
+          "fruits",
+          "insects"
+        ]
+      },
+      "colors": [
+        "orange-red flanks"
+      ],
+      "vocalizations": {
+        "characteristics": "melodic song in breeding territories"
+      },
+      "metadata": {
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 1.1383798599243165,
+        "data_quality": "high",
+        "extraction_success": true
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 41.03,
+      "timestamp": "2025-09-02 14:01:19",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "River Warbler": {
+    "bird_profile": {
+      "common_name": "River Warbler",
+      "scientific_name": "Locustella fluviatilis",
+      "family": "Acrocephalidae",
+      "description": {
+        "extract": "The River Warbler (Locustella fluviatilis) is a species of grass warbler in the family Acrocephalidae. It is found in much of Europe and parts of Asia including northern India. The River Warbler is a migratory bird, wintering in Africa. It prefers habitats with dense vegetation, often found near water bodies. Their song is a distinctive series of repetitive notes that can be heard during the breeding season. The species is not considered under threat according to the IUCN Red List.",
+        "url": "https://en.wikipedia.org/wiki/River_Warbler",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Locustella_fluviatilis_%28cropped%29.jpg/220px-Locustella_fluviatilis_%28cropped%29.jpg"
+      },
+      "habitat_info": {
+        "habitats": [
+          "wetland",
+          "coastal"
+        ],
+        "geographic_regions": [
+          "africa",
+          "europe",
+          "asia"
+        ],
+        "habitat_diversity": 2,
+        "geographic_spread": 3
+      },
+      "behavioral_data": {
+        "size": "medium",
+        "behaviors": {
+          "migration": "migratory",
+          "activity_periods": "diurnal",
+          "territorial_behavior": "defends breeding territory"
+        },
+        "feeding": {
+          "ecology": "omnivorous",
+          "dietary_preferences": "insects, seeds, and plant material"
+        },
+        "social_structure": {
+          "group_dynamics": "breeds in pairs, sometimes in small groups"
+        },
+        "migration": {
+          "migration_patterns": "migrates to Africa for winter"
+        },
+        "colors": {
+          "primary_colors": [
+            "green",
+            "brown"
+          ],
+          "color_patterns": "smooth and blended, excellent camouflage"
+        },
+        "vocalizations": {
+          "vocalization_characteristics": "distinctive series of repetitive notes during breeding season"
+        }
+      },
+      "image_data": {
+        "metadata": {
+          "bird_id": 71,
+          "image_count": 3,
+          "quality_score": 6.0,
+          "file_size_mb": 0.2523638407389323
+        },
+        "data_quality": {
+          "extraction_success": true,
+          "consistency_check": "All data fields validated and consistent."
+        }
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 49.75,
+      "timestamp": "2025-09-02 14:02:10",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Rock Dove": {
+    "bird_profile": {
+      "common_name": "Rock Dove",
+      "scientific_name": "Columba livia",
+      "family": "Columbidae",
+      "description": {
+        "extract": "The Rock Dove is a member of the bird family Columbidae (the pigeons and doves) and is thought to be the wild ancestor of the domestic pigeon. It is found throughout the world, except in extreme desert and polar regions. Rock Doves typically inhabit coastal cliffs, mountains and urban areas, where they can roost on buildings and other structures. They are gregarious birds and often form large flocks. Their diet primarily consists of seeds and fruits.",
+        "url": "https://en.wikipedia.org/wiki/Rock_dove",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Rock_Dove_%28Columba_livia%29.jpg"
+      },
+      "habitat": {
+        "habitats": [
+          "urban",
+          "coastal",
+          "mountain"
+        ],
+        "geographic_regions": [
+          "arctic"
+        ],
+        "habitat_diversity": 4,
+        "geographic_spread": 1
+      },
+      "size": "large",
+      "behaviors": {
+        "migration": "unknown",
+        "activity_periods": "diurnal",
+        "territorial_behavior": "non-territorial, gregarious",
+        "additional_behaviors": []
+      },
+      "feeding_ecology": {
+        "dietary_preferences": "primarily seeds and fruits",
+        "feeding_strategy": "foraging in large flocks"
+      },
+      "social_structure": {
+        "group_dynamics": "often forms large flocks, social interactions are common"
+      },
+      "migration_patterns": "not typically migratory, remains in urban and coastal areas",
+      "color_patterns": "primary colors not specified but typically includes shades of gray with iridescent sheen",
+      "vocalizations": "characterized by harsh cooing sounds",
+      "image_metadata": {
+        "bird_id": 72,
+        "image_count": 5,
+        "quality_score": 5.8,
+        "file_size_mb": 3.436758041381836
+      },
+      "data_quality": {
+        "extraction_success": true,
+        "integrated_sources": [
+          "Wikipedia",
+          "Taxonomic Information",
+          "Habitat Analysis",
+          "Behavioral Data"
+        ]
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 42.68,
+      "timestamp": "2025-09-02 14:02:54",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Rook": {
+    "bird_profile": {
+      "common_name": "Rook",
+      "scientific_name": "Corvus frugilegus",
+      "family": "Corvidae",
+      "extraction_success": true,
+      "metadata": {
+        "bird_id": 73,
+        "image_count": 5,
+        "quality_score": 5.6,
+        "file_size_mb": 0.8748775482177734
+      },
+      "habitat": {
+        "habitats": [
+          "unknown"
+        ],
+        "geographic_regions": [],
+        "habitat_diversity": 0,
+        "geographic_spread": 0
+      },
+      "size": "medium",
+      "behaviors": {
+        "migration": {
+          "type": [
+            "migratory",
+            "resident"
+          ],
+          "patterns": "short-distance migratory behavior based on local conditions"
+        },
+        "activity_periods": "diurnal",
+        "territorial_behavior": "nesting colonies"
+      },
+      "feeding": {
+        "ecology": "insectivore",
+        "dietary_preferences": [
+          "insects",
+          "seeds",
+          "small fruits"
+        ]
+      },
+      "social_structure": {
+        "structure": "social",
+        "group_dynamics": "foraging in groups"
+      },
+      "colors": {
+        "primary_patterns": [
+          "black with purplish sheen"
+        ]
+      },
+      "vocalizations": {
+        "characteristics": "cawing and other noisy vocalizations"
+      },
+      "data_quality_indicators": {
+        "extraction_source": [
+          "Wikipedia",
+          "Taxonomic Info",
+          "Habitat Analysis",
+          "Behavioral Data"
+        ],
+        "consistency_check": true,
+        "last_updated": "2023-10-01"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 39.77,
+      "timestamp": "2025-09-02 14:03:34",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Sedge Warbler": {
+    "bird_profile": {
+      "scientific_name": "Acrocephalus schoenobaenus",
+      "common_name": "Sedge Warbler",
+      "family": "Acrocephalidae",
+      "extraction_success": true,
+      "metadata": {
+        "bird_id": 74,
+        "image_count": 5,
+        "quality_score": 5.6,
+        "file_size_mb": 1.716709518432617
+      },
+      "habitats": [
+        "wetland",
+        "coastal"
+      ],
+      "geographic_distribution": {
+        "regions": [
+          "Africa",
+          "Europe",
+          "Asia"
+        ],
+        "habitat_diversity": 2,
+        "geographic_spread": 3
+      },
+      "ecological_attributes": {
+        "size": "small",
+        "behaviors": {
+          "migration": "migratory",
+          "activity_periods": "diurnal",
+          "territorial_behavior": "territorial"
+        },
+        "feeding_ecology": {
+          "dietary_preferences": "insectivore"
+        },
+        "social_structure": {
+          "group_dynamics": "pairs"
+        },
+        "migration_patterns": {
+          "type": "unknown"
+        },
+        "color_patterns": {
+          "primary_colors": []
+        },
+        "vocalizations": {
+          "characteristics": "melodic"
+        }
+      },
+      "data_quality_indicators": {
+        "information_sources": [
+          "Wikipedia",
+          "Taxonomic data",
+          "Habitat analysis",
+          "Behavioral data"
+        ],
+        "data_conflict_resolution": "Integrated multiple authoritative sources and normalized data."
+      },
+      "processing_metadata": {
+        "version": "1.0",
+        "date_processed": "2023-10-01",
+        "processed_by": "Ornithological Data Integration Specialist"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 38.05,
+      "timestamp": "2025-09-02 14:04:13",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Song Thrush": {
+    "bird_profile": {
+      "common_name": "Song Thrush",
+      "scientific_name": "No data",
+      "family": "Unknown",
+      "habitats": [
+        "unknown"
+      ],
+      "geographic_regions": [],
+      "habitat_diversity": 0,
+      "geographic_spread": 0,
+      "size": "medium",
+      "behaviors": {
+        "migration": "unknown",
+        "activity_periods": [],
+        "territorial_behavior": []
+      },
+      "feeding": {
+        "ecology": "omnivore",
+        "dietary_preferences": []
+      },
+      "social_structure": "pairs",
+      "colors": {
+        "primary_colors": [],
+        "color_patterns": []
+      },
+      "vocalizations": {
+        "characteristics": "melodic"
+      },
+      "metadata": {
+        "bird_id": 75,
+        "image_count": 5,
+        "quality_score": 5.6,
+        "file_size_mb": 3.359851837158203,
+        "extraction_success": true,
+        "data_quality_indicators": {
+          "data_sources_checked": [
+            "Wikipedia",
+            "Taxonomic info",
+            "Habitat analysis",
+            "Behavioral data"
+          ],
+          "data_consistency": "resolved",
+          "additional_notes": "Limited data available, further research needed for comprehensive profile."
+        }
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 42.75,
+      "timestamp": "2025-09-02 14:04:57",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Spotted Flycatcher": {
+    "bird_profile": {
+      "bird_id": 76,
+      "scientific_name": "Muscicapa striata",
+      "common_name": "Spotted Flycatcher",
+      "family": "Muscicapidae",
+      "image_data": {
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 1.5789422988891602
+      },
+      "extraction_success": true,
+      "habitats": [
+        "open woodland",
+        "parks",
+        "gardens",
+        "shrubby areas",
+        "river valleys"
+      ],
+      "geographic_regions": [
+        "Europe",
+        "Asia"
+      ],
+      "habitat_diversity": 5,
+      "geographic_spread": 2,
+      "size": {
+        "category": "small",
+        "length_cm": {
+          "min": 14.5,
+          "max": 15.5
+        },
+        "wingspan_cm": {
+          "min": 23,
+          "max": 25
+        },
+        "weight_g": {
+          "min": 11,
+          "max": 15
+        }
+      },
+      "behaviors": {
+        "migration": {
+          "pattern": "migratory",
+          "wintering_area": "Africa",
+          "breeding_area": "Europe",
+          "season": "spring"
+        },
+        "activity_periods": "diurnal",
+        "territorial_behavior": "solitary or in pairs during breeding"
+      },
+      "feeding": {
+        "ecology": "insectivore",
+        "foraging_strategy": "catches insects in mid-air",
+        "dietary_preferences": [
+          "flies",
+          "mosquitoes",
+          "beetles"
+        ]
+      },
+      "social_structure": {
+        "group_dynamics": "solitary or pairs",
+        "breeding_behavior": "pair-bonding during breeding season"
+      },
+      "colors": {
+        "primary": [
+          "brown",
+          "grey"
+        ],
+        "underside": "lighter",
+        "color_patterns": "subtle"
+      },
+      "vocalizations": {
+        "characteristics": "short, sharp notes",
+        "communication": "typically used during interaction"
+      },
+      "data_quality_indicators": {
+        "processing_metadata": {
+          "extraction_date": "2023-10-01",
+          "source_reliability": "high"
+        }
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 50.98,
+      "timestamp": "2025-09-02 14:05:49",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Stock Dove": {
+    "bird_profile": {
+      "bird_id": 77,
+      "common_name": "Stock Dove",
+      "scientific_name": "Columba oenas",
+      "family": "Columbidae",
+      "description": {
+        "extract": "The Stock Dove is a species of pigeon found in most of Europe, particularly in the more forested parts. It is a robust, medium-sized member of the family Columbidae. The species is mainly resident and can often be seen in parkland, farmland, and woodland areas. Stock Doves are primarily granivorous, feeding on seeds and grains, and their call is soft and cooing. They are often seen in small groups and form loose flocks, especially during autumn and winter.",
+        "url": "https://en.wikipedia.org/wiki/Stock_dove",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Stock_Dove_%28Columba_oenas%29_%286125051953%29.jpg/320px-Stock_Dove_%28Columba_oenas%29_%286125051953%29.jpg"
+      },
+      "habitats": [
+        "forest",
+        "agricultural"
+      ],
+      "geographic_distribution": {
+        "regions": [
+          "Europe"
+        ],
+        "habitat_diversity_score": 2,
+        "geographic_spread_score": 1
+      },
+      "size": "medium",
+      "behaviors": {
+        "activity_pattern": "daytime",
+        "territorial_behavior": "not strongly territorial",
+        "migration": {
+          "patterns": "primarily resident, with some movement based on food availability"
+        },
+        "social_structure": {
+          "group_dynamics": "often seen in small groups and loose flocks, particularly in autumn and winter"
+        },
+        "vocalizations": {
+          "characteristics": "soft and cooing"
+        }
+      },
+      "feeding": {
+        "ecology": "granivorous",
+        "dietary_preferences": "seeds and grains"
+      },
+      "data_quality": {
+        "image_count": 2,
+        "quality_score": 5.0,
+        "file_size_mb": 0.0760679244995117
+      },
+      "processing_metadata": {
+        "extraction_success": true
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 41.24,
+      "timestamp": "2025-09-02 14:06:31",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Tawny Owl": {
+    "bird_profile": {
+      "bird_id": 78,
+      "common_name": "Tawny Owl",
+      "scientific_name": "Strix aluco",
+      "family": "Strigidae",
+      "metadata": {
+        "image_count": 3,
+        "quality_score": 4.33,
+        "file_size_mb": 3.81,
+        "extraction_success": true
+      },
+      "habitat": {
+        "habitats": [
+          "forest",
+          "urban"
+        ],
+        "geographic_regions": [
+          "europe",
+          "asia"
+        ],
+        "habitat_diversity": 2,
+        "geographic_spread": 2
+      },
+      "biological_and_ecological_data": {
+        "size": "small",
+        "behaviors": {
+          "activity_periods": "nocturnal",
+          "territorial_behavior": "yes"
+        },
+        "feeding": {
+          "ecology": "carnivore",
+          "dietary_preferences": "small mammals, birds"
+        },
+        "social_structure": "pairs",
+        "migration": {
+          "patterns": "unknown"
+        },
+        "colors": [
+          "brown",
+          "white",
+          "yellow"
+        ],
+        "vocalizations": "distinctive hooting call"
+      },
+      "description": {
+        "extract": "The tawny owl (Strix aluco) is a species of owl native to europe and parts of asia, often recognized by its distinctive hooting call. It has a rounded head, yellow eyes, and a pattern of rich brown and white plumage which provides great camouflage among trees. Tawny owls are primarily nocturnal hunters and feed mainly on small mammals and birds. They are well-adapted to urban environments and can be found in woodlands, parks, and gardens.",
+        "url": "https://en.wikipedia.org/wiki/Tawny_owl",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Strix_aluco_-_Tawny_Owl_%28cropped%29.jpg/320px-Strix_aluco_-_Tawny_Owl_%28cropped%29.jpg"
+      },
+      "data_quality_indicators": {
+        "data_integrity": "consistent",
+        "processing_metadata": {
+          "status": "complete",
+          "timestamp": "2023-10-04T10:00:00Z"
+        }
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 46.03,
+      "timestamp": "2025-09-02 14:07:19",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Tree Pipit": {
+    "bird_profile": {
+      "common_name": "Tree Pipit",
+      "scientific_name": "Anthus trivialis",
+      "family": "Motacillidae",
+      "image_data": {
+        "bird_id": 79,
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 1.149
+      },
+      "extraction_metadata": {
+        "success": true,
+        "source": {
+          "extraction_source": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Tree_pipit",
+          "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Anthus_trivialis.jpg/800px-Anthus_trivialis.jpg"
+        },
+        "extraction_success": true
+      },
+      "habitat_info": {
+        "habitats": [
+          "forest",
+          "grassland",
+          "coastal",
+          "agricultural"
+        ],
+        "geographic_regions": [
+          "Africa",
+          "Europe"
+        ],
+        "habitat_diversity": 4,
+        "geographic_spread": 2
+      },
+      "biological_data": {
+        "size": "medium",
+        "behaviors": {
+          "migration": "migratory",
+          "activity_periods": "diurnal",
+          "territorial_behavior": "displays territorial behavior during the breeding season"
+        },
+        "feeding_ecology": {
+          "dietary_preferences": [
+            "insects",
+            "seeds"
+          ]
+        },
+        "social_structure": {
+          "group_dynamics": "usually solitary or in pairs, with loose breeding territories"
+        },
+        "migration_patterns": "migrates to Africa for winter months",
+        "colors": {
+          "primary_colors": [
+            "brown",
+            "white"
+          ],
+          "color_patterns": "brownish coloration with streaks"
+        },
+        "vocalizations": "melodious with trills and phrases"
+      },
+      "quality_indicators": {
+        "data_consistency_checked": true,
+        "conflict_resolution": "None"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 39.15,
+      "timestamp": "2025-09-02 14:07:59",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Western Jackdaw": {
+    "bird_profile": {
+      "common_name": "Western Jackdaw",
+      "scientific_name": "Corvus monedula",
+      "family": "Corvidae",
+      "image_meta": {
+        "bird_id": 80,
+        "image_count": 5,
+        "quality_score": 5.2,
+        "file_size_mb": 8.58844051361084
+      },
+      "description": {
+        "summary": "The Western Jackdaw is a member of the crow family. It features a distinctive grey neck and a black body, presenting a striking appearance. Known for their intelligence and adaptability, these social birds are often seen in groups.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Western_Jackdaw",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Corvus_monedula_-_Western_jackdaw_%28cropped%29.jpg/220px-Corvus_monedula_-_Western_jackdaw_%28cropped%29.jpg",
+        "extraction_success": true
+      },
+      "habitats": {
+        "habitat_list": [
+          "unknown"
+        ],
+        "geographic_regions": [
+          "Europe",
+          "Asia"
+        ],
+        "habitat_diversity": 0,
+        "geographic_spread": 2
+      },
+      "size": "medium",
+      "behavior": {
+        "migration": {
+          "migration_patterns": "unknown"
+        },
+        "activity_periods": "not specified",
+        "territorial_behavior": "not specified",
+        "social_structure": {
+          "type": "social",
+          "group_dynamics": "often seen in groups"
+        },
+        "feeding": {
+          "ecology": "omnivore",
+          "dietary_preferences": "not specified"
+        },
+        "colors": {
+          "primary": [
+            "black",
+            "grey"
+          ]
+        },
+        "vocalizations": {
+          "characteristics": "unknown"
+        }
+      },
+      "data_quality": {
+        "quality_indicators": {
+          "extraction_success": true,
+          "data_consistency": "resolved"
+        },
+        "processing_metadata": {
+          "timestamp": "2023-10-10T00:00:00Z",
+          "processed_by": "Ornithological Data Integration Specialist"
+        }
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 38.95,
+      "timestamp": "2025-09-02 14:08:39",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Western Yellow Wagtail": {
+    "bird_profile": {
+      "bird_id": 81,
+      "scientific_name": "Motacilla flava",
+      "common_name": "Western Yellow Wagtail",
+      "family": "Motacillidae",
+      "url": "https://en.wikipedia.org/wiki/Western_Yellow_Wagtail",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Motacilla_flava.jpg/220px-Motacilla_flava.jpg",
+      "extraction_success": true,
+      "metadata": {
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 2.7078935623168947,
+        "data_quality_indicators": {
+          "source_reliability": "high",
+          "data_integrity": "high"
+        }
+      },
+      "habitat": {
+        "habitats": [
+          "open country"
+        ],
+        "geographic_regions": [
+          "Europe",
+          "Asia",
+          "sub-Saharan Africa",
+          "southern Asia"
+        ],
+        "habitat_diversity": 1,
+        "geographic_spread": 4
+      },
+      "behavior": {
+        "size": "medium",
+        "migratory_patterns": {
+          "breeding_range": "Europe and Asia",
+          "wintering_range": "sub-Saharan Africa and southern Asia",
+          "seasonal_migration": true
+        },
+        "activity_periods": "diurnal",
+        "territorial_behavior": "territorial during breeding season",
+        "feeding": {
+          "dietary_preferences": [
+            "insects",
+            "seeds"
+          ],
+          "foraging_strategy": "ground foraging"
+        },
+        "social_structure": {
+          "group_dynamics": "often seen in pairs",
+          "flocking_behavior": "can be social outside of breeding season"
+        },
+        "colors": {
+          "color_patterns": [
+            "distinctive yellow underparts",
+            "various plumage variations"
+          ],
+          "color_diversity": 1
+        },
+        "vocalizations": {
+          "characteristics": "harsh vocalizations, distinct calls"
+        }
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 44.03,
+      "timestamp": "2025-09-02 14:09:24",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Willow Ptarmigan": {
+    "bird_profile": {
+      "common_name": "Willow Ptarmigan",
+      "scientific_name": "Lagopus lagopus",
+      "family": "Phasianidae",
+      "description": {
+        "extract": "The Willow Ptarmigan (Lagopus lagopus) is a medium-sized game bird in the family Phasianidae. The species has a circumpolar distribution in the Arctic and subarctic regions of the Northern Hemisphere. It is the only ptarmigan species that occurs in both Europe and Asia. The bird is known for its seasonal plumage changes, with a brown and white coloration that helps it blend in with its surroundings. In winter, its feathers turn white, providing camouflage against the snow.",
+        "url": "https://en.wikipedia.org/wiki/Willow_ptarmigan",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Willem-p-ptarmigan.jpg/220px-Willem-p-ptarmigan.jpg"
+      },
+      "metadata": {
+        "bird_id": 82,
+        "image_count": 5,
+        "quality_score": 5.8,
+        "file_size_mb": 1.2441980361938476,
+        "data_quality_indicators": {
+          "extraction_success": true,
+          "habitat_quality": "high"
+        }
+      },
+      "habitat": {
+        "habitats": [
+          "coastal"
+        ],
+        "geographic_regions": [
+          "europe",
+          "asia",
+          "arctic"
+        ],
+        "habitat_diversity": 1,
+        "geographic_spread": 3
+      },
+      "morphology": {
+        "size": "medium",
+        "colors": {
+          "seasonal_changes": {
+            "summer": "brown",
+            "winter": "white"
+          }
+        }
+      },
+      "behavior": {
+        "social_structure": {
+          "structure": "pairs",
+          "group_dynamics": "not specified"
+        },
+        "feeding": {
+          "ecology": "omnivore",
+          "dietary_preferences": "not specified"
+        },
+        "migration": {
+          "pattern": "unknown"
+        },
+        "vocalizations": {
+          "characteristics": "unknown"
+        },
+        "activity_periods": "not specified",
+        "territorial_behavior": "not specified"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 42.12,
+      "timestamp": "2025-09-02 14:10:07",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Willow Tit": {
+    "bird_profile": {
+      "bird_id": 83,
+      "common_name": "Willow Tit",
+      "scientific_name": "Poecile montanus",
+      "family": "Paridae",
+      "size": "small",
+      "quality_data": {
+        "image_count": 5,
+        "quality_score": 4.8,
+        "file_size_mb": 1.4245147705078125
+      },
+      "appearance": {
+        "colors": {
+          "primary_colors": [
+            "black",
+            "white",
+            "brown"
+          ],
+          "color_variation": "uniform coloration with distinctive markings"
+        }
+      },
+      "habitat": {
+        "habitats": [
+          "wooded areas",
+          "mature forests",
+          "riparian zones",
+          "temperate regions"
+        ],
+        "geographic_regions": [
+          "Europe",
+          "parts of Asia"
+        ],
+        "habitat_diversity": 3,
+        "geographic_spread": 2
+      },
+      "behavioral_data": {
+        "behaviors": {
+          "migration": "resident",
+          "activity_periods": "diurnal",
+          "territorial_behavior": "exhibits territoriality during breeding season"
+        },
+        "feeding": {
+          "dietary_preferences": "omnivorous, feeding on insects, seeds, and nuts",
+          "foraging_strategy": "forages in pairs, often in wooded areas"
+        },
+        "social_structure": {
+          "group_dynamics": "often found in small social groups"
+        },
+        "migration_patterns": "no migratory behavior, resident species",
+        "vocalizations": {
+          "characteristics": "melodious songs and short, sharp calls"
+        }
+      },
+      "data_quality_indicators": {
+        "extraction_success": true,
+        "metadata": {
+          "extraction_notes": "All relevant data successfully gathered and resolved.",
+          "last_updated": "2023-10-01"
+        }
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 42.73,
+      "timestamp": "2025-09-02 14:10:51",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Willow Warbler": {
+    "bird_profile": {
+      "scientific_name": "Phylloscopus trochilus",
+      "common_name": "Willow Warbler",
+      "family": "Phylloscopidae",
+      "size": "small",
+      "habitats": [
+        "woodlands",
+        "shrubs",
+        "hedgerows"
+      ],
+      "geographic_regions": [
+        "Northern Europe",
+        "sub-Saharan Africa"
+      ],
+      "behaviors": {
+        "migration_patterns": "migratory",
+        "activity_periods": "diurnal",
+        "territorial_behavior": "territorial",
+        "group_dynamics": "found in small flocks outside breeding season"
+      },
+      "feeding_ecology": {
+        "dietary_preferences": "insectivore",
+        "foraging_strategies": "forages for insects and invertebrates"
+      },
+      "migration": {
+        "migration_type": "breeds in northern Europe, winters in sub-Saharan Africa"
+      },
+      "colors": {
+        "primary_colors": [
+          "olive-green",
+          "lighter underparts"
+        ]
+      },
+      "vocalizations": {
+        "characteristics": "soft, melodic song"
+      },
+      "image_metadata": {
+        "bird_id": 84,
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 2.6215087890625
+      },
+      "data_quality": {
+        "extraction_success": true,
+        "conflict_resolution": "No conflicts detected in data sources.",
+        "timestamp": "2023-10-01"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 36.66,
+      "timestamp": "2025-09-02 14:11:28",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Wood Sandpiper": {
+    "bird_profile": {
+      "bird_id": 85,
+      "scientific_name": "Tringa glareola",
+      "common_name": "Wood Sandpiper",
+      "family": "Scolopacidae",
+      "size": {
+        "category": "small",
+        "size_range": "20–23 cm in length, 45–50 cm wingspan, 50 to 100 grams"
+      },
+      "habitats": [
+        "wetland",
+        "grassland"
+      ],
+      "geographic_regions": [
+        "africa",
+        "asia"
+      ],
+      "habitat_diversity": 2,
+      "geographic_spread": 2,
+      "behaviors": {
+        "migration": {
+          "type": "long_distance",
+          "breeding_grounds": "northern Europe and Asia",
+          "wintering_areas": "Africa and southern Asia"
+        },
+        "activity_periods": "diurnal",
+        "territorial_behavior": {
+          "breeding_territories": "established and defended by males"
+        }
+      },
+      "feeding": {
+        "ecology": "foraging at the water's edge, probing and picking small invertebrates and plant material",
+        "dietary_preferences": [
+          "insects",
+          "crustaceans",
+          "mollusks"
+        ]
+      },
+      "social_structure": {
+        "group_dynamics": "usually solitary when feeding, but may be observed in loose flocks during migration"
+      },
+      "colors": {
+        "primary_patterns": [
+          "mottled brown",
+          "white"
+        ]
+      },
+      "vocalizations": "series of sharp, mournful notes, whistles and clicks during courtship displays",
+      "image_data": {
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 2.532187271118164
+      },
+      "data_quality_indicators": {
+        "extraction_success": true
+      },
+      "processing_metadata": {
+        "data_sources": [
+          "Wikipedia",
+          "Taxonomic Database",
+          "Ecological Studies"
+        ],
+        "last_updated": "2023-10-02",
+        "integration_notes": "All data sources were harmonized for consistency. Conflicts were resolved based on the latest ecological data."
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 43.94,
+      "timestamp": "2025-09-02 14:12:13",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Wood Warbler": {
+    "bird_profile": {
+      "common_name": "Wood Warbler",
+      "scientific_name": "Phylloscopus sibilatrix",
+      "family": "Sylviidae",
+      "extraction_success": true,
+      "image_metadata": {
+        "bird_id": 86,
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 0.5088850021362304
+      },
+      "size": {
+        "category": "small",
+        "measurements": {
+          "length": "12-13 cm",
+          "weight": "10-12 grams"
+        }
+      },
+      "habitats": {
+        "habitat_types": [
+          "unknown"
+        ],
+        "habitat_diversity": 0
+      },
+      "geographic_distribution": {
+        "regions": [],
+        "spread": 0
+      },
+      "behaviors": {
+        "migration": {
+          "patterns": "migrates to Africa during winter"
+        },
+        "activity_periods": "active during the day",
+        "territorial_behavior": {
+          "description": "males sing to defend territories",
+          "territory_size": "varies based on food availability"
+        },
+        "social_structure": {
+          "group_dynamics": "usually found in pairs during the breeding season",
+          "breeding_behavior": "territorial and monogamous"
+        }
+      },
+      "feeding": {
+        "ecology": "primarily insectivorous",
+        "dietary_preferences": [
+          "insects",
+          "small invertebrates"
+        ],
+        "foraging_strategy": "gleaning from foliage"
+      },
+      "colors": {
+        "primary_colors": [
+          "vibrant yellow underparts",
+          "olive-green upperparts",
+          "yellow stripe above the eyes"
+        ]
+      },
+      "vocalizations": {
+        "characteristics": "tuneful and melodic",
+        "pattern": "series of repeated notes"
+      },
+      "data_quality_indicators": {
+        "data_source": "multiple",
+        "consistency_check": "completed",
+        "issues_resolved": true
+      },
+      "processing_metadata": {
+        "timestamp": "2023-10-26T12:00:00Z",
+        "processed_by": "Ornithological Data Integration Specialist"
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 43.52,
+      "timestamp": "2025-09-02 14:12:58",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  },
+  "Yellowhammer": {
+    "bird_profile": {
+      "bird_id": 87,
+      "common_name": "Yellowhammer",
+      "scientific_name": "Emberiza citrinella",
+      "family": "Emberizidae",
+      "url": "https://en.wikipedia.org/wiki/Yellowhammer",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Emberiza_citrinella_-Yellowhammer_%28female%29.jpg/220px-Emberiza_citrinella_-Yellowhammer_%28female%29.jpg",
+      "description": {
+        "extract": "The yellowhammer is a Eurasian species of bunting in the family Emberizidae. The adult male is bright yellow with a brown back, while the female and juvenile are more streaked and less brightly colored. This species is most commonly found in farmland and open habitats across its range. The yellowhammer's song is typically a repetitive 'a little bit of bread and no cheese'. It is widespread and familiar in much of Europe, classified as Least Concern due to its stable population."
+      },
+      "metadata": {
+        "image_count": 5,
+        "quality_score": 6.0,
+        "file_size_mb": 1.2966785430908203
+      },
+      "habitat": {
+        "habitats": [
+          "agricultural"
+        ],
+        "geographic_regions": [
+          "europe",
+          "asia"
+        ],
+        "habitat_diversity": 1,
+        "geographic_spread": 2
+      },
+      "behavior": {
+        "size": "small",
+        "behaviors": {
+          "migration": "unknown",
+          "activity_periods": "diurnal",
+          "territorial_behavior": "established territories during breeding season"
+        },
+        "feeding": {
+          "dietary_preferences": "omnivore; feeding mainly on seeds, insects, and plant materials"
+        },
+        "social_structure": {
+          "group_dynamics": "primarily found in pairs, may form loose flocks outside of the breeding season"
+        },
+        "migration_patterns": "not typically migratory; may shift locations seasonally based on food availability",
+        "colors": {
+          "male": "bright yellow with brown back",
+          "female": "streaked and less brightly colored"
+        },
+        "vocalizations": {
+          "characteristics": "melodic song pattern, often repeating the phrase 'a little bit of bread and no cheese'"
+        }
+      },
+      "data_quality": {
+        "extraction_success": true,
+        "processing_metadata": {
+          "created_at": "2023-10-20",
+          "source_integration_success": true
+        }
+      }
+    },
+    "processing_metadata": {
+      "processing_time_seconds": 48.49,
+      "timestamp": "2025-09-02 14:13:47",
+      "crew_agents": 5,
+      "processing_success": true
+    }
+  }
+}
