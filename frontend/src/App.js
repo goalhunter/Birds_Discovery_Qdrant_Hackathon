@@ -96,25 +96,6 @@ function App() {
       </header>
 
       <main className="main-content">
-        {/* API Status Indicator */}
-        {apiStatus && (
-          <div className="api-status">
-            <h3>Database Status</h3>
-            <div className="status-grid">
-              {Object.entries(apiStatus).map(([collection, status]) => (
-                <div key={collection} className="status-item">
-                  <span className="collection-name">{collection.replace('bird_', '').replace('_search', '')}</span>
-                  <span className={`status-badge ${status.status}`}>
-                    {status.status === 'active' ? '✓' : '✗'}
-                  </span>
-                  {status.points_count && (
-                    <span className="point-count">{status.points_count} birds</span>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
 
         {/* Search Interface */}
         <SearchBar

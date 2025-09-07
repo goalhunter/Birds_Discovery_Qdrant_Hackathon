@@ -1,5 +1,6 @@
 from fastapi import FastAPI, File, UploadFile, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 from typing import List, Optional, Dict, Any
@@ -22,18 +23,21 @@ load_dotenv()
 
 app = FastAPI(
     title="Multi-Modal Bird Search API",
-    description="Search for birds using audio, images, or text descriptions",
+    description="Search for birds using audio, images, or text descriptions with comprehensive results",
     version="1.0.0"
 )
 
 # Enable CORS for frontend communication
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # React dev servers
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Mount static files for audio only (images use Wikimedia URLs)
+app.mount("/audio", StaticFiles(directory="../clips_10sec"), name="audio")
 
 # Initialize clients
 qdrant_client = QdrantClient(
@@ -63,16 +67,117 @@ model = Wav2Vec2Model.from_pretrained("facebook/wav2vec2-base")
 
 # Audio feature extraction
 def extract_audio_features(audio_path: str) -> np.ndarray:
-    # Load audio at 16kHz (Wav2Vec2 requirement)
     audio, sr = librosa.load(audio_path, sr=16000)
-    
-    # Get wav2vec features
     inputs = processor(audio, sampling_rate=16000, return_tensors="pt")
     with torch.no_grad():
         outputs = model(**inputs)
         features = torch.mean(outputs.last_hidden_state, dim=1).squeeze().numpy()
-    
     return features
+
+def get_all_text_data():
+    """Get all text data from collection"""
+    try:
+        results = qdrant_client.scroll(
+            collection_name="bird_text_search",
+            limit=100,
+            with_payload=True,
+            with_vectors=False
+        )
+        return {point.payload.get("bird_id"): point.payload for point in results[0]}
+    except Exception as e:
+        print(f"Error getting all text data: {e}")
+        return {}
+
+def get_all_image_data():
+    """Get all image data from collection"""
+    try:
+        results = qdrant_client.scroll(
+            collection_name="bird_image_search",
+            limit=1000,
+            with_payload=True,
+            with_vectors=False
+        )
+        image_data = {}
+        for point in results[0]:
+            bird_id = point.payload.get("bird_id")
+            if bird_id not in image_data:
+                image_data[bird_id] = []
+            image_data[bird_id].append(point.payload)
+        return image_data
+    except Exception as e:
+        print(f"Error getting all image data: {e}")
+        return {}
+
+def get_all_audio_data():
+    """Get all audio data from collection"""
+    try:
+        results = qdrant_client.scroll(
+            collection_name="bird_audio_search",
+            limit=1000,
+            with_payload=True,
+            with_vectors=False
+        )
+        audio_data = {}
+        for point in results[0]:
+            bird_id = point.payload.get("bird_id")
+            if bird_id not in audio_data:
+                audio_data[bird_id] = []
+            # Add audio URL
+            payload = point.payload.copy()
+            if payload.get("clip_path"):
+                filename = payload["clip_path"].split("\\")[-1].split("/")[-1]
+                payload["audio_url"] = f"http://localhost:8000/audio/{filename}"
+            audio_data[bird_id].append(payload)
+        return audio_data
+    except Exception as e:
+        print(f"Error getting all audio data: {e}")
+        return {}
+
+# Cache data on startup
+print("Loading all data into memory...")
+ALL_TEXT_DATA = get_all_text_data()
+ALL_IMAGE_DATA = get_all_image_data()
+ALL_AUDIO_DATA = get_all_audio_data()
+print(f"Loaded {len(ALL_TEXT_DATA)} text records, {len(ALL_IMAGE_DATA)} image groups, {len(ALL_AUDIO_DATA)} audio groups")
+
+def create_comprehensive_result(search_result, search_type: str) -> Dict[str, Any]:
+    """Create comprehensive result using cached data"""
+    bird_id = search_result.payload.get("bird_id")
+    if bird_id is None:
+        return None
+    
+    # Get data from cache
+    text_info = ALL_TEXT_DATA.get(bird_id, {})
+    images = ALL_IMAGE_DATA.get(bird_id, [])
+    audio_clips = ALL_AUDIO_DATA.get(bird_id, [])
+    
+    return {
+        "bird_id": bird_id,
+        "species_name": search_result.payload.get("species_name") or text_info.get("species_name", "Unknown"),
+        "scientific_name": text_info.get("scientific_name", ""),
+        "family": text_info.get("family", ""),
+        "confidence_score": float(search_result.score),
+        "search_match_type": search_type,
+        
+        # Raw text information for LLM processing
+        "text_description": text_info.get("searchable_text", ""),
+        "raw_text_data": text_info,  # Complete raw text data
+        
+        # Basic extracted fields (you can enhance with LLM later)
+        "habitats": "",
+        "geographic_regions": "",
+        "size": text_info.get("size", ""),
+        "ecology": "",
+        "group_dynamics": "",
+        "extract": "",
+        "url": f"https://en.wikipedia.org/wiki/{text_info.get('species_name', '').replace(' ', '_')}" if text_info.get("species_name") else "",
+        
+        # Media data
+        "images": images,
+        "primary_image": images[0] if images else None,
+        "audio_clips": audio_clips,
+        "primary_audio": audio_clips[0] if audio_clips else None
+    }
 
 # Pydantic models
 class SearchRequest(BaseModel):
@@ -84,23 +189,13 @@ class SearchResponse(BaseModel):
     total_found: int
     search_type: str
 
-class BirdInfo(BaseModel):
-    bird_id: int
-    species_name: str
-    scientific_name: Optional[str]
-    family: Optional[str]
-    confidence_score: float
-
 # API Endpoints
-
 @app.get("/")
 async def root():
-    """API health check"""
     return {"message": "Multi-Modal Bird Search API", "status": "active"}
 
 @app.get("/collections/status")
 async def get_collections_status():
-    """Get status of all Qdrant collections"""
     try:
         collections = ["bird_audio_search", "bird_image_search", "bird_text_search"]
         status = {}
@@ -114,49 +209,56 @@ async def get_collections_status():
                     "vector_size": info.config.params.vectors.size
                 }
             except Exception as e:
-                status[collection_name] = {
-                    "status": "error",
-                    "error": str(e)
-                }
+                status[collection_name] = {"status": "error", "error": str(e)}
         
         return status
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error checking collections: {str(e)}")
 
+@app.get("/refresh-cache")
+async def refresh_cache():
+    """Refresh cached data"""
+    global ALL_TEXT_DATA, ALL_IMAGE_DATA, ALL_AUDIO_DATA
+    ALL_TEXT_DATA = get_all_text_data()
+    ALL_IMAGE_DATA = get_all_image_data()
+    ALL_AUDIO_DATA = get_all_audio_data()
+    return {
+        "message": "Cache refreshed",
+        "counts": {
+            "text": len(ALL_TEXT_DATA),
+            "images": len(ALL_IMAGE_DATA),
+            "audio": len(ALL_AUDIO_DATA)
+        }
+    }
+
 @app.post("/search/text")
 async def search_by_text(request: SearchRequest):
     """Search birds by text description"""
     try:
-        # Generate embedding for the text query
+        # Generate embedding
         response = openai_client.embeddings.create(
             model="text-embedding-3-small",
             input=request.query
         )
         query_vector = response.data[0].embedding
         
-        # Search in Qdrant
+        # Search in text collection
         results = qdrant_client.search(
             collection_name="bird_text_search",
             query_vector=query_vector,
             limit=request.limit
         )
         
-        # Format results
-        formatted_results = []
+        # Create comprehensive results
+        comprehensive_results = []
         for result in results:
-            formatted_results.append({
-                "bird_id": result.payload.get("bird_id"),
-                "species_name": result.payload.get("species_name"),
-                "scientific_name": result.payload.get("scientific_name"),
-                "family": result.payload.get("family"),
-                "confidence_score": float(result.score),
-                "data_completeness": result.payload.get("data_completeness"),
-                "searchable_text": result.payload.get("searchable_text", "")[:200] + "..."
-            })
+            comprehensive_result = create_comprehensive_result(result, "text")
+            if comprehensive_result:
+                comprehensive_results.append(comprehensive_result)
         
         return SearchResponse(
-            results=formatted_results,
-            total_found=len(results),
+            results=comprehensive_results,
+            total_found=len(comprehensive_results),
             search_type="text"
         )
         
@@ -167,55 +269,44 @@ async def search_by_text(request: SearchRequest):
 async def search_by_image(file: UploadFile = File(...), limit: int = Query(10)):
     """Search birds by uploaded image"""
     try:
-        # Validate file type
         if not file.content_type.startswith('image/'):
             raise HTTPException(status_code=400, detail="File must be an image")
         
-        # Save uploaded file temporarily
         with tempfile.NamedTemporaryFile(delete=False, suffix='.jpg') as tmp_file:
             content = await file.read()
             tmp_file.write(content)
             tmp_file_path = tmp_file.name
         
         try:
-            # Load and preprocess image
+            # Process image
             image = Image.open(tmp_file_path).convert('RGB')
             image_tensor = image_transform(image).unsqueeze(0).to(device)
             
-            # Extract features
             with torch.no_grad():
                 features = image_model(image_tensor)
                 features = features.view(features.size(0), -1).squeeze().cpu().numpy()
             
-            # Search in Qdrant
+            # Search in image collection
             results = qdrant_client.search(
                 collection_name="bird_image_search",
                 query_vector=features.tolist(),
                 limit=limit
             )
             
-            # Format results
-            formatted_results = []
+            # Create comprehensive results
+            comprehensive_results = []
             for result in results:
-                formatted_results.append({
-                    "bird_id": result.payload.get("bird_id"),
-                    "species_name": result.payload.get("species_name"),
-                    "image_path": result.payload.get("image_path"),
-                    "source_url": result.payload.get("source_url"),
-                    "quality_score": result.payload.get("quality_score"),
-                    "confidence_score": float(result.score),
-                    "width": result.payload.get("width"),
-                    "height": result.payload.get("height")
-                })
+                comprehensive_result = create_comprehensive_result(result, "image")
+                if comprehensive_result:
+                    comprehensive_results.append(comprehensive_result)
             
             return SearchResponse(
-                results=formatted_results,
-                total_found=len(results),
+                results=comprehensive_results,
+                total_found=len(comprehensive_results),
                 search_type="image"
             )
             
         finally:
-            # Clean up temporary file
             os.unlink(tmp_file_path)
             
     except Exception as e:
@@ -225,11 +316,9 @@ async def search_by_image(file: UploadFile = File(...), limit: int = Query(10)):
 async def search_by_audio(file: UploadFile = File(...), limit: int = Query(10)):
     """Search birds by uploaded audio file"""
     try:
-        # Validate file type
         if not file.content_type.startswith('audio/'):
             raise HTTPException(status_code=400, detail="File must be an audio file")
         
-        # Save uploaded file temporarily
         with tempfile.NamedTemporaryFile(delete=False, suffix='.wav') as tmp_file:
             content = await file.read()
             tmp_file.write(content)
@@ -239,135 +328,56 @@ async def search_by_audio(file: UploadFile = File(...), limit: int = Query(10)):
             # Extract audio features
             features = extract_audio_features(tmp_file_path)
             
-            # Search in Qdrant
+            # Search in audio collection
             results = qdrant_client.search(
                 collection_name="bird_audio_search",
                 query_vector=features.tolist(),
                 limit=limit
             )
             
-            # Format results
-            formatted_results = []
+            # Create comprehensive results
+            comprehensive_results = []
             for result in results:
-                formatted_results.append({
-                    "bird_id": result.payload.get("bird_id"),
-                    "species_name": result.payload.get("species_name"),
-                    "clip_path": result.payload.get("clip_path"),
-                    "clip_duration": result.payload.get("clip_duration"),
-                    "confidence_score": float(result.score),
-                    "feature_type": result.payload.get("feature_type"),
-                    "audio_quality": result.payload.get("audio_quality")
-                })
+                comprehensive_result = create_comprehensive_result(result, "audio")
+                if comprehensive_result:
+                    comprehensive_results.append(comprehensive_result)
             
             return SearchResponse(
-                results=formatted_results,
-                total_found=len(results),
+                results=comprehensive_results,
+                total_found=len(comprehensive_results),
                 search_type="audio"
             )
             
         finally:
-            # Clean up temporary file
             os.unlink(tmp_file_path)
             
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Audio search error: {str(e)}")
 
-@app.get("/search/cross-modal/{bird_id}")
-async def cross_modal_search(bird_id: int, limit: int = Query(5)):
-    """Find similar birds across all modalities for a given bird_id"""
-    try:
-        results = {}
-        
-        # Search in each collection by bird_id
-        collections = ["bird_audio_search", "bird_image_search", "bird_text_search"]
-        
-        for collection_name in collections:
-            try:
-                # Find the bird in this collection
-                bird_results = qdrant_client.scroll(
-                    collection_name=collection_name,
-                    scroll_filter={
-                        "must": [
-                            {
-                                "key": "bird_id",
-                                "match": {"value": bird_id}
-                            }
-                        ]
-                    },
-                    limit=1
-                )
-                
-                if bird_results[0]:  # If bird found
-                    target_vector = bird_results[0][0].vector
-                    
-                    # Search for similar birds
-                    similar_results = qdrant_client.search(
-                        collection_name=collection_name,
-                        query_vector=target_vector,
-                        limit=limit
-                    )
-                    
-                    # Format results
-                    modality = collection_name.replace("bird_", "").replace("_search", "")
-                    results[modality] = []
-                    
-                    for result in similar_results:
-                        results[modality].append({
-                            "bird_id": result.payload.get("bird_id"),
-                            "species_name": result.payload.get("species_name"),
-                            "confidence_score": float(result.score),
-                            **result.payload  # Include all metadata
-                        })
-                        
-            except Exception as e:
-                results[collection_name] = {"error": str(e)}
-        
-        return {
-            "target_bird_id": bird_id,
-            "cross_modal_results": results
-        }
-        
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Cross-modal search error: {str(e)}")
-
 @app.get("/bird/{bird_id}")
 async def get_bird_info(bird_id: int):
     """Get comprehensive information about a specific bird"""
     try:
-        bird_info = {}
+        text_info = ALL_TEXT_DATA.get(bird_id, {})
+        images = ALL_IMAGE_DATA.get(bird_id, [])
+        audio_clips = ALL_AUDIO_DATA.get(bird_id, [])
         
-        collections = ["bird_audio_search", "bird_image_search", "bird_text_search"]
-        
-        for collection_name in collections:
-            try:
-                results = qdrant_client.scroll(
-                    collection_name=collection_name,
-                    scroll_filter={
-                        "must": [
-                            {
-                                "key": "bird_id", 
-                                "match": {"value": bird_id}
-                            }
-                        ]
-                    },
-                    limit=10  # Get all instances of this bird
-                )
-                
-                modality = collection_name.replace("bird_", "").replace("_search", "")
-                bird_info[modality] = []
-                
-                for point in results[0]:
-                    bird_info[modality].append(point.payload)
-                    
-            except Exception as e:
-                bird_info[collection_name] = {"error": str(e)}
-        
-        if not any(bird_info.values()):
+        if not any([text_info, images, audio_clips]):
             raise HTTPException(status_code=404, detail=f"Bird with ID {bird_id} not found")
         
         return {
             "bird_id": bird_id,
-            "modalities": bird_info
+            "species_name": text_info.get("species_name", "Unknown"),
+            "scientific_name": text_info.get("scientific_name", ""),
+            "family": text_info.get("family", ""),
+            "text_information": text_info,
+            "raw_text_data": text_info,
+            "images": images,
+            "audio_clips": audio_clips,
+            "counts": {
+                "images": len(images),
+                "audio_clips": len(audio_clips)
+            }
         }
         
     except HTTPException:
@@ -375,28 +385,54 @@ async def get_bird_info(bird_id: int):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error retrieving bird info: {str(e)}")
 
+@app.post("/enhance-description")
+async def enhance_description(request: dict):
+    """Use LLM to enhance bird description"""
+    try:
+        raw_text = request.get("raw_text_data", {})
+        searchable_text = raw_text.get("searchable_text", "")
+        
+        if not searchable_text:
+            return {"enhanced_description": "No text data available for enhancement"}
+        
+        # Use OpenAI to create a structured summary
+        prompt = f"""
+        Extract and format the following bird information from this raw data:
+        
+        Raw data: {searchable_text}
+        
+        Please provide a clean, structured response with:
+        1. Habitat (where the bird lives)
+        2. Geographic regions (where it's found)
+        3. Behavior and ecology
+        4. Physical characteristics
+        5. Brief description
+        
+        Format as a readable paragraph for each section.
+        """
+        
+        response = openai_client.chat.completions.create(
+            model="gpt-3.5-turbo",
+            messages=[{"role": "user", "content": prompt}],
+            max_tokens=500
+        )
+        
+        return {"enhanced_description": response.choices[0].message.content}
+        
+    except Exception as e:
+        return {"enhanced_description": f"Error enhancing description: {str(e)}"}
+
 @app.get("/stats")
 async def get_database_stats():
-    """Get statistics about the bird database"""
+    """Get database statistics"""
     try:
-        stats = {}
-        collections = ["bird_audio_search", "bird_image_search", "bird_text_search"]
-        
-        for collection_name in collections:
-            try:
-                info = qdrant_client.get_collection(collection_name)
-                modality = collection_name.replace("bird_", "").replace("_search", "")
-                stats[modality] = {
-                    "total_points": info.points_count,
-                    "vector_dimensions": info.config.params.vectors.size,
-                    "status": info.status
-                }
-            except Exception as e:
-                stats[collection_name] = {"error": str(e)}
-        
         return {
-            "database_stats": stats,
-            "total_collections": len([s for s in stats.values() if "error" not in s])
+            "database_stats": {
+                "text": {"total_points": len(ALL_TEXT_DATA), "status": "loaded"},
+                "image": {"total_points": len(ALL_IMAGE_DATA), "status": "loaded"},
+                "audio": {"total_points": len(ALL_AUDIO_DATA), "status": "loaded"}
+            },
+            "total_collections": 3
         }
         
     except Exception as e:
