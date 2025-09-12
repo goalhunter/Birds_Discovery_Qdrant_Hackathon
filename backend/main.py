@@ -182,7 +182,7 @@ def create_comprehensive_result(search_result, search_type: str) -> Dict[str, An
 # Pydantic models
 class SearchRequest(BaseModel):
     query: str
-    limit: int = 10
+    limit: int = 9
 
 class SearchResponse(BaseModel):
     results: List[Dict[str, Any]]
@@ -265,55 +265,8 @@ async def search_by_text(request: SearchRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Text search error: {str(e)}")
 
-@app.post("/search/image")
-async def search_by_image(file: UploadFile = File(...), limit: int = Query(10)):
-    """Search birds by uploaded image"""
-    try:
-        if not file.content_type.startswith('image/'):
-            raise HTTPException(status_code=400, detail="File must be an image")
-        
-        with tempfile.NamedTemporaryFile(delete=False, suffix='.jpg') as tmp_file:
-            content = await file.read()
-            tmp_file.write(content)
-            tmp_file_path = tmp_file.name
-        
-        try:
-            # Process image
-            image = Image.open(tmp_file_path).convert('RGB')
-            image_tensor = image_transform(image).unsqueeze(0).to(device)
-            
-            with torch.no_grad():
-                features = image_model(image_tensor)
-                features = features.view(features.size(0), -1).squeeze().cpu().numpy()
-            
-            # Search in image collection
-            results = qdrant_client.search(
-                collection_name="bird_image_search",
-                query_vector=features.tolist(),
-                limit=limit
-            )
-            
-            # Create comprehensive results
-            comprehensive_results = []
-            for result in results:
-                comprehensive_result = create_comprehensive_result(result, "image")
-                if comprehensive_result:
-                    comprehensive_results.append(comprehensive_result)
-            
-            return SearchResponse(
-                results=comprehensive_results,
-                total_found=len(comprehensive_results),
-                search_type="image"
-            )
-            
-        finally:
-            os.unlink(tmp_file_path)
-            
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Image search error: {str(e)}")
-
 @app.post("/search/audio")
-async def search_by_audio(file: UploadFile = File(...), limit: int = Query(10)):
+async def search_by_audio(file: UploadFile = File(...), limit: int = Query(9)):
     """Search birds by uploaded audio file"""
     try:
         if not file.content_type.startswith('audio/'):
@@ -438,6 +391,67 @@ async def get_database_stats():
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error getting stats: {str(e)}")
 
+def get_unique_birds_from_results(results, search_type: str) -> List[Dict[str, Any]]:
+    """Get unique birds from search results, avoiding duplicates"""
+    seen_bird_ids = set()
+    unique_results = []
+    
+    for result in results:
+        bird_id = result.payload.get("bird_id")
+        if bird_id is not None and bird_id not in seen_bird_ids:
+            seen_bird_ids.add(bird_id)
+            comprehensive_result = create_comprehensive_result(result, search_type)
+            if comprehensive_result:
+                unique_results.append(comprehensive_result)
+    
+    return unique_results
+
+@app.post("/search/image")
+async def search_by_image(file: UploadFile = File(...), limit: int = Query(9)):
+    """Search birds by uploaded image"""
+    try:
+        if not file.content_type.startswith('image/'):
+            raise HTTPException(status_code=400, detail="File must be an image")
+        
+        with tempfile.NamedTemporaryFile(delete=False, suffix='.jpg') as tmp_file:
+            content = await file.read()
+            tmp_file.write(content)
+            tmp_file_path = tmp_file.name
+        
+        try:
+            # Process image
+            image = Image.open(tmp_file_path).convert('RGB')
+            image_tensor = image_transform(image).unsqueeze(0).to(device)
+            
+            with torch.no_grad():
+                features = image_model(image_tensor)
+                features = features.view(features.size(0), -1).squeeze().cpu().numpy()
+            
+            # Search in image collection - get more results to account for duplicates
+            results = qdrant_client.search(
+                collection_name="bird_image_search",
+                query_vector=features.tolist(),
+                limit=limit * 5  # Get more since we'll deduplicate
+            )
+            
+            # Get unique birds only
+            comprehensive_results = get_unique_birds_from_results(results, "image")
+            
+            # Limit to requested amount
+            comprehensive_results = comprehensive_results[:limit]
+            
+            return SearchResponse(
+                results=comprehensive_results,
+                total_found=len(comprehensive_results),
+                search_type="image"
+            )
+            
+        finally:
+            os.unlink(tmp_file_path)
+            
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Image search error: {str(e)}")
+    
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000, reload=True)
