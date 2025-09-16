@@ -27,7 +27,7 @@ class ApiService {
   }
 
   // Text search
-  static async searchByText(query, limit = 10) {
+  static async searchByText(query, limit = 12) {
     try {
       const response = await fetch(`${API_BASE_URL}/search/text`, {
         method: 'POST',
@@ -50,7 +50,7 @@ class ApiService {
   }
 
   // Image search
-  static async searchByImage(file, limit = 10) {
+  static async searchByImage(file, limit = 12) {
     try {
       const formData = new FormData();
       formData.append('file', file);
@@ -74,7 +74,7 @@ class ApiService {
   }
 
   // Audio search
-  static async searchByAudio(file, limit = 10) {
+  static async searchByAudio(file, limit = 12) {
     try {
       const formData = new FormData();
       formData.append('file', file);
@@ -144,6 +144,55 @@ class ApiService {
       return await response.json();
     } catch (error) {
       console.error('Get database stats failed:', error);
+      throw error;
+    }
+  }
+
+  // Enhance bird description using AI
+  static async enhanceDescription(bird) {
+    try {
+      // Use the searchable_text from raw_text_data which contains all the structured info
+      const searchableText = bird.raw_text_data?.searchable_text || bird.text_description || '';
+      
+      console.log('Sending to enhance-description:', { searchableText }); // Debug log
+      
+      const response = await fetch(`${API_BASE_URL}/enhance-description`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          raw_text_data: {
+            searchable_text: searchableText
+          }
+        }),
+      });
+      
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.detail || 'Failed to enhance description');
+      }
+      
+      return await response.json();
+    } catch (error) {
+      console.error('Enhance description failed:', error);
+      throw error;
+    }
+  }
+
+  // Get all birds
+  static async getAllBirds() {
+    try {
+      const response = await fetch(`${API_BASE_URL}/birds/all`);
+      
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.detail || 'Failed to get all birds');
+      }
+      
+      return await response.json();
+    } catch (error) {
+      console.error('Get all birds failed:', error);
       throw error;
     }
   }

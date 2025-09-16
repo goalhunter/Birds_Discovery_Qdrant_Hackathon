@@ -182,7 +182,7 @@ def create_comprehensive_result(search_result, search_type: str) -> Dict[str, An
 # Pydantic models
 class SearchRequest(BaseModel):
     query: str
-    limit: int = 9
+    limit: int = 12
 
 class SearchResponse(BaseModel):
     results: List[Dict[str, Any]]
@@ -266,7 +266,7 @@ async def search_by_text(request: SearchRequest):
         raise HTTPException(status_code=500, detail=f"Text search error: {str(e)}")
 
 @app.post("/search/audio")
-async def search_by_audio(file: UploadFile = File(...), limit: int = Query(9)):
+async def search_by_audio(file: UploadFile = File(...), limit: int = Query(12)):
     """Search birds by uploaded audio file"""
     try:
         if not file.content_type.startswith('audio/'):
@@ -354,12 +354,7 @@ async def enhance_description(request: dict):
         
         Raw data: {searchable_text}
         
-        Please provide a clean, structured response with:
-        1. Habitat (where the bird lives)
-        2. Geographic regions (where it's found)
-        3. Behavior and ecology
-        4. Physical characteristics
-        5. Brief description
+        provide a summary of the data in 100 words. Don't add unnecessary information other than bird's details.
         
         Format as a readable paragraph for each section.
         """
@@ -367,7 +362,7 @@ async def enhance_description(request: dict):
         response = openai_client.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[{"role": "user", "content": prompt}],
-            max_tokens=500
+            max_tokens=2000
         )
         
         return {"enhanced_description": response.choices[0].message.content}
@@ -407,7 +402,7 @@ def get_unique_birds_from_results(results, search_type: str) -> List[Dict[str, A
     return unique_results
 
 @app.post("/search/image")
-async def search_by_image(file: UploadFile = File(...), limit: int = Query(9)):
+async def search_by_image(file: UploadFile = File(...), limit: int = Query(12)):
     """Search birds by uploaded image"""
     try:
         if not file.content_type.startswith('image/'):
@@ -452,6 +447,51 @@ async def search_by_image(file: UploadFile = File(...), limit: int = Query(9)):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Image search error: {str(e)}")
     
+@app.get("/birds/all")
+async def get_all_birds():
+    """Get all 88 bird records with comprehensive information"""
+    try:
+        all_birds = []
+        
+        # Iterate through all cached text data (which contains all 88 birds)
+        for bird_id, text_info in ALL_TEXT_DATA.items():
+            # Get associated media data
+            images = ALL_IMAGE_DATA.get(bird_id, [])
+            audio_clips = ALL_AUDIO_DATA.get(bird_id, [])
+            
+            # Create comprehensive result (same structure as search results)
+            bird_record = {
+                "bird_id": bird_id,
+                "species_name": text_info.get("species_name", "Unknown"),
+                "scientific_name": text_info.get("scientific_name", ""),
+                "family": text_info.get("family", ""),
+                
+                # Raw text information
+                "text_description": text_info.get("searchable_text", ""),
+                "raw_text_data": text_info,
+                
+                # Basic fields
+                "size": text_info.get("size", ""),
+                "url": f"https://en.wikipedia.org/wiki/{text_info.get('species_name', '').replace(' ', '_')}" if text_info.get("species_name") else "",
+                
+                # Media data
+                "images": images,
+                "primary_image": images[0] if images else None,
+                "audio_clips": audio_clips,
+                "primary_audio": audio_clips[0] if audio_clips else None
+            }
+            
+            all_birds.append(bird_record)
+        
+        return {
+            "results": all_birds,
+            "total_found": len(all_birds),
+            "search_type": "all_records"
+        }
+        
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error fetching all birds: {str(e)}")
+        
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000, reload=True)

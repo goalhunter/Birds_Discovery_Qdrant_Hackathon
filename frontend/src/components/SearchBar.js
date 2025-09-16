@@ -24,7 +24,7 @@ const SearchBar = ({ onSearch, loading, searchType, onSearchTypeChange }) => {
   ];
 
   const placeholderText = {
-    text: 'Search for birds by description (e.g., "small red bird that sings")',
+    text: 'Search for birds by description',
     image: 'Upload an image to find similar birds',
     audio: 'Upload an audio file to find similar bird sounds'
   };

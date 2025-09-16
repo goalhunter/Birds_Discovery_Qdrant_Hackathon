@@ -1,11 +1,98 @@
 // src/components/ResultsDisplay.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import BirdDetailPanel from './BirdDetailPanel';
+import BirdThumbnailGallery from './BirdThumbnailGallery';
+import ApiService from '../services/api';
 
-const ResultsDisplay = ({ results, searchType, onCrossModalSearch, loading }) => {
+const ResultsDisplay = ({ results, searchType, onCrossModalSearch, loading, isInitialView = false }) => {
   const [selectedBird, setSelectedBird] = useState(null);
-  const [expandedCards, setExpandedCards] = useState(new Set());
+  const [detailPanelBird, setDetailPanelBird] = useState(null);
+  const [randomBirds, setRandomBirds] = useState([]);
+  const [randomBirdsLoading, setRandomBirdsLoading] = useState(false);
+  const [hasSearchResults, setHasSearchResults] = useState(false);
 
-  if (!results || results.length === 0) {
+  // Track when we have actual search results
+  useEffect(() => {
+    if (results && results.length > 0 && !isInitialView) {
+      setHasSearchResults(true);
+      console.log('Search results received:', results.length, 'birds');
+    } else if (isInitialView) {
+      setHasSearchResults(false);
+      console.log('Back to initial view, clearing search results flag');
+    }
+  }, [results, isInitialView]);
+
+  // Fetch random birds when on initial view with no results
+  useEffect(() => {
+    const fetchRandomBirds = async () => {
+      console.log('useEffect triggered:', { isInitialView, hasResults: !!(results && results.length > 0), randomBirdsLength: randomBirds.length });
+      
+      if (isInitialView && !hasSearchResults && randomBirds.length === 0) {
+        console.log('Fetching random birds...');
+        try {
+          setRandomBirdsLoading(true);
+          const response = await ApiService.getAllBirds();
+          
+          let birdsData;
+          if (Array.isArray(response)) {
+            birdsData = response;
+          } else if (response.birds && Array.isArray(response.birds)) {
+            birdsData = response.birds;
+          } else if (response.data && Array.isArray(response.data)) {
+            birdsData = response.data;
+          } else {
+            birdsData = Object.values(response).find(val => Array.isArray(val)) || [];
+          }
+          
+          // Create a truly random shuffle with current timestamp as seed
+          const shuffledBirds = [...birdsData]
+            .map(bird => ({ bird, sort: Math.random() + Date.now() }))
+            .sort((a, b) => a.sort - b.sort)
+            .map(({ bird }) => bird);
+            
+          console.log('Random birds selected:', shuffledBirds.slice(0, 5).map(b => b.species_name));
+          setRandomBirds(shuffledBirds.slice(0, 12));
+        } catch (error) {
+          console.error('Failed to fetch random birds:', error);
+        } finally {
+          setRandomBirdsLoading(false);
+        }
+      }
+    };
+
+    fetchRandomBirds();
+  }, [isInitialView, hasSearchResults]); // Only depend on these key flags
+
+  // Determine which birds to display
+  const birdsToDisplay = (() => {
+    console.log('Determining birds to display:', { 
+      isInitialView, 
+      hasSearchResults, 
+      resultsLength: results ? results.length : 0, 
+      randomBirdsLength: randomBirds.length 
+    });
+    
+    if (isInitialView && !hasSearchResults) {
+      console.log('Using random birds:', randomBirds.length);
+      return randomBirds;
+    } else {
+      console.log('Using search results:', results ? results.length : 0);
+      return results || [];
+    }
+  })();
+
+  const currentLoading = loading || randomBirdsLoading;
+
+  if (currentLoading) {
+    return (
+      <div className="loading-container">
+        <div className="loading-spinner"></div>
+        <p>Loading birds...</p>
+      </div>
+    );
+  }
+
+  if (!birdsToDisplay || birdsToDisplay.length === 0) {
     return (
       <div className="no-results">
         <div className="no-results-icon">🔍</div>
@@ -14,21 +101,17 @@ const ResultsDisplay = ({ results, searchType, onCrossModalSearch, loading }) =>
     );
   }
 
-  const handleBirdSelect = (bird) => {
+  const handleBirdClick = (bird, e) => {
+    e.stopPropagation();
+    setDetailPanelBird(bird);
+  };
+
+  const handleCrossModalClick = (bird, e) => {
+    e.stopPropagation();
     setSelectedBird(bird);
     if (onCrossModalSearch) {
       onCrossModalSearch(bird.bird_id);
     }
-  };
-
-  const toggleCardExpansion = (birdId) => {
-    const newExpanded = new Set(expandedCards);
-    if (newExpanded.has(birdId)) {
-      newExpanded.delete(birdId);
-    } else {
-      newExpanded.add(birdId);
-    }
-    setExpandedCards(newExpanded);
   };
 
   const formatConfidenceScore = (score) => {
@@ -70,300 +153,126 @@ const ResultsDisplay = ({ results, searchType, onCrossModalSearch, loading }) =>
     }
   };
 
-  const renderResultCard = (bird, index) => {
+  const renderBirdCard = (bird, index) => {
     const isSelected = selectedBird?.bird_id === bird.bird_id;
-    const isExpanded = expandedCards.has(bird.bird_id);
     const bestImage = getBestImage(bird);
     const bestAudio = getBestAudio(bird);
     
     return (
       <div
         key={bird.bird_id || index}
-        className={`result-card comprehensive ${isSelected ? 'selected' : ''} ${isExpanded ? 'expanded' : ''}`}
+        className={`modern-bird-card ${isSelected ? 'selected' : ''}`}
+        onClick={(e) => handleBirdClick(bird, e)}
       >
-        {/* Header with confidence and match type */}
-        <div className="card-header">
-          <div className="match-info">
-            <span className="match-type-icon" title={`Matched via ${bird.search_match_type}`}>
-              {getMatchTypeIcon(bird.search_match_type)}
-            </span>
-            <span className="confidence-badge">
+        {/* Image Section */}
+        <div className="bird-card-image">
+          {bestImage ? (
+            <img
+              src={getImageSrc(bestImage)}
+              alt={bird.species_name}
+              className="card-image"
+              onError={(e) => {
+                e.target.style.display = 'none';
+                e.target.nextSibling.style.display = 'flex';
+              }}
+            />
+          ) : (
+            <div className="image-placeholder">
+              <span className="placeholder-icon">🐦</span>
+            </div>
+          )}
+          
+          {/* Confidence Badge - only show for search results */}
+          {bird.confidence_score && !isInitialView && (
+            <div className="confidence-badge">
               {formatConfidenceScore(bird.confidence_score)}%
-            </span>
-          </div>
-          
-          <button
-            className="expand-button"
-            onClick={(e) => {
-              e.stopPropagation();
-              toggleCardExpansion(bird.bird_id);
-            }}
-            title={isExpanded ? 'Collapse' : 'Expand details'}
-          >
-            {isExpanded ? '▼' : '▶'}
-          </button>
-        </div>
-
-        {/* Main content area */}
-        <div className="card-content" onClick={() => handleBirdSelect(bird)}>
-          
-          {/* Bird Image */}
-          <div className="result-media">
-            {bestImage ? (
-              <div className="image-container">
-                <img
-                  src={getImageSrc(bestImage)}
-                  alt={bird.species_name}
-                  className="result-image"
-                  onError={(e) => {
-                    e.target.style.display = 'none';
-                    e.target.nextSibling.style.display = 'flex';
-                  }}
-                />
-                <div className="image-placeholder" style={{ display: 'none' }}>
-                  <span>🐦</span>
-                  <small>Image unavailable</small>
-                </div>
-                {bird.images && bird.images.length > 1 && (
-                  <div className="image-count-badge">
-                    +{bird.images.length - 1} more
-                  </div>
-                )}
-              </div>
-            ) : (
-              <div className="image-placeholder">
-                <span>🐦</span>
-                <small>No image available</small>
-              </div>
-            )}
-          </div>
-
-          {/* Bird Information */}
-          <div className="result-info">
-            <div className="bird-header">
-              <h3 className="bird-name">{bird.species_name}</h3>
-              {bird.scientific_name && bird.scientific_name !== 'Unknown' && (
-                <p className="scientific-name">({bird.scientific_name})</p>
-              )}
             </div>
-            
-            {bird.family && bird.family !== 'Unknown' && (
-              <p className="bird-family">Family: {bird.family}</p>
-            )}
+          )}
 
-            {/* Quick info tags */}
-            <div className="quick-info">
-              {bird.size && (
-                <span className="info-tag size">Size: {bird.size}</span>
-              )}
-              {bird.ecology && (
-                <span className="info-tag ecology">{bird.ecology}</span>
-              )}
-              {bird.group_dynamics && (
-                <span className="info-tag group">{bird.group_dynamics}</span>
-              )}
-            </div>
-
-            {/* Habitat and geography (always visible) */}
-            {(bird.habitats || bird.geographic_regions) && (
-              <div className="habitat-info">
-                {bird.habitats && (
-                  <p><strong>Habitat:</strong> {bird.habitats}</p>
-                )}
-                {bird.geographic_regions && (
-                  <p><strong>Region:</strong> {bird.geographic_regions}</p>
-                )}
-              </div>
-            )}
-
-            {/* Audio player if available */}
-            {bestAudio && (
-              <div className="audio-section">
-                <div className="audio-header">
-                  <span className="audio-icon">🎵</span>
-                  <span>Bird Call</span>
-                  {bird.audio_clips && bird.audio_clips.length > 1 && (
-                    <span className="audio-count">+{bird.audio_clips.length - 1} more</span>
-                  )}
-                </div>
-                {getAudioSrc(bestAudio) && (
-                  <audio controls className="audio-player">
-                    <source src={getAudioSrc(bestAudio)} type="audio/wav" />
-                    Your browser does not support audio playback.
-                  </audio>
-                )}
-              </div>
-            )}
-          </div>
-        </div>
-
-        {/* Expanded details */}
-        {isExpanded && (
-          <div className="expanded-details">
-            
-            {/* Full description */}
-            {bird.extract && (
-              <div className="description-section">
-                <h4>Description</h4>
-                <p className="full-description">{bird.extract}</p>
-                {bird.url && (
-                  <a href={bird.url} target="_blank" rel="noopener noreferrer" className="source-link">
-                    Learn more →
-                  </a>
-                )}
-              </div>
-            )}
-
-            {/* All images gallery */}
+          {/* Media Count Indicators */}
+          <div className="media-indicators">
             {bird.images && bird.images.length > 1 && (
-              <div className="images-gallery">
-                <h4>All Images ({bird.images.length})</h4>
-                <div className="image-grid">
-                  {bird.images.slice(0, 6).map((img, idx) => (
-                    <div key={idx} className="gallery-image">
-                      <img
-                        src={getImageSrc(img)}
-                        alt={`${bird.species_name} ${idx + 1}`}
-                        onError={(e) => e.target.style.display = 'none'}
-                      />
-                      {img.quality_score && (
-                        <div className="quality-badge">Q: {img.quality_score}</div>
-                      )}
-                    </div>
-                  ))}
-                  {bird.images.length > 6 && (
-                    <div className="more-images">+{bird.images.length - 6} more</div>
-                  )}
-                </div>
-              </div>
+              <span className="media-count">📸 {bird.images.length}</span>
             )}
-
-            {/* All audio clips */}
-            {bird.audio_clips && bird.audio_clips.length > 1 && (
-              <div className="audio-gallery">
-                <h4>All Audio Clips ({bird.audio_clips.length})</h4>
-                <div className="audio-list">
-                  {bird.audio_clips.slice(0, 3).map((audio, idx) => (
-                    <div key={idx} className="audio-item">
-                      <span>Clip {idx + 1}</span>
-                      {audio.clip_duration && <span>({audio.clip_duration}s)</span>}
-                      {getAudioSrc(audio) && (
-                        <audio controls>
-                          <source src={getAudioSrc(audio)} type="audio/wav" />
-                        </audio>
-                      )}
-                    </div>
-                  ))}
-                  {bird.audio_clips.length > 3 && (
-                    <div className="more-audio">+{bird.audio_clips.length - 3} more clips</div>
-                  )}
-                </div>
-              </div>
+            {bird.audio_clips && bird.audio_clips.length > 0 && (
+              <span className="media-count">🎵 {bird.audio_clips.length}</span>
             )}
-
-            {/* Metadata */}
-            <div className="metadata-section">
-              <h4>Search Details</h4>
-              <div className="metadata-grid">
-                <div className="metadata-item">
-                  <strong>Bird ID:</strong> {bird.bird_id}
-                </div>
-                <div className="metadata-item">
-                  <strong>Match Type:</strong> {bird.search_match_type}
-                </div>
-                <div className="metadata-item">
-                  <strong>Confidence:</strong> {formatConfidenceScore(bird.confidence_score)}%
-                </div>
-                {bird.images && (
-                  <div className="metadata-item">
-                    <strong>Images:</strong> {bird.images.length}
-                  </div>
-                )}
-                {bird.audio_clips && (
-                  <div className="metadata-item">
-                    <strong>Audio Clips:</strong> {bird.audio_clips.length}
-                  </div>
-                )}
-              </div>
-            </div>
           </div>
-        )}
-
-        {/* Action buttons */}
-        <div className="card-actions">
-          <button
-            className="cross-modal-button"
-            onClick={(e) => {
-              e.stopPropagation();
-              handleBirdSelect(bird);
-            }}
-            disabled={loading}
-          >
-            🔍 Find Similar Birds
-          </button>
-          
-          <button
-            className="details-button"
-            onClick={(e) => {
-              e.stopPropagation();
-              toggleCardExpansion(bird.bird_id);
-            }}
-          >
-            {isExpanded ? 'Less Details' : 'More Details'}
-          </button>
         </div>
+
+        {/* Content Section */}
+        <div className="bird-card-content">
+          <div className="bird-header">
+            <h3 className="bird-name">{bird.species_name}</h3>
+            {bird.scientific_name && bird.scientific_name !== 'Unknown' && (
+              <p className="scientific-name">{bird.scientific_name}</p>
+            )}
+          </div>
+
+          {/* Quick Info */}
+          <div className="quick-info">
+            {bird.family && bird.family !== 'Unknown' && (
+              <span className="info-chip family">{bird.family}</span>
+            )}
+            {bird.size && (
+              <span className="info-chip size">{bird.size}</span>
+            )}
+            {bird.ecology && (
+              <span className="info-chip ecology">{bird.ecology}</span>
+            )}
+          </div>
+
+          {/* Habitat Preview */}
+          {bird.habitats && (
+            <div className="habitat-preview">
+              <span className="habitat-icon">🌍</span>
+              <span className="habitat-text">{bird.habitats}</span>
+            </div>
+          )}
+
+          {/* Audio Preview */}
+          {bestAudio && (
+            <div className="audio-preview">
+              <audio controls className="mini-audio-player">
+                <source src={getAudioSrc(bestAudio)} type="audio/wav" />
+              </audio>
+            </div>
+          )}
+        </div>
+
+        {/* Hover Action */}
+        <div className="card-hover-action">
+          <span>Click to view details</span>
+        </div>
+
+        {/* Cross Modal Button (appears on hover) */}
+        <button
+          className="cross-modal-quick-button"
+          onClick={(e) => handleCrossModalClick(bird, e)}
+          title="Find similar birds"
+        >
+          🔍
+        </button>
       </div>
     );
   };
 
-  const getSearchTypeSummary = () => {
-    const withImages = results.filter(r => r.images && r.images.length > 0).length;
-    const withAudio = results.filter(r => r.audio_clips && r.audio_clips.length > 0).length;
-    const withComplete = results.filter(r => 
-      r.images?.length > 0 && 
-      r.audio_clips?.length > 0 && 
-      r.text_description?.length > 0
-    ).length;
-
-    return { withImages, withAudio, withComplete };
-  };
-
-  const summary = getSearchTypeSummary();
-
   return (
-    <div className="results-container comprehensive">
-      <div className="results-header">
-        <div className="header-main">
-          <h2>Search Results</h2>
-          <span className="search-type-badge">
-            {getMatchTypeIcon(searchType)} {searchType.toUpperCase()} Search
-          </span>
-        </div>
-        
-        <div className="results-summary">
-          <span className="results-count">
-            Found {results.length} bird{results.length !== 1 ? 's' : ''}
-          </span>
-          <div className="content-summary">
-            <span className="summary-item">📸 {summary.withImages} with images</span>
-            <span className="summary-item">🎵 {summary.withAudio} with audio</span>
-            <span className="summary-item">✨ {summary.withComplete} complete profiles</span>
-          </div>
-        </div>
+    <div className="modern-results-container">
+      {/* Birds Grid */}
+      <div className="modern-birds-grid">
+        {birdsToDisplay.map((bird, index) => renderBirdCard(bird, index))}
       </div>
 
-      <div className="results-grid comprehensive">
-        {results.map((bird, index) => renderResultCard(bird, index))}
-      </div>
+      {/* Thumbnail Gallery for additional navigation */}
+      <BirdThumbnailGallery />
 
-      {/* Load More Button (if needed) */}
-      {results.length >= 10 && (
-        <div className="load-more-container">
-          <button className="load-more-button" disabled={loading}>
-            Load More Results
-          </button>
-        </div>
-      )}
+      {/* Detail Panel */}
+      <BirdDetailPanel
+        bird={detailPanelBird}
+        isOpen={!!detailPanelBird}
+        onClose={() => setDetailPanelBird(null)}
+      />
     </div>
   );
 };
