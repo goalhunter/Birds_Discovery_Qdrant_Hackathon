@@ -4,7 +4,7 @@ A multi-modal bird identification and discovery application that enables users t
 
 ## Demo Video
 
-[Link to 1-minute demo video showcasing multi-modal bird search capabilities]
+[\[Link to 1-minute demo video showcasing multi-modal bird search capabilities\]](https://youtu.be/XHOhdaS-uLU)
 
 ## Screenshots
    
